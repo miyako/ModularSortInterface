@@ -1,0 +1,20 @@
+INTERVENTIONS
+Target Sort Composer INTERVENTIONS
+Table
+Fields
+Direction
+ASC (direction) ) ( DESC (direction) )
+Sorting criteria
+1
+&8 INTERVENTIONS
+st asc
+ASC )
+2
+INTERVENTIONS
+DateStart
+Reset
++ Add
+> Execute
+G Save
+Load
+® Close

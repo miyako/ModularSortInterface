@@ -1,0 +1,19 @@
+© @ TECHNICIANS
+Target Sort Composer TECHNICIANS
+Table
+Fields
+Direction
+T ID (fiela)
+T ID (field)
+T (field)
+T (field)
+T ID (field)
+Sorting criteria
+4
+table > champ > ASC/DESC
+Reset
++ Add
+D Execute
+G Save
+9) Load
+® Close

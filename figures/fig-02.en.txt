@@ -1,0 +1,17 @@
+© @ TECHNICIANS
+Target Sort Composer TECHNICIANS
+Table
+Fields
+Direction
+21 ASC (direction) | { = DESC (direction)
+Sorting criteria
+1
+(8 TECHNICIANS
+T Name
+asc
+W Reset
++ Add
+> Execute
+G Save
+Load
+® Close

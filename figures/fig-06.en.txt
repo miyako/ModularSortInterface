@@ -1,0 +1,95 @@
+eee
+Resources
+Name
+Date Modified
+Size
+Kind
+BD frlproj
+25 Jun 2026 at 15:53
+Folder
+© buttons_fr.xif
+25 Jun 2026 at 15:53
+4kKB
+XML Lo...change
+© dialog_fr.xlf
+25 Jun 2026 at 15:53
+XML Lo...change
+© menus_fr.xif
+25 Jun 2026 at 15:53
+4kB
+XML Lo...change
+> @ images
+26 Jun 2026 at 13:33
+Folder
+Y D scripts
+26 Jun 2026 at 13:32
+Folder
+@ mod2_orderBy
+26 Jun 2026 at 13:32
+Folder
+v B fonts
+25 Jun 2026 at 15:53
+Folder
+tabler-4d.ttf
+25 Jun 2026 at 15:53
+2KB
+TrueType® font
+tabler-icons.ttf
+25 Jun 2026 at 15:53
+2,4 MB
+TrueType® font
+Today at 09:01
+5 KB
+HTML text
+scripts
+Today at 08:44
+Folder
+B buttons.js
+25 Jun 2026 at 15:53
+624 bytes
+Text Document
+B engine.js
+Today at 08:50
+10 KB
+Text Document
+B i18next.core.js
+Today at 08:52
+2KB
+Text Document
+Yesterday at 15:08
+49 KB
+Text Document
+B search.js
+25 Jun 2026 at 15:53
+2KB
+Text Document
+B tabs.js
+25 Jun 2026 at 15:53
+603 bytes
+Text Document
+v B styles
+25 Jun 2026 at 15:53
+Folder
+B main.css
+29 Jun 2026 at 17:10
+8KB
+Text Document
+B piece.css
+25 Jun 2026 at 15:53
+1KB
+Text Document
+B search.css
+29 Jun 2026 at 16:55
+1KB
+Text Document
+B tabler-4d.css
+25 Jun 2026 at 15:53
+782 bytes
+Text Document
+B tabler-icons.min.css
+25 Jun 2026 at 15:53
+281 KB
+Text Document
+> void
+23 Jun 2026 at 09:31
+Folder

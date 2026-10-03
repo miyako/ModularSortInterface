@@ -45,6 +45,7 @@ The workflow and checkpoints are in `.github/copilot-instructions.md`. This file
 | `table.size` | Font size used only by table cells (or null) |
 | `paragraph.gap`, `short_line_x1` | Start a new paragraph after a vertical gap > `gap`, or after a short line ending in `.` or `:` |
 | `ocr.psm`, `min_conf`, `noise` | Tesseract page-segmentation mode, word confidence threshold, regex of junk lines |
+| `vector_figures` | `[{page, clip: [x0,y0,x1,y1], dpi}]`: rasterise a vector diagram as one figure; text and images inside `clip` are dropped from the body, and the figure is OCR'd like the others |
 | `figure_fonts` | `{light, regular, bold: ["path#index", ...]}`: overrides the per-platform defaults |
 
 `make inspect` derives most of these from a style histogram of the body pages:
@@ -73,9 +74,9 @@ monospace font for code instead of colours, `code.colors` can stay empty.
   `![caption](fig-NN)` placed where the image sits.
   - `layout/fig-NN.json` stores `source`, `page`, `width_pt` (the placed width, reused in the rebuild) and
     `localize`, plus one `items[]` entry per OCR line with its `box`.
-- Vector diagrams (drawn with PDF paths, not images) are **not** extracted. `inspect` lists pages with many
-  drawings. If they contain text, ask the user: either rasterise the region with `page.get_pixmap(clip=…)` into a
-  new figure, or leave it.
+- Vector diagrams (drawn with PDF paths, not images) are **not** extracted by default. `inspect` lists pages with
+  many drawings. If they contain text, ask the user: either add the region to `vector_figures` (rasterised into a
+  figure, numbered in document order), or leave it.
 - Re-extraction never overwrites. `--force` overwrites `<src>` files and layouts, so warn the user first:
   it discards OCR corrections and layout tweaks.
 

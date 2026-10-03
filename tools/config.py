@@ -27,6 +27,7 @@ DEFAULTS = {
     "table": {"size": None},        # font size used only by table cells, or null
     "paragraph": {"gap": 3, "short_line_x1": 470},
     "ocr": {"psm": 11, "min_conf": 30, "noise": r"^[E ]+$"},
+    "vector_figures": [],          # [{"page": N, "clip": [x0, y0, x1, y1], "dpi": 300}]: diagrams drawn as vectors
     "figure_fonts": {},             # {"light"|"regular"|"bold": [path or path#index, ...]}
     "demo_dir": "demo",
 }

@@ -1,0 +1,19 @@
+© @ TECHNICIANS
+Target Sort Composer TECHNICIANS
+Table
+Fields
+Direction
+{8 CUSTOMERS (table)
+INTERVENTIONS (table)
+INVOICE_LINES (‘2ble)
+B INVOICES (table)
+lis)
+Sorting criteria
+1
+‘(> table > champ > ASC/DESC.
+G Save
+5) Load
+® Close
+Reset
++ Add
+D Execute
