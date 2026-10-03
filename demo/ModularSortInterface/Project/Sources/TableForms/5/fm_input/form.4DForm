@@ -1,0 +1,190 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 1024,
+	"windowMinHeight": 768,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload"
+	],
+	"windowTitle": "list Screen PARTS",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"tField001": {
+					"type": "text",
+					"text": "ID : ",
+					"left": 115,
+					"top": 118,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField001": {
+					"type": "input",
+					"left": 295,
+					"top": 117,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[PARTS:5]ID:1",
+					"class": "ss_default"
+				},
+				"tField002": {
+					"type": "text",
+					"text": "Name : ",
+					"left": 115,
+					"top": 143,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField002": {
+					"type": "input",
+					"left": 295,
+					"top": 142,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[PARTS:5]Name:2",
+					"class": "ss_default"
+				},
+				"tField003": {
+					"type": "text",
+					"text": "UnitPrice : ",
+					"left": 115,
+					"top": 168,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField003": {
+					"type": "input",
+					"left": 295,
+					"top": 167,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[PARTS:5]UnitPrice:3",
+					"class": "ss_default",
+					"dataSourceTypeHint": "number"
+				},
+				"tField004": {
+					"type": "text",
+					"text": "VATRate : ",
+					"left": 115,
+					"top": 193,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField004": {
+					"type": "input",
+					"left": 295,
+					"top": 192,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[PARTS:5]VATRate:4",
+					"class": "ss_default",
+					"dataSourceTypeHint": "number"
+				},
+				"tField005": {
+					"type": "text",
+					"text": "OemReference : ",
+					"left": 115,
+					"top": 218,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField005": {
+					"type": "input",
+					"left": 295,
+					"top": 217,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[PARTS:5]OemReference:5",
+					"class": "ss_default"
+				},
+				"tField006": {
+					"type": "text",
+					"text": "StockQuantity : ",
+					"left": 115,
+					"top": 243,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField006": {
+					"type": "input",
+					"left": 295,
+					"top": 242,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[PARTS:5]StockQuantity:6",
+					"class": "ss_default",
+					"dataSourceTypeHint": "integer"
+				},
+				"tField007": {
+					"type": "text",
+					"text": "Supplier : ",
+					"left": 115,
+					"top": 268,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField007": {
+					"type": "input",
+					"left": 295,
+					"top": 267,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[PARTS:5]Supplier:7",
+					"class": "ss_default"
+				},
+				"tField008": {
+					"type": "text",
+					"text": "k_invoice_line_list : ",
+					"left": 115,
+					"top": 293,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				}
+			}
+		}
+	],
+	"geometryStamp": 323,
+	"markerFooter": 767,
+	"markerBreak": 767,
+	"markerBody": 767,
+	"markerHeader": 65,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"inheritedForm": "fm_model_input",
+	"method": "method.4dm"
+}

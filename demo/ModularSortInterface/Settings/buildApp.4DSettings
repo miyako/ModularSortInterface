@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Preferences4D>
+  <BuildApp>
+    <BuildCompiled>True</BuildCompiled>
+    <IncludeAssociatedFolders>True</IncludeAssociatedFolders>
+    <BuildComponent>False</BuildComponent>
+    <BuildApplicationSerialized>False</BuildApplicationSerialized>
+    <RuntimeVL>
+      <LastDataPathLookup>ByAppName</LastDataPathLookup>
+    </RuntimeVL>
+    <SourcesFiles>
+      <RuntimeVL>
+        <RuntimeVLIncludeIt>True</RuntimeVLIncludeIt>
+      </RuntimeVL>
+      <CS>
+        <ServerIncludeIt>False</ServerIncludeIt>
+        <ClientWinIncludeIt>False</ClientWinIncludeIt>
+        <ClientMacIncludeIt>False</ClientMacIncludeIt>
+      </CS>
+    </SourcesFiles>
+    <CS>
+      <BuildServerApplication>False</BuildServerApplication>
+      <LastDataPathLookup>ByAppName</LastDataPathLookup>
+      <MacCompiledDatabaseToWinIncludeIt>False</MacCompiledDatabaseToWinIncludeIt>
+      <MacCompiledDatabaseToWin></MacCompiledDatabaseToWin>
+      <ServerEmbedsProjectDirectoryFile>False</ServerEmbedsProjectDirectoryFile>
+      <BuildCSUpgradeable>False</BuildCSUpgradeable>
+      <CurrentVers>1</CurrentVers>
+      <HardLink></HardLink>
+    </CS>
+    <BuildApplicationName>Composer</BuildApplicationName>
+    <Licenses>
+      <AutomaticLicenseIntegration>False</AutomaticLicenseIntegration>
+      <EvaluationMode>False</EvaluationMode>
+      <ArrayLicenseWin>
+        <ItemsCount>0</ItemsCount>
+      </ArrayLicenseWin>
+    </Licenses>
+    <BuildWinDestFolder>..\Composer_Build\</BuildWinDestFolder>
+    <ArrayExcludedPluginName>
+      <ItemsCount>0</ItemsCount>
+    </ArrayExcludedPluginName>
+    <ArrayExcludedPluginID>
+      <ItemsCount>0</ItemsCount>
+    </ArrayExcludedPluginID>
+    <ArrayExcludedComponentName>
+      <ItemsCount>2</ItemsCount>
+      <Item1>4D AIKit</Item1>
+      <Item2>4D WritePro Interface</Item2>
+    </ArrayExcludedComponentName>
+    <ArrayExcludedModuleName>
+      <ItemsCount>3</ItemsCount>
+      <Item1>4D Updater</Item1>
+      <Item2>4D Qodly Pro and Data Explorer</Item2>
+      <Item3>Windows App Runtime</Item3>
+    </ArrayExcludedModuleName>
+    <SignApplication>
+      <MacSignature>False</MacSignature>
+      <MacCertificate></MacCertificate>
+    </SignApplication>
+  </BuildApp>
+</Preferences4D>

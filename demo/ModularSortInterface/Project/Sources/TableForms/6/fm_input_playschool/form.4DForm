@@ -1,0 +1,355 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 1024,
+	"windowMinHeight": 1019,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload"
+	],
+	"windowTitle": "list Screen INVOICES",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"tField_6_1": {
+					"type": "text",
+					"text": "ID",
+					"left": 50,
+					"top": 45,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_6_1_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 71,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[INVOICES:6]ID:1",
+					"class": "fm_input_ro"
+				},
+				"tField_6_2": {
+					"type": "text",
+					"text": "InvoiceDate",
+					"left": 50,
+					"top": 121,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_6_2_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 147,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[INVOICES:6]InvoiceDate:2",
+					"class": "fm_input",
+					"dataSourceTypeHint": "date"
+				},
+				"tField_6_3": {
+					"type": "text",
+					"text": "TotalExclTax",
+					"left": 50,
+					"top": 197,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_6_3_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 223,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[INVOICES:6]TotalExclTax:3",
+					"class": "fm_input",
+					"dataSourceTypeHint": "number"
+				},
+				"tField_6_4": {
+					"type": "text",
+					"text": "TotalVAT",
+					"left": 50,
+					"top": 273,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_6_4_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 299,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[INVOICES:6]TotalVAT:4",
+					"class": "fm_input",
+					"dataSourceTypeHint": "number"
+				},
+				"tField_6_5": {
+					"type": "text",
+					"text": "TotalInclTax",
+					"left": 50,
+					"top": 349,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_6_5_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 375,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[INVOICES:6]TotalInclTax:5",
+					"class": "fm_input",
+					"dataSourceTypeHint": "number"
+				},
+				"tField_6_6": {
+					"type": "text",
+					"text": "Status",
+					"left": 50,
+					"top": 425,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_6_6_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 451,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[INVOICES:6]Status:6",
+					"class": "fm_input",
+					"dataSourceTypeHint": "boolean"
+				},
+				"tField_6_7": {
+					"type": "text",
+					"text": "ID_Customer",
+					"left": 50,
+					"top": 501,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_6_7_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 527,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[INVOICES:6]ID_Customer:7",
+					"class": "fm_input"
+				},
+				"tField_6_8": {
+					"type": "text",
+					"text": "ID_Intervention",
+					"left": 50,
+					"top": 577,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_6_8_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 603,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[INVOICES:6]ID_Intervention:8",
+					"class": "fm_input"
+				},
+				"tField_6_9": {
+					"type": "text",
+					"text": "PaymentDate",
+					"left": 50,
+					"top": 653,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_6_9_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 679,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[INVOICES:6]PaymentDate:9",
+					"class": "fm_input",
+					"dataSourceTypeHint": "date"
+				},
+				"tField_6_10": {
+					"type": "text",
+					"text": "PaymentMethod",
+					"left": 50,
+					"top": 729,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_6_10_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 755,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[INVOICES:6]PaymentMethod:10",
+					"class": "fm_input",
+					"dataSourceTypeHint": "integer"
+				},
+				"tField_6_11": {
+					"type": "text",
+					"text": "Notes",
+					"left": 50,
+					"top": 805,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_6_11_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 831,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[INVOICES:6]Notes:11",
+					"class": "fm_input"
+				},
+				"iField_6_1_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 71,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.ID",
+					"class": "fm_input_ro"
+				},
+				"iField_6_2_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 147,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.InvoiceDate",
+					"class": "fm_input",
+					"dataSourceTypeHint": "date"
+				},
+				"iField_6_3_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 223,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.TotalExclTax",
+					"class": "fm_input",
+					"dataSourceTypeHint": "number"
+				},
+				"iField_6_4_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 299,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.TotalVAT",
+					"class": "fm_input",
+					"dataSourceTypeHint": "number"
+				},
+				"iField_6_5_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 375,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.TotalInclTax",
+					"class": "fm_input",
+					"dataSourceTypeHint": "number"
+				},
+				"iField_6_6_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 451,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.Status",
+					"class": "fm_input",
+					"dataSourceTypeHint": "boolean"
+				},
+				"iField_6_7_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 527,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.ID_Customer",
+					"class": "fm_input"
+				},
+				"iField_6_8_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 603,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.ID_Intervention",
+					"class": "fm_input"
+				},
+				"iField_6_9_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 679,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.PaymentDate",
+					"class": "fm_input",
+					"dataSourceTypeHint": "date"
+				},
+				"iField_6_10_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 755,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.PaymentMethod",
+					"class": "fm_input",
+					"dataSourceTypeHint": "integer"
+				},
+				"iField_6_11_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 831,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.Notes",
+					"class": "fm_input"
+				}
+			}
+		}
+	],
+	"geometryStamp": 614,
+	"markerFooter": 1018,
+	"markerBreak": 1018,
+	"markerBody": 1018,
+	"markerHeader": 65,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"inheritedForm": "fm_model_input_playschool",
+	"method": "method.4dm"
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+
+<xliff version="1.0">
+
+  <file datatype="x-STR#" original="undefined" product-Version="v19" source-language="en"
+    target-language="en">
+
+    <header>
+      <note></note>
+    </header>
+
+    <group resname="playschool_style">
+
+      <!-- table names -->
+
+      <trans-unit id="30100" resname="tTable1">
+        <source>Customers</source>
+        <target>Customers</target>
+      </trans-unit>
+      <trans-unit id="30200" resname="tTable2">
+        <source>Vehicles</source>
+        <target>Vehicles</target>
+      </trans-unit>
+      <trans-unit id="30300" resname="tTable3">
+        <source>Interventions</source>
+        <target>Interventions</target>
+      </trans-unit>
+      <trans-unit id="30400" resname="tTable4">
+        <source>Services</source>
+        <target>Services</target>
+      </trans-unit>
+      <trans-unit id="30500" resname="tTable5">
+        <source>Parts</source>
+        <target>Parts</target>
+      </trans-unit>
+      <trans-unit id="30600" resname="tTable6">
+        <source>Invoices</source>
+        <target>Invoices</target>
+      </trans-unit>
+      <trans-unit id="30700" resname="tTable7">
+        <source>Invoice lines</source>
+        <target>Invoice lines</target>
+      </trans-unit>
+      <trans-unit id="30800" resname="tTable8">
+        <source>Techicians</source>
+        <target>Techicians</target>
+      </trans-unit>
+      <trans-unit id="30900" resname="tTable9">
+        <source>Demo Tables</source>
+        <target>Demo Tables</target>
+      </trans-unit>
+
+      <!-- explorer playschool-->
+
+      <trans-unit id="40001" resname="tReduce">
+        <source>Reduce</source>
+        <target>Reduce</target>
+      </trans-unit>
+      <trans-unit id="40002" resname="tExtend">
+        <source>Extend</source>
+        <target>Extend</target>
+      </trans-unit>
+
+      <trans-unit id="40003" resname="tBrandTag">
+        <source>Workshop · Management</source>
+        <target>Workshop · Management</target>
+      </trans-unit>
+      <trans-unit id="40003" resname="tToggleMode">
+        <source>Toggle to mode</source>
+        <target>Toggle to mode</target>
+      </trans-unit>
+
+    </group>
+
+  </file>
+
+</xliff>

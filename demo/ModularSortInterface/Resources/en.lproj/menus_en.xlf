@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+
+<xliff version="1.0">
+  <file datatype="x-STR#" original="undefined" product-Version="v19" source-language="en" target-language="en">
+    <header>
+      <note>application main menu</note>
+    </header>
+    <group resname="Bar1">
+      <trans-unit id="10000" resname="xCommonMenuAbout">
+        <source>About ...</source>
+        <target>About ...</target>
+      </trans-unit>
+      <trans-unit id="11000" resname="xCommonMenuFile">
+        <source>File</source>
+        <target>File</target>
+      </trans-unit>
+      <trans-unit id="11100" resname="xCommonMenuItemPreferences">
+        <source>Preferences</source>
+        <target>Preferences</target>
+      </trans-unit>
+      <trans-unit id="11200" resname="xCommonMenuItemQuit">
+        <source>Quit</source>
+        <target>Quit</target>
+      </trans-unit>
+      <trans-unit id="12000" resname="xCommonMenuEdit">
+        <source>Edit</source>
+        <target>Edit</target>
+      </trans-unit>
+      <trans-unit id="12100" resname="xCommonMenuItemUndo">
+        <source>Undo</source>
+        <target>Undo</target>
+      </trans-unit>
+      <trans-unit id="12200" resname="xCommonMenuItemCut">
+        <source>Cut</source>
+        <target>Cut</target>
+      </trans-unit>
+      <trans-unit id="12300" resname="xCommonMenuItemCopy">
+        <source>Copy</source>
+        <target>Copy</target>
+      </trans-unit>
+      <trans-unit id="12400" resname="xCommonMenuItemPaste">
+        <source>Paste</source>
+        <target>Paste</target>
+      </trans-unit>
+      <trans-unit id="12500" resname="xCommonMenuItemClear">
+        <source>Clear</source>
+        <target>Clear</target>
+      </trans-unit>
+      <trans-unit id="12600" resname="xCommonMenuItemSelectAll">
+        <source>Select All</source>
+        <target>Select All</target>
+      </trans-unit>
+      <trans-unit id="12700" resname="xCommonMenuItemShowClipboard">
+        <source>Clipboard</source>
+        <target>Clipboard</target>
+      </trans-unit>
+      <trans-unit id="13000" resname="xCommonMenuMode">
+        <source>Mode</source>
+        <target>Mode</target>
+      </trans-unit>
+      <trans-unit id="13100" resname="xCommonMenuItemDesign">
+        <source>To design mode</source>
+        <target>To design mode</target>
+      </trans-unit>
+
+      <trans-unit id="14000" resname="xCommonMenuData">
+        <source>Data</source>
+        <target>Data</target>
+      </trans-unit>
+      <trans-unit id="14100" resname="xCommonMenuDataExplorer">
+        <source>Explorer</source>
+        <target>Explorer</target>
+      </trans-unit>
+      <trans-unit id="14200" resname="xCommonMenuDataCLIENTS">
+        <source>Clients</source>
+        <target>Clients</target>
+      </trans-unit>
+      <trans-unit id="14500" resname="xCommonMenuDataINTERVENTIONS">
+        <source>Interventions</source>
+        <target>Interventions</target>
+      </trans-unit>
+      <trans-unit id="14300" resname="xCommonMenuDataINVOICES">
+        <source>Invoices</source>
+        <target>Invoices</target>
+      </trans-unit>
+      <trans-unit id="14800" resname="xCommonMenuDataPARTS">
+        <source>Parts</source>
+        <target>Parts</target>
+      </trans-unit>
+      <trans-unit id="14700" resname="xCommonMenuDataSERVICES">
+        <source>Services</source>
+        <target>Services</target>
+      </trans-unit>
+      <trans-unit id="14600" resname="xCommonMenuDataTECHNICIANS">
+        <source>Technicians</source>
+        <target>Technicians</target>
+      </trans-unit>
+      <trans-unit id="14400" resname="xCommonMenuDataVEHICLES">
+        <source>Vehicles</source>
+        <target>Vehicles</target>
+      </trans-unit>
+      <trans-unit id="14500" resname="xCommonMenuHomeNT">
+        <source>Home</source>
+        <target>Home</target>
+      </trans-unit>
+
+    </group>
+  </file>
+</xliff>

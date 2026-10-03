@@ -1,0 +1,156 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 1024,
+	"windowMinHeight": 768,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload",
+		"onSelectionChange"
+	],
+	"windowTitle": "window title",
+	"destination": "listScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"bField1": {
+					"type": "button",
+					"text": "ID",
+					"top": 73,
+					"left": 11,
+					"width": 320,
+					"height": 16,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"borderStyle": "none",
+					"class": "ss_button",
+					"sizingX": "grow"
+				},
+				"iField1": {
+					"type": "input",
+					"left": 13,
+					"top": 104,
+					"width": 320,
+					"height": 16,
+					"class": "ss_default",
+					"dataSource": "[INVOICES:6]ID:1",
+					"borderStyle": "none",
+					"fill": "transparent",
+					"sizingX": "grow"
+				},
+				"sField1": {
+					"type": "splitter",
+					"left": 340,
+					"top": 65,
+					"width": 5,
+					"height": 61,
+					"borderStyle": "solid",
+					"stroke": "#808080",
+					"splitterMode": "move"
+				},
+				"bField2": {
+					"type": "button",
+					"text": "Status",
+					"top": 73,
+					"left": 351,
+					"width": 260,
+					"height": 16,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"borderStyle": "none",
+					"class": "ss_button",
+					"sizingX": "grow"
+				},
+				"iField2": {
+					"type": "input",
+					"left": 353,
+					"top": 104,
+					"width": 260,
+					"height": 16,
+					"class": "ss_default",
+					"dataSource": "[INVOICES:6]Status:6",
+					"borderStyle": "none",
+					"fill": "transparent",
+					"sizingX": "grow"
+				},
+				"sField2": {
+					"type": "splitter",
+					"left": 620,
+					"top": 65,
+					"width": 5,
+					"height": 61,
+					"borderStyle": "solid",
+					"stroke": "#808080",
+					"splitterMode": "move"
+				},
+				"bField3": {
+					"type": "button",
+					"text": "PaymentDate",
+					"top": 73,
+					"left": 631,
+					"width": 260,
+					"height": 16,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"borderStyle": "none",
+					"class": "ss_button",
+					"sizingX": "grow"
+				},
+				"iField3": {
+					"type": "input",
+					"left": 633,
+					"top": 104,
+					"width": 260,
+					"height": 16,
+					"class": "ss_default",
+					"dataSource": "[INVOICES:6]PaymentDate:9",
+					"borderStyle": "none",
+					"fill": "transparent",
+					"sizingX": "grow"
+				},
+				"sField3": {
+					"type": "splitter",
+					"left": 900,
+					"top": 65,
+					"width": 5,
+					"height": 61,
+					"borderStyle": "solid",
+					"stroke": "#808080",
+					"splitterMode": "move"
+				}
+			}
+		}
+	],
+	"markerHeader": 100,
+	"markerBody": 125,
+	"markerBreak": 126,
+	"markerFooter": 210,
+	"geometryStamp": 527,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm",
+	"inheritedForm": "fm_model_output"
+}

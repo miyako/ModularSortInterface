@@ -1,0 +1,119 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 1024,
+	"windowMinHeight": 768,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload",
+		"onSelectionChange"
+	],
+	"windowTitle": "window title",
+	"destination": "listScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"bField1": {
+					"type": "button",
+					"text": "ID",
+					"top": 73,
+					"left": 11,
+					"width": 428,
+					"height": 16,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"borderStyle": "none",
+					"class": "ss_button",
+					"sizingX": "grow"
+				},
+				"bField2": {
+					"type": "button",
+					"text": "Name",
+					"top": 73,
+					"left": 461,
+					"width": 518,
+					"height": 16,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"borderStyle": "none",
+					"class": "ss_button",
+					"sizingX": "grow"
+				},
+				"iField1": {
+					"type": "input",
+					"left": 13,
+					"top": 104,
+					"width": 426,
+					"height": 16,
+					"class": "ss_default",
+					"dataSource": "[TECHNICIANS:8]ID:1",
+					"borderStyle": "none",
+					"fill": "transparent",
+					"sizingX": "grow"
+				},
+				"iField2": {
+					"type": "input",
+					"left": 463,
+					"top": 104,
+					"width": 516,
+					"height": 16,
+					"class": "ss_default",
+					"dataSource": "[TECHNICIANS:8]Name:2",
+					"borderStyle": "none",
+					"fill": "transparent",
+					"sizingX": "grow"
+				},
+				"sField1": {
+					"type": "splitter",
+					"left": 450,
+					"top": 65,
+					"width": 5,
+					"height": 61,
+					"borderStyle": "solid",
+					"stroke": "#808080",
+					"splitterMode": "move"
+				},
+				"sField2": {
+					"type": "splitter",
+					"left": 994,
+					"top": 65,
+					"width": 5,
+					"height": 61,
+					"borderStyle": "solid",
+					"stroke": "#808080",
+					"splitterMode": "move"
+				}
+			}
+		}
+	],
+	"markerHeader": 100,
+	"markerBody": 125,
+	"markerBreak": 126,
+	"markerFooter": 210,
+	"geometryStamp": 522,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm",
+	"inheritedForm": "fm_model_output"
+}

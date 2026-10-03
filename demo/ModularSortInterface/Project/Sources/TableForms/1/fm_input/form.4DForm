@@ -1,0 +1,178 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 1024,
+	"windowMinHeight": 768,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload"
+	],
+	"windowTitle": "list Screen CLIENTS",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"tField001": {
+					"type": "text",
+					"text": "ID : ",
+					"left": 114,
+					"top": 117,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField001": {
+					"type": "input",
+					"left": 294,
+					"top": 116,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[CUSTOMERS:1]ID:1",
+					"class": "ss_default"
+				},
+				"tField002": {
+					"type": "text",
+					"text": "LastName : ",
+					"left": 114,
+					"top": 142,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField002": {
+					"type": "input",
+					"left": 294,
+					"top": 141,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[CUSTOMERS:1]LastName:2",
+					"class": "ss_default"
+				},
+				"tField003": {
+					"type": "text",
+					"text": "FirstName : ",
+					"left": 114,
+					"top": 167,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField003": {
+					"type": "input",
+					"left": 294,
+					"top": 166,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[CUSTOMERS:1]FirstName:3",
+					"class": "ss_default"
+				},
+				"tField004": {
+					"type": "text",
+					"text": "Phone : ",
+					"left": 114,
+					"top": 192,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField004": {
+					"type": "input",
+					"left": 294,
+					"top": 191,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[CUSTOMERS:1]Phone:4",
+					"class": "ss_default"
+				},
+				"tField005": {
+					"type": "text",
+					"text": "Email : ",
+					"left": 114,
+					"top": 217,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField005": {
+					"type": "input",
+					"left": 294,
+					"top": 216,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[CUSTOMERS:1]Email:5",
+					"class": "ss_default"
+				},
+				"tField006": {
+					"type": "text",
+					"text": "Address : ",
+					"left": 114,
+					"top": 242,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField006": {
+					"type": "input",
+					"left": 294,
+					"top": 241,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[CUSTOMERS:1]Address:6",
+					"class": "ss_default"
+				},
+				"tField007": {
+					"type": "text",
+					"text": "k_vehicle_list : ",
+					"left": 114,
+					"top": 267,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"tField008": {
+					"type": "text",
+					"text": "k_invoice_list : ",
+					"left": 114,
+					"top": 292,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				}
+			}
+		}
+	],
+	"geometryStamp": 334,
+	"markerFooter": 767,
+	"markerBreak": 767,
+	"markerBody": 767,
+	"markerHeader": 65,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"inheritedForm": "fm_model_input",
+	"method": "method.4dm"
+}

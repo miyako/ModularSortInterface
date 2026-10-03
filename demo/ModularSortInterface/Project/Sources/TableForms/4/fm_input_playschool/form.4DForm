@@ -1,0 +1,156 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 1024,
+	"windowMinHeight": 488,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload"
+	],
+	"windowTitle": "list Screen SERVICES",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"tField_4_1": {
+					"type": "text",
+					"text": "ID",
+					"left": 50,
+					"top": 45,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_4_1_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 71,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[SERVICES:4]ID:1",
+					"class": "fm_input_ro"
+				},
+				"tField_4_2": {
+					"type": "text",
+					"text": "Name",
+					"left": 50,
+					"top": 121,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_4_2_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 147,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[SERVICES:4]Name:2",
+					"class": "fm_input"
+				},
+				"tField_4_3": {
+					"type": "text",
+					"text": "UnitPrice",
+					"left": 50,
+					"top": 197,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_4_3_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 223,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[SERVICES:4]UnitPrice:3",
+					"class": "fm_input",
+					"dataSourceTypeHint": "number"
+				},
+				"tField_4_4": {
+					"type": "text",
+					"text": "VATRate",
+					"left": 50,
+					"top": 273,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_4_4_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 299,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[SERVICES:4]VATRate:4",
+					"class": "fm_input",
+					"dataSourceTypeHint": "number"
+				},
+				"iField_4_1_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 71,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.ID",
+					"class": "fm_input_ro"
+				},
+				"iField_4_2_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 147,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.Name",
+					"class": "fm_input"
+				},
+				"iField_4_3_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 223,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.UnitPrice",
+					"class": "fm_input",
+					"dataSourceTypeHint": "number"
+				},
+				"iField_4_4_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 299,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.VATRate",
+					"class": "fm_input",
+					"dataSourceTypeHint": "number"
+				}
+			}
+		}
+	],
+	"geometryStamp": 394,
+	"markerFooter": 487,
+	"markerBreak": 487,
+	"markerBody": 487,
+	"markerHeader": 65,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"inheritedForm": "fm_model_input_playschool",
+	"method": "method.4dm"
+}

@@ -1,0 +1,233 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 1024,
+	"windowMinHeight": 639,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload"
+	],
+	"windowTitle": "list Screen VEHICLES",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"tField_2_1": {
+					"type": "text",
+					"text": "ID",
+					"left": 50,
+					"top": 45,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_2_1_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 71,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[VEHICLES:2]ID:1",
+					"class": "fm_input_ro"
+				},
+				"tField_2_2": {
+					"type": "text",
+					"text": "LicensePlate",
+					"left": 50,
+					"top": 121,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_2_2_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 147,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[VEHICLES:2]LicensePlate:2",
+					"class": "fm_input"
+				},
+				"tField_2_3": {
+					"type": "text",
+					"text": "Brand",
+					"left": 50,
+					"top": 197,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_2_3_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 223,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[VEHICLES:2]Brand:3",
+					"class": "fm_input"
+				},
+				"tField_2_4": {
+					"type": "text",
+					"text": "Model",
+					"left": 50,
+					"top": 273,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_2_4_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 299,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[VEHICLES:2]Model:4",
+					"class": "fm_input"
+				},
+				"tField_2_5": {
+					"type": "text",
+					"text": "Year",
+					"left": 50,
+					"top": 349,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_2_5_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 375,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[VEHICLES:2]Year:5",
+					"class": "fm_input"
+				},
+				"tField_2_6": {
+					"type": "text",
+					"text": "ID_Customer",
+					"left": 50,
+					"top": 425,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_2_6_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 451,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[VEHICLES:2]ID_Customer:6",
+					"class": "fm_input"
+				},
+				"tField_2_7": {
+					"type": "text",
+					"text": "WIN",
+					"left": 50,
+					"top": 501,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_2_7_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 527,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[VEHICLES:2]WIN:7",
+					"class": "fm_input"
+				},
+				"iField_2_1_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 71,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.ID",
+					"class": "fm_input_ro"
+				},
+				"iField_2_2_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 147,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.LicensePlate",
+					"class": "fm_input"
+				},
+				"iField_2_3_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 223,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.Brand",
+					"class": "fm_input"
+				},
+				"iField_2_4_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 299,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.Model",
+					"class": "fm_input"
+				},
+				"iField_2_5_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 375,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.Year",
+					"class": "fm_input"
+				},
+				"iField_2_6_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 451,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.ID_Customer",
+					"class": "fm_input"
+				},
+				"iField_2_7_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 527,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.WIN",
+					"class": "fm_input"
+				}
+			}
+		}
+	],
+	"geometryStamp": 763,
+	"markerFooter": 638,
+	"markerBreak": 638,
+	"markerBody": 638,
+	"markerHeader": 65,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"inheritedForm": "fm_model_input_playschool",
+	"method": "method.4dm"
+}

@@ -1,0 +1,211 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload"
+	],
+	"windowTitle": "list Screen INVOICE_LINES",
+	"destination": "listScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"tField001": {
+					"type": "text",
+					"text": "ID : ",
+					"left": 17,
+					"top": 16,
+					"width": 200,
+					"height": 15,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField001": {
+					"type": "input",
+					"left": 17,
+					"top": 39,
+					"width": 200,
+					"height": 16,
+					"dataSource": "[INVOICE_LINES:7]ID:1",
+					"class": "ss_default"
+				},
+				"tField002": {
+					"type": "text",
+					"text": "ItemType : ",
+					"left": 244,
+					"top": 16,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField002": {
+					"type": "input",
+					"left": 244,
+					"top": 39,
+					"width": 200,
+					"height": 16,
+					"dataSource": "[INVOICE_LINES:7]ItemType:2",
+					"class": "ss_default",
+					"dataSourceTypeHint": "boolean"
+				},
+				"tField003": {
+					"type": "text",
+					"text": "ID_Invoice : ",
+					"left": 463,
+					"top": 15,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField003": {
+					"type": "input",
+					"left": 463,
+					"top": 39,
+					"width": 200,
+					"height": 16,
+					"dataSource": "[INVOICE_LINES:7]ID_Invoice:3",
+					"class": "ss_default"
+				},
+				"tField004": {
+					"type": "text",
+					"text": "ID_Intervention : ",
+					"left": 691,
+					"top": 15,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField004": {
+					"type": "input",
+					"left": 683,
+					"top": 39,
+					"width": 200,
+					"height": 16,
+					"dataSource": "[INVOICE_LINES:7]ID_Intervention:4",
+					"class": "ss_default"
+				},
+				"tField005": {
+					"type": "text",
+					"text": "Quantity : ",
+					"left": 900,
+					"top": 16,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField005": {
+					"type": "input",
+					"left": 900,
+					"top": 39,
+					"width": 200,
+					"height": 16,
+					"dataSource": "[INVOICE_LINES:7]Quantity:5",
+					"class": "ss_default",
+					"dataSourceTypeHint": "integer"
+				},
+				"tField006": {
+					"type": "text",
+					"text": "UnitPrice : ",
+					"left": 1118,
+					"top": 15,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField006": {
+					"type": "input",
+					"left": 1120,
+					"top": 39,
+					"width": 200,
+					"height": 16,
+					"dataSource": "[INVOICE_LINES:7]UnitPrice:6",
+					"class": "ss_default",
+					"dataSourceTypeHint": "number"
+				},
+				"tField007": {
+					"type": "text",
+					"text": "VATRate : ",
+					"left": 1349,
+					"top": 16,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField007": {
+					"type": "input",
+					"left": 1349,
+					"top": 39,
+					"width": 200,
+					"height": 16,
+					"dataSource": "[INVOICE_LINES:7]VATRate:7",
+					"class": "ss_default",
+					"dataSourceTypeHint": "number"
+				},
+				"tField008": {
+					"type": "text",
+					"text": "LineTotal : ",
+					"left": 1567,
+					"top": 15,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField008": {
+					"type": "input",
+					"left": 1567,
+					"top": 39,
+					"width": 200,
+					"height": 16,
+					"dataSource": "[INVOICE_LINES:7]LineTotal:8",
+					"class": "ss_default",
+					"dataSourceTypeHint": "number"
+				},
+				"tField009": {
+					"type": "text",
+					"text": "ID_Parts : ",
+					"left": 1792,
+					"top": 15,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField009": {
+					"type": "input",
+					"left": 1792,
+					"top": 39,
+					"width": 200,
+					"height": 16,
+					"dataSource": "[INVOICE_LINES:7]ID_Parts:9",
+					"class": "ss_default"
+				}
+			}
+		}
+	],
+	"markerHeader": 34,
+	"markerBody": 73,
+	"markerBreak": 73,
+	"markerFooter": 73,
+	"geometryStamp": 33
+}

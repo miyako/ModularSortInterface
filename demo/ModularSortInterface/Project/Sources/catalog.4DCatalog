@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="ModularSortInterface" uuid="BFCBADD70CBD4E95A4C3995D8AB7D4CC" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="CUSTOMERS" uuid="269A33BA9E0B4D96A462E837905F46AE" id="1">
+		<field name="ID" uuid="D5D9C047EB5A4316924C18A8D9C4C464" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="LastName" uuid="514A07368520491D802C2E447F2A6CA8" type="10" limiting_length="255" id="2"/>
+		<field name="FirstName" uuid="98AFEFE4BFC54F5089F2FB9BD9D425BA" type="10" limiting_length="255" id="3"/>
+		<field name="Phone" uuid="3D438869485C420C835EE004A4927623" type="10" limiting_length="255" id="4"/>
+		<field name="Email" uuid="94766CB0243048BEAC1F36FE36EADE6A" type="10" limiting_length="255" id="5"/>
+		<field name="Address" uuid="5D62EB35049F4E0CB7221CC68089A1E2" type="10" limiting_length="255" id="6"/>
+		<primary_key field_name="ID" field_uuid="D5D9C047EB5A4316924C18A8D9C4C464"/>
+		<table_extra input_form="fm_input" output_form="fm_output"/>
+	</table>
+	<table name="VEHICLES" uuid="7BC518DB06FB43A78A302D6C395B20FF" id="2">
+		<field name="ID" uuid="56088B6E40AD482A9B6541784C91DFC7" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="LicensePlate" uuid="6C039C7DE6D54968B81A6A1E4D491C49" type="10" limiting_length="255" id="2"/>
+		<field name="Brand" uuid="75E5B1A8DD2E41D4A62073F0C8CBC3CF" type="10" limiting_length="255" id="3"/>
+		<field name="Model" uuid="2A9D68C99DAD4CCBA1BADA413A65774B" type="10" limiting_length="255" id="4"/>
+		<field name="Year" uuid="9F0AF81C9D0C480CB9F9DB096FB37F4D" type="10" limiting_length="255" id="5"/>
+		<field name="ID_Customer" uuid="54D853F1FA42400FA4558DD5CBD5AE62" type="10" store_as_UUID="true" id="6"/>
+		<field name="WIN" uuid="B9F49CD7A5AA4944A9036C96FA69DDBA" type="10" limiting_length="255" id="7"/>
+		<primary_key field_name="ID" field_uuid="56088B6E40AD482A9B6541784C91DFC7"/>
+		<table_extra input_form="fm_input" output_form="fm_output"/>
+	</table>
+	<table name="INTERVENTIONS" uuid="78DDB2D844A94EB0973D2B30DF6A9D84" id="3">
+		<field name="ID" uuid="DCF5605E4F784F88BA0A0B5060CDF426" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="DateStart" uuid="DC650EF9A99046A09918E2BEB06CBD38" type="8" id="2"/>
+		<field name="Description" uuid="F4CC2E1E026B4035BF973D3BC5B4D852" type="10" limiting_length="255" id="3"/>
+		<field name="Mileage" uuid="573CCFA7975B4A8EA7B87BCA5BE8C68D" type="4" id="4"/>
+		<field name="Status" uuid="B11896E8E04B44A7B944B5918210FE95" type="3" id="5"/>
+		<field name="ID_Vehicle" uuid="28F0FD0DBA3A4A46B97B90C5F6EB84CB" type="10" store_as_UUID="true" id="6"/>
+		<field name="DateEnd" uuid="E3329B4311384E7A9FE7AE94A76DE938" type="8" id="7"/>
+		<field name="TimeStart" uuid="958AEC8232514C7985CDAC67EE488428" type="9" id="8"/>
+		<field name="TimeEnd" uuid="2E3AAEC93A54416481C1F14FF0E4CBD0" type="9" id="9"/>
+		<field name="ID_Technician" uuid="2290430935AA41F39B212C4CD09C0CD3" type="10" store_as_UUID="true" id="10"/>
+		<primary_key field_name="ID" field_uuid="DCF5605E4F784F88BA0A0B5060CDF426"/>
+		<table_extra input_form="fm_input" output_form="fm_output"/>
+	</table>
+	<table name="SERVICES" uuid="D1E78CE6BFA8417AA3FF438332D5E39C" id="4">
+		<field name="ID" uuid="9308091FDE53425AAB95B148C785CA88" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="Name" uuid="EA48CC958D8B4A5E81847A8FFA6A3CF5" type="10" limiting_length="255" id="2"/>
+		<field name="UnitPrice" uuid="58E84FEB2BC840108DBB0CF523CAF7D6" type="6" id="3"/>
+		<field name="VATRate" uuid="C9BA188487C74F15829F04ECE851F9DC" type="6" id="4"/>
+		<primary_key field_name="ID" field_uuid="9308091FDE53425AAB95B148C785CA88"/>
+		<table_extra input_form="fm_input" output_form="fm_output"/>
+	</table>
+	<table name="PARTS" uuid="0C0C41A024A24EA6AB991977DFD51398" id="5">
+		<field name="ID" uuid="016D65487BC84F06B806C7A22F87CCC2" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="Name" uuid="BE09C40578114871B3D0856A853EA6EC" type="10" limiting_length="255" id="2"/>
+		<field name="UnitPrice" uuid="0C292CE32A654344B2E1F0138D5DEC25" type="6" id="3"/>
+		<field name="VATRate" uuid="01010133897B4DECA9EE884F6683A798" type="6" id="4"/>
+		<field name="OemReference" uuid="F927519C3EBF455EA16CDFDEDCA291D9" type="10" limiting_length="255" id="5"/>
+		<field name="StockQuantity" uuid="AA63775D36F94BBE861EEC778202AC28" type="3" id="6"/>
+		<field name="Supplier" uuid="A250238EC7CF4569882A01CC08F56891" type="10" limiting_length="255" id="7"/>
+		<primary_key field_name="ID" field_uuid="016D65487BC84F06B806C7A22F87CCC2"/>
+		<table_extra input_form="fm_input" output_form="fm_output"/>
+	</table>
+	<table name="INVOICES" uuid="AA81DB3BB002461DA9CA3E7749CEB35B" id="6">
+		<field name="ID" uuid="E08A4670DD0D4830BFCEF2FBFFFF04E8" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="InvoiceDate" uuid="4092F025CFAF41F2ACD0A25C7413845D" type="8" id="2"/>
+		<field name="TotalExclTax" uuid="7DA26114C7444D419426C80BEB43586B" type="6" id="3"/>
+		<field name="TotalVAT" uuid="3CF91C50057D42B68D83CD886EE8DA5B" type="6" id="4"/>
+		<field name="TotalInclTax" uuid="9A21B1D5CC34442A8200E4C795E953C8" type="6" id="5"/>
+		<field name="Status" uuid="13F654E8A9B04C288EBAE6C8C4576D63" type="1" id="6"/>
+		<field name="ID_Customer" uuid="F8BBEFB713D14B7E80BD8E7F50FB1BCE" type="10" store_as_UUID="true" id="7"/>
+		<field name="ID_Intervention" uuid="7C03C4D98A1044A09014C9317960EA11" type="10" limiting_length="255" id="8"/>
+		<field name="PaymentDate" uuid="9995279178E645218277E07D80452006" type="8" id="9"/>
+		<field name="PaymentMethod" uuid="AE0CE95659EA42608781F76B644FE9D3" type="3" id="10"/>
+		<field name="Notes" uuid="4E23771719D3418E8AE099AB37104B6B" type="10" id="11"/>
+		<primary_key field_name="ID" field_uuid="E08A4670DD0D4830BFCEF2FBFFFF04E8"/>
+		<table_extra input_form="fm_input" output_form="fm_output"/>
+	</table>
+	<table name="INVOICE_LINES" uuid="8E16BD401CF546BCA398C4E00C72C3F3" id="7">
+		<field name="ID" uuid="F32F0B1DBAD84AF8923FA09A12D6062D" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="ItemType" uuid="B361F6C61FC64637B361ED8430117152" type="1" id="2"/>
+		<field name="ID_Invoice" uuid="DE609F7B0F5544E1A81E3460B59333A6" type="10" store_as_UUID="true" id="3"/>
+		<field name="ID_Intervention" uuid="AFE11534BB1248BC8CF421ED3C8FB615" type="10" store_as_UUID="true" id="4"/>
+		<field name="Quantity" uuid="2EEDC6B58FEE4FF7ADF9DD0A3B216E63" type="3" id="5"/>
+		<field name="UnitPrice" uuid="5FA22E49CE514824AED9C5A8611E4667" type="6" id="6"/>
+		<field name="VATRate" uuid="72BEDA86F869406DB9D20E00EFDDE8B5" type="6" id="7"/>
+		<field name="LineTotal" uuid="84427B13998C4AD4A91EF31DD825D7E5" type="6" id="8"/>
+		<field name="ID_Parts" uuid="C416FBA1B992417F95CBA36D453C2023" type="10" store_as_UUID="true" id="9"/>
+		<primary_key field_name="ID" field_uuid="F32F0B1DBAD84AF8923FA09A12D6062D"/>
+		<table_extra input_form="fm_output" output_form="fm_output"/>
+	</table>
+	<table name="TECHNICIANS" uuid="EC696456EDF641DBBB739EBD5D841036" id="8">
+		<field name="ID" uuid="AD0AB8BAD7994691ABA72C264E2386A9" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="Name" uuid="AD44FA56C1E545CDACB4E2517089D596" type="10" limiting_length="255" id="2"/>
+		<primary_key field_name="ID" field_uuid="AD0AB8BAD7994691ABA72C264E2386A9"/>
+		<table_extra output_form="fm_output" input_form="fm_input"/>
+	</table>
+	<table name="TABLE_DEMO" uuid="EDBF852E9049400E97CC706E6D261150" id="9">
+		<field name="ID" uuid="5D05726779834950A217258723C8263F" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="Demo_String" uuid="4439B8B2E4E348D3BBFAD4BBA4214F97" type="10" limiting_length="255" id="2"/>
+		<field name="Demo_Text" uuid="1FDA1E0F8AF044D98803DCC0DF2F3BA1" type="10" id="3"/>
+		<field name="Demo_Date" uuid="326D9413F8E54911AC7EA87B137D0AE1" type="8" id="4"/>
+		<field name="Demo_Time" uuid="C014943BF4534B68AE46A360363913A6" type="9" id="5"/>
+		<field name="Demo_Bool" uuid="9B04C45525984A27BB8EC54CC6B50DFE" type="1" id="6"/>
+		<field name="Demo_Int" uuid="81F56301DFF543CFBD1E0CB72E6E152F" type="3" id="7"/>
+		<field name="Demo_LongInt" uuid="973E33BDB3B843B3BF64897B7EA120FB" type="4" id="8"/>
+		<field name="Demo_Int64" uuid="EF8FC07D4EFC40C48979113FB0CF61C1" type="5" id="9"/>
+		<field name="Demo_Real" uuid="A8183579CC27493B9B9090E85C8D1B56" type="6" id="10"/>
+		<field name="Demo_Blob" uuid="59E428DF47154F4BB9C2312AE44122BD" type="18" id="11"/>
+		<field name="Demo_Picture" uuid="B9393B5A4DA84A88961BB5B40DB0AF70" type="12" id="12"/>
+		<field name="Demo_Object" uuid="1E4E9E62492A482E8F21D10D03590B08" type="21" blob_switch_size="2147483647" id="13"/>
+		<primary_key field_name="ID" field_uuid="5D05726779834950A217258723C8263F"/>
+	</table>
+	<relation uuid="9FC37318456F412EB0F2D6868F746B43" name_Nto1="k_client" name_1toN="k_vehicle_list" auto_load_Nto1="true" auto_load_1toN="true" state="1">
+		<related_field kind="source">
+			<field_ref uuid="54D853F1FA42400FA4558DD5CBD5AE62" name="ID_Customer">
+				<table_ref uuid="7BC518DB06FB43A78A302D6C395B20FF" name="VEHICLES"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="D5D9C047EB5A4316924C18A8D9C4C464" name="ID">
+				<table_ref uuid="269A33BA9E0B4D96A462E837905F46AE" name="CUSTOMERS"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="588B82B4AFCE47CFAE8D61398CD6C520" name_Nto1="k_vehicle" name_1toN="k_intervention_list" state="1">
+		<related_field kind="source">
+			<field_ref uuid="28F0FD0DBA3A4A46B97B90C5F6EB84CB" name="ID_Vehicle">
+				<table_ref uuid="78DDB2D844A94EB0973D2B30DF6A9D84" name="INTERVENTIONS"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="56088B6E40AD482A9B6541784C91DFC7" name="ID">
+				<table_ref uuid="7BC518DB06FB43A78A302D6C395B20FF" name="VEHICLES"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="B62CEE4E508E45D6B6FADF6217C15DFD" name_Nto1="k_invoice" name_1toN="k_invoice_line" auto_load_Nto1="true" auto_load_1toN="true" state="1">
+		<related_field kind="source">
+			<field_ref uuid="DE609F7B0F5544E1A81E3460B59333A6" name="ID_Invoice">
+				<table_ref uuid="8E16BD401CF546BCA398C4E00C72C3F3" name="INVOICE_LINES"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="E08A4670DD0D4830BFCEF2FBFFFF04E8" name="ID">
+				<table_ref uuid="AA81DB3BB002461DA9CA3E7749CEB35B" name="INVOICES"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="186327084BBD4019BD905446BE9E96D9" name_Nto1="k_client" name_1toN="k_invoice_list" auto_load_Nto1="true" auto_load_1toN="true" state="1">
+		<related_field kind="source">
+			<field_ref uuid="F8BBEFB713D14B7E80BD8E7F50FB1BCE" name="ID_Customer">
+				<table_ref uuid="AA81DB3BB002461DA9CA3E7749CEB35B" name="INVOICES"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="D5D9C047EB5A4316924C18A8D9C4C464" name="ID">
+				<table_ref uuid="269A33BA9E0B4D96A462E837905F46AE" name="CUSTOMERS"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="DAD9263B3E1F416BB4F74F515C935646" name_Nto1="k_technician" name_1toN="k_intervention_list" state="1">
+		<related_field kind="source">
+			<field_ref uuid="2290430935AA41F39B212C4CD09C0CD3" name="ID_Technician">
+				<table_ref uuid="78DDB2D844A94EB0973D2B30DF6A9D84" name="INTERVENTIONS"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="AD0AB8BAD7994691ABA72C264E2386A9" name="ID">
+				<table_ref uuid="EC696456EDF641DBBB739EBD5D841036" name="TECHNICIANS"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="D2EEB419016043F9B0C8CFA16CEFA465" name_Nto1="k_intervention" name_1toN="k_invoice_line_list" state="1">
+		<related_field kind="source">
+			<field_ref uuid="AFE11534BB1248BC8CF421ED3C8FB615" name="ID_Intervention">
+				<table_ref uuid="8E16BD401CF546BCA398C4E00C72C3F3" name="INVOICE_LINES"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="DCF5605E4F784F88BA0A0B5060CDF426" name="ID">
+				<table_ref uuid="78DDB2D844A94EB0973D2B30DF6A9D84" name="INTERVENTIONS"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<relation uuid="DE3B7C33F6694F48BE0E85B392F22397" name_Nto1="k_part" name_1toN="k_invoice_line_list" auto_load_Nto1="true" auto_load_1toN="true" state="1">
+		<related_field kind="source">
+			<field_ref uuid="C416FBA1B992417F95CBA36D453C2023" name="ID_Parts">
+				<table_ref uuid="8E16BD401CF546BCA398C4E00C72C3F3" name="INVOICE_LINES"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="016D65487BC84F06B806C7A22F87CCC2" name="ID">
+				<table_ref uuid="0C0C41A024A24EA6AB991977DFD51398" name="PARTS"/>
+			</field_ref>
+		</related_field>
+	</relation>
+	<index kind="regular" unique_keys="true" uuid="279F84FDC50146449B1AE54FD1CBBCC0" type="7">
+		<field_ref uuid="AD0AB8BAD7994691ABA72C264E2386A9" name="ID">
+			<table_ref uuid="EC696456EDF641DBBB739EBD5D841036" name="TECHNICIANS"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="2ECD77A137F847E19EF07A3FCB3E4966" type="7">
+		<field_ref uuid="D5D9C047EB5A4316924C18A8D9C4C464" name="ID">
+			<table_ref uuid="269A33BA9E0B4D96A462E837905F46AE" name="CUSTOMERS"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="318FE0F7041B400CB5E12B00B0A8160A" type="7">
+		<field_ref uuid="016D65487BC84F06B806C7A22F87CCC2" name="ID">
+			<table_ref uuid="0C0C41A024A24EA6AB991977DFD51398" name="PARTS"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="584C3891E7E84160866C69B9B309AEFD" type="7">
+		<field_ref uuid="54D853F1FA42400FA4558DD5CBD5AE62" name="ID_Customer">
+			<table_ref uuid="7BC518DB06FB43A78A302D6C395B20FF" name="VEHICLES"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="67E37DD4628E4FA5BE0141FC079AF0F1" type="7">
+		<field_ref uuid="28F0FD0DBA3A4A46B97B90C5F6EB84CB" name="ID_Vehicle">
+			<table_ref uuid="78DDB2D844A94EB0973D2B30DF6A9D84" name="INTERVENTIONS"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="72E760E68E3E415D87A0D404C0EE8761" type="7">
+		<field_ref uuid="E08A4670DD0D4830BFCEF2FBFFFF04E8" name="ID">
+			<table_ref uuid="AA81DB3BB002461DA9CA3E7749CEB35B" name="INVOICES"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="7F28FAFF50954181A773CD51AB102428" type="7">
+		<field_ref uuid="5D05726779834950A217258723C8263F" name="ID">
+			<table_ref uuid="EDBF852E9049400E97CC706E6D261150" name="TABLE_DEMO"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="87020E4C2C7F448883F35A1278A46EC0" type="7">
+		<field_ref uuid="DCF5605E4F784F88BA0A0B5060CDF426" name="ID">
+			<table_ref uuid="78DDB2D844A94EB0973D2B30DF6A9D84" name="INTERVENTIONS"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="8749BBCE21814BF3A461C8868AC3EFF3" type="7">
+		<field_ref uuid="2290430935AA41F39B212C4CD09C0CD3" name="ID_Technician">
+			<table_ref uuid="78DDB2D844A94EB0973D2B30DF6A9D84" name="INTERVENTIONS"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="A5B8342D20444E70961F22A6EF93CF0F" type="7">
+		<field_ref uuid="9308091FDE53425AAB95B148C785CA88" name="ID">
+			<table_ref uuid="D1E78CE6BFA8417AA3FF438332D5E39C" name="SERVICES"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="AFC89A27D5564A119747FFEDB8C621E7" type="7">
+		<field_ref uuid="DE609F7B0F5544E1A81E3460B59333A6" name="ID_Invoice">
+			<table_ref uuid="8E16BD401CF546BCA398C4E00C72C3F3" name="INVOICE_LINES"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B58D1F03977D4DAF8BF69D303D705948" type="7">
+		<field_ref uuid="F32F0B1DBAD84AF8923FA09A12D6062D" name="ID">
+			<table_ref uuid="8E16BD401CF546BCA398C4E00C72C3F3" name="INVOICE_LINES"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="C19D20AC7CE244229A96BC0781CD5E5D" type="7">
+		<field_ref uuid="56088B6E40AD482A9B6541784C91DFC7" name="ID">
+			<table_ref uuid="7BC518DB06FB43A78A302D6C395B20FF" name="VEHICLES"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="F3D931809865458882E7A7C51DDF7919" type="7">
+		<field_ref uuid="C416FBA1B992417F95CBA36D453C2023" name="ID_Parts">
+			<table_ref uuid="8E16BD401CF546BCA398C4E00C72C3F3" name="INVOICE_LINES"/>
+		</field_ref>
+	</index>
+</base>

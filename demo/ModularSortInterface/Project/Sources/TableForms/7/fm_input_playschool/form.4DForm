@@ -1,0 +1,297 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 1024,
+	"windowMinHeight": 401,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload"
+	],
+	"windowTitle": "list Screen INVOICE_LINES",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"tField_7_1": {
+					"type": "text",
+					"text": "ID",
+					"left": 50,
+					"top": 45,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_7_1_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 71,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[INVOICE_LINES:7]ID:1",
+					"class": "fm_input_ro"
+				},
+				"tField_7_2": {
+					"type": "text",
+					"text": "ItemType",
+					"left": 50,
+					"top": 121,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_7_2_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 147,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[INVOICE_LINES:7]ItemType:2",
+					"class": "fm_input",
+					"dataSourceTypeHint": "boolean"
+				},
+				"tField_7_3": {
+					"type": "text",
+					"text": "ID_Invoice",
+					"left": 50,
+					"top": 197,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_7_3_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 223,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[INVOICE_LINES:7]ID_Invoice:3",
+					"class": "fm_input"
+				},
+				"tField_7_4": {
+					"type": "text",
+					"text": "ID_Intervention",
+					"left": 50,
+					"top": 273,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_7_4_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 299,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[INVOICE_LINES:7]ID_Intervention:4",
+					"class": "fm_input"
+				},
+				"tField_7_5": {
+					"type": "text",
+					"text": "Quantity",
+					"left": 50,
+					"top": 349,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_7_5_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 375,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[INVOICE_LINES:7]Quantity:5",
+					"class": "fm_input",
+					"dataSourceTypeHint": "integer"
+				},
+				"tField_7_6": {
+					"type": "text",
+					"text": "UnitPrice",
+					"left": 50,
+					"top": 425,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_7_6_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 451,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[INVOICE_LINES:7]UnitPrice:6",
+					"class": "fm_input",
+					"dataSourceTypeHint": "number"
+				},
+				"tField_7_7": {
+					"type": "text",
+					"text": "VATRate",
+					"left": 50,
+					"top": 501,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_7_7_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 527,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[INVOICE_LINES:7]VATRate:7",
+					"class": "fm_input",
+					"dataSourceTypeHint": "number"
+				},
+				"tField_7_8": {
+					"type": "text",
+					"text": "LineTotal",
+					"left": 50,
+					"top": 577,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_7_8_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 603,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[INVOICE_LINES:7]LineTotal:8",
+					"class": "fm_input",
+					"dataSourceTypeHint": "number"
+				},
+				"tField_7_9": {
+					"type": "text",
+					"text": "ID_Parts",
+					"left": 50,
+					"top": 653,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_7_9_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 679,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[INVOICE_LINES:7]ID_Parts:9",
+					"class": "fm_input"
+				},
+				"iField_7_1_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 71,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.ID",
+					"class": "fm_input_ro"
+				},
+				"iField_7_2_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 147,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.ItemType",
+					"class": "fm_input",
+					"dataSourceTypeHint": "boolean"
+				},
+				"iField_7_3_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 223,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.ID_Invoice",
+					"class": "fm_input"
+				},
+				"iField_7_4_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 299,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.ID_Intervention",
+					"class": "fm_input"
+				},
+				"iField_7_5_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 375,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.Quantity",
+					"class": "fm_input",
+					"dataSourceTypeHint": "integer"
+				},
+				"iField_7_6_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 451,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.UnitPrice",
+					"class": "fm_input",
+					"dataSourceTypeHint": "number"
+				},
+				"iField_7_7_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 527,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.VATRate",
+					"class": "fm_input",
+					"dataSourceTypeHint": "number"
+				},
+				"iField_7_8_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 603,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.LineTotal",
+					"class": "fm_input",
+					"dataSourceTypeHint": "number"
+				},
+				"iField_7_9_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 679,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.ID_Parts",
+					"class": "fm_input"
+				}
+			}
+		}
+	],
+	"geometryStamp": 446,
+	"markerFooter": 400,
+	"markerBreak": 400,
+	"markerBody": 400,
+	"markerHeader": 65,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"inheritedForm": "fm_model_input_playschool",
+	"method": "method.4dm"
+}

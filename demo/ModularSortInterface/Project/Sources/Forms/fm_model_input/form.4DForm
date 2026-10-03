@@ -1,0 +1,265 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 1024,
+	"windowMinHeight": 768,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {
+				"rHeader": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1024,
+					"height": 64,
+					"sizingX": "grow",
+					"stroke": "transparent",
+					"class": "snt_leftPanel"
+				},
+				"snt_panelDivider": {
+					"type": "line",
+					"top": 64,
+					"left": 0,
+					"width": 1024,
+					"height": 0,
+					"sizingX": "grow",
+					"stroke": "#000f87"
+				},
+				"rBody": {
+					"type": "rectangle",
+					"top": 65,
+					"left": 0,
+					"width": 64,
+					"height": 703,
+					"sizingX": "fixed",
+					"stroke": "transparent",
+					"sizingY": "grow",
+					"class": "leftPanel"
+				},
+				"nBody": {
+					"type": "line",
+					"top": 65,
+					"left": 64,
+					"width": 0,
+					"height": 703,
+					"sizingX": "fixed",
+					"stroke": "#000f87",
+					"startPoint": "bottomLeft",
+					"sizingY": "grow"
+				},
+				"pLogoBeast": {
+					"type": "picture",
+					"top": 10,
+					"left": 20,
+					"width": 166,
+					"height": 89,
+					"picture": "/RESOURCES/images/logo/beast.png",
+					"pictureFormat": "scaled"
+				}
+			}
+		},
+		{
+			"objects": {
+				"bRecFirst": {
+					"type": "button",
+					"text": ":xliff:bRecFirst",
+					"top": 75,
+					"left": 3,
+					"width": 58,
+					"height": 64,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/images/buttons/FirstRecord.svg",
+					"iconFrames": 4,
+					"class": "ss_button",
+					"style": "custom",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"action": "firstRecord",
+					"borderStyle": "none"
+				},
+				"bRecPrevious": {
+					"type": "button",
+					"text": ":xliff:bRecPrevious",
+					"top": 140,
+					"left": 3,
+					"width": 58,
+					"height": 64,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/images/buttons/PreviousRecord.svg",
+					"iconFrames": 4,
+					"class": "ss_button",
+					"style": "custom",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"action": "previousRecord",
+					"borderStyle": "none"
+				},
+				"bRecNext": {
+					"type": "button",
+					"text": ":xliff:bRecNext",
+					"top": 205,
+					"left": 3,
+					"width": 58,
+					"height": 64,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/images/buttons/NextRecord.svg",
+					"iconFrames": 4,
+					"class": "ss_button",
+					"style": "custom",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"action": "nextRecord",
+					"borderStyle": "none"
+				},
+				"bRecLast": {
+					"type": "button",
+					"text": ":xliff:bRecLast",
+					"top": 270,
+					"left": 3,
+					"width": 58,
+					"height": 64,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/images/buttons/LastRecord.svg",
+					"iconFrames": 4,
+					"class": "ss_button",
+					"style": "custom",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"action": "lastRecord",
+					"borderStyle": "none"
+				},
+				"bRecDelete": {
+					"type": "button",
+					"text": ":xliff:bRecDelete",
+					"top": 355,
+					"left": 3,
+					"width": 58,
+					"height": 64,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/images/buttons/DeleteRecord.svg",
+					"iconFrames": 4,
+					"class": "ss_button",
+					"style": "custom",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"action": "deleteRecord",
+					"borderStyle": "none"
+				},
+				"nRecButtonSplit1": {
+					"type": "line",
+					"top": 344,
+					"left": 12,
+					"width": 44,
+					"height": 0,
+					"sizingX": "fixed",
+					"sizingY": "fixed"
+				},
+				"bRecCancel": {
+					"type": "button",
+					"text": ":xliff:bRecCancel",
+					"top": 590,
+					"left": 3,
+					"width": 58,
+					"height": 64,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/images/buttons/Cancel.svg",
+					"iconFrames": 4,
+					"class": "ss_button",
+					"style": "custom",
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"action": "cancel",
+					"borderStyle": "none",
+					"shortcutAccel": false,
+					"shortcutControl": false,
+					"shortcutShift": false,
+					"shortcutAlt": false,
+					"shortcutKey": "[Esc]"
+				},
+				"bRecValid": {
+					"type": "button",
+					"text": ":xliff:bRecValid",
+					"top": 674,
+					"left": 3,
+					"width": 58,
+					"height": 64,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/images/buttons/Validate.svg",
+					"iconFrames": 4,
+					"class": "ss_button",
+					"style": "custom",
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"action": "accept",
+					"borderStyle": "none"
+				},
+				"nRecButtonSplit2": {
+					"type": "line",
+					"top": 509,
+					"left": 12,
+					"width": 44,
+					"height": 0,
+					"sizingX": "fixed",
+					"sizingY": "fixed"
+				},
+				"nRecButtonSplit3": {
+					"type": "line",
+					"top": 664,
+					"left": 12,
+					"width": 44,
+					"height": 0,
+					"sizingX": "fixed",
+					"sizingY": "move"
+				},
+				"tTitle": {
+					"type": "text",
+					"text": "Beast garage",
+					"top": 10,
+					"left": 199,
+					"width": 480,
+					"height": 32,
+					"class": "ss_title"
+				},
+				"tTitleSub": {
+					"type": "text",
+					"text": "...",
+					"top": 35,
+					"left": 300,
+					"width": 480,
+					"height": 24,
+					"class": "ss_title"
+				}
+			}
+		}
+	],
+	"geometryStamp": 30,
+	"markerFooter": 769,
+	"markerBreak": 769,
+	"markerBody": 769,
+	"markerHeader": 65
+}

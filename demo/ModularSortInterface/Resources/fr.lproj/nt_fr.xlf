@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+
+<xliff version="1.0">
+  <file datatype="x-STR#" original="undefined" product-Version="v19" source-language="en" target-language="fr">
+    <header>
+      <note>application main menu</note>
+    </header>
+    <group resname="nt">
+
+        <trans-unit id="20000" resname="xlf_brandName">
+            <source>OrderBy Composer</source>
+            <target>Composeur de tri</target>
+        </trans-unit>
+        <trans-unit id="20001" resname="xlf_brandTagline">
+            <source>Modular sorting interface</source>
+            <target>Interface de tri modulaire</target>
+        </trans-unit>
+        <trans-unit id="20002" resname="xlf_featText">
+            <source>● Sort by module
+● Sort on selection
+● Sort on selected entities
+● Search using simplified criteria
+● Save sorting parameters
+● Restore sorting parameters
+            </source>
+            <target>● Trie par module
+● Trie sur séléction
+● Trie sur sélection d'entités
+● Recherche de critéres simplifiés
+● Sauvergarde de paramètres de trie
+● Restitution de paramétres de trie
+            </target>
+        </trans-unit>
+        <trans-unit id="20003" resname="xlf_eyebrow">
+            <source>How to it works</source>
+            <target>Comment ça marche</target>
+        </trans-unit>
+        <trans-unit id="20004" resname="xlf_heading">
+            <source>Principes</source>
+            <target>Principes</target>
+        </trans-unit>
+        <trans-unit id="20005" resname="xlf_copyText">
+            <source>© 2026  ·  4D Tech Note</source>
+            <target>© 2026  ·  4D Tech Note</target>
+        </trans-unit>
+        <trans-unit id="20006" resname="xlf_descBody">
+            <source></source>
+            <target>La base suivante présente la mise en place d'un tri modulaire. Celui-ci permet d'effectuer un tri par module, soit en mode Sélection, soit en mode Sélection d'entités. Le dialogue étant indépendant, il permet de visualiser le tri en temps réel.
+
+Pour utiliser la base, cliquez sur le bouton correspondant au mode de sélections souhaité. Dans l'interface, cliquez ensuite sur le bouton Tri pour ouvrir le dialogue et commencer à utiliser les différentes fonctionnalités.</target>
+        </trans-unit>
+
+
+        <trans-unit id="20007" resname="xlf_primaryBtn1">
+            <source></source>
+            <target>Lancer la démo en sélection classique →</target>
+        </trans-unit>
+        <trans-unit id="20008" resname="xlf_primaryBtn2">
+            <source></source>
+            <target>Lancer la démo en sélection orda →</target>
+        </trans-unit>
+    </group>
+  </file>
+</xliff>

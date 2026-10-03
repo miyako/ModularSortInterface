@@ -1,0 +1,280 @@
+{
+	"tables": {
+		"TABLE_DEMO": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 1025.28125,
+				"top": 429.81640625,
+				"width": 210.2578125,
+				"height": 334.01171875
+			},
+			"displayable_fields_count": 13
+		},
+		"TECHNICIANS": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 1020.55859375,
+				"top": 0,
+				"width": 120,
+				"height": 167.33203125
+			},
+			"displayable_fields_count": 6
+		},
+		"INVOICE_LINES": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 343.328125,
+				"top": 51.3671875,
+				"width": 222.17578125,
+				"height": 306.8203125
+			},
+			"displayable_fields_count": 12,
+			"fields_ordering": 2,
+			"fields": {
+				"ID_Parts": {
+					"position": 4
+				},
+				"LineTotal": {
+					"position": 9
+				},
+				"VATRate": {
+					"position": 8
+				},
+				"UnitPrice": {
+					"position": 7
+				},
+				"Quantity": {
+					"position": 6
+				},
+				"ID_Intervention": {
+					"position": 3
+				},
+				"ID_Invoice": {
+					"position": 2
+				},
+				"ItemType": {
+					"position": 5
+				},
+				"ID": {
+					"position": 1
+				}
+			}
+		},
+		"INVOICES": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 44.30859375,
+				"top": 238.6953125,
+				"width": 166.046875,
+				"height": 306.76953125
+			},
+			"displayable_fields_count": 12
+		},
+		"PARTS": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 737.59765625,
+				"top": 397.1484375,
+				"width": 196.10546875,
+				"height": 202.65625
+			},
+			"displayable_fields_count": 7
+		},
+		"SERVICES": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 1023.44140625,
+				"top": 208.76171875,
+				"width": 120,
+				"height": 167.33203125
+			},
+			"displayable_fields_count": 6
+		},
+		"INTERVENTIONS": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 764.296875,
+				"top": 3.58984375,
+				"width": 187.99609375,
+				"height": 288.27734375
+			},
+			"displayable_fields_count": 11,
+			"fields_ordering": 2,
+			"fields": {
+				"ID_Technician": {
+					"position": 3
+				},
+				"TimeEnd": {
+					"position": 10
+				},
+				"TimeStart": {
+					"position": 9
+				},
+				"DateEnd": {
+					"position": 8
+				},
+				"ID_Vehicle": {
+					"position": 2
+				},
+				"Status": {
+					"position": 6
+				},
+				"Mileage": {
+					"position": 5
+				},
+				"Description": {
+					"position": 4
+				},
+				"DateStart": {
+					"position": 7
+				},
+				"ID": {
+					"position": 1
+				}
+			}
+		},
+		"VEHICLES": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 426.1171875,
+				"top": 443.36328125,
+				"width": 196.09765625,
+				"height": 196.9296875
+			},
+			"displayable_fields_count": 7,
+			"fields": {
+				"ID_Customer": {
+					"position": 2
+				},
+				"Year": {
+					"position": 6
+				},
+				"Model": {
+					"position": 5
+				},
+				"Brand": {
+					"position": 4
+				},
+				"LicensePlate": {
+					"position": 3
+				},
+				"ID": {
+					"position": 1
+				}
+			}
+		},
+		"CUSTOMERS": {
+			"color": {
+				"red": 255,
+				"green": 255,
+				"blue": 255,
+				"alpha": 0
+			},
+			"coordinates": {
+				"left": 2,
+				"top": 0,
+				"width": 185.5859375,
+				"height": 191.4609375
+			},
+			"displayable_fields_count": 7
+		}
+	},
+	"relations": {
+		"DE3B7C33F6694F48BE0E85B392F22397": {
+			"color": {
+				"red": 255,
+				"green": 153,
+				"blue": 63,
+				"alpha": 255
+			}
+		},
+		"D2EEB419016043F9B0C8CFA16CEFA465": {
+			"color": {
+				"red": 255,
+				"green": 153,
+				"blue": 63,
+				"alpha": 255
+			}
+		},
+		"DAD9263B3E1F416BB4F74F515C935646": {
+			"color": {
+				"red": 150,
+				"green": 216,
+				"blue": 175,
+				"alpha": 255
+			}
+		},
+		"186327084BBD4019BD905446BE9E96D9": {
+			"color": {
+				"red": 114,
+				"green": 209,
+				"blue": 221,
+				"alpha": 255
+			}
+		},
+		"B62CEE4E508E45D6B6FADF6217C15DFD": {
+			"color": {
+				"red": 249,
+				"green": 130,
+				"blue": 127,
+				"alpha": 255
+			}
+		},
+		"588B82B4AFCE47CFAE8D61398CD6C520": {
+			"color": {
+				"red": 224,
+				"green": 234,
+				"blue": 104,
+				"alpha": 255
+			}
+		},
+		"9FC37318456F412EB0F2D6868F746B43": {
+			"color": {
+				"red": 114,
+				"green": 209,
+				"blue": 221,
+				"alpha": 255
+			}
+		}
+	}
+}

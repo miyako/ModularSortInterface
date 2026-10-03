@@ -1,0 +1,206 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 1024,
+	"windowMinHeight": 610,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload"
+	],
+	"windowTitle": "list Screen CUSTOMERS",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"tField_1_1": {
+					"type": "text",
+					"text": "ID",
+					"left": 50,
+					"top": 45,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_1_1_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 71,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[CUSTOMERS:1]ID:1",
+					"class": "fm_input_ro"
+				},
+				"tField_1_2": {
+					"type": "text",
+					"text": "LastName",
+					"left": 50,
+					"top": 121,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_1_2_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 147,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[CUSTOMERS:1]LastName:2",
+					"class": "fm_input"
+				},
+				"tField_1_3": {
+					"type": "text",
+					"text": "FirstName",
+					"left": 50,
+					"top": 197,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_1_3_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 223,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[CUSTOMERS:1]FirstName:3",
+					"class": "fm_input"
+				},
+				"tField_1_4": {
+					"type": "text",
+					"text": "Phone",
+					"left": 50,
+					"top": 273,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_1_4_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 299,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[CUSTOMERS:1]Phone:4",
+					"class": "fm_input"
+				},
+				"tField_1_5": {
+					"type": "text",
+					"text": "Email",
+					"left": 50,
+					"top": 349,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_1_5_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 375,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[CUSTOMERS:1]Email:5",
+					"class": "fm_input"
+				},
+				"tField_1_6": {
+					"type": "text",
+					"text": "Address",
+					"left": 50,
+					"top": 425,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_1_6_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 451,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[CUSTOMERS:1]Address:6",
+					"class": "fm_input"
+				},
+				"iField_1_1_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 71,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.ID",
+					"class": "fm_input_ro"
+				},
+				"iField_1_2_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 147,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.LastName",
+					"class": "fm_input"
+				},
+				"iField_1_3_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 223,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.FirstName",
+					"class": "fm_input"
+				},
+				"iField_1_4_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 299,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.Phone",
+					"class": "fm_input"
+				},
+				"iField_1_5_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 375,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.Email",
+					"class": "fm_input"
+				},
+				"iField_1_6_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 451,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.Address",
+					"class": "fm_input"
+				}
+			}
+		}
+	],
+	"geometryStamp": 758,
+	"markerFooter": 609,
+	"markerBreak": 609,
+	"markerBody": 609,
+	"markerHeader": 65,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"inheritedForm": "fm_model_input_playschool",
+	"method": "method.4dm"
+}

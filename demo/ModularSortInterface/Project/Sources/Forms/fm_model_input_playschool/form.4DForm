@@ -1,0 +1,49 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 740,
+	"windowMinHeight": 610,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {
+				"rBg": {
+					"type": "rectangle",
+					"left": 0,
+					"top": 0,
+					"width": 985,
+					"height": 610,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"class": "fm_window_bg",
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {}
+		}
+	],
+	"geometryStamp": 481,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}
