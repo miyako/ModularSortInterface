@@ -81,7 +81,11 @@ def is_heading(fonts, size):
 
 def is_caption(item):
     spans = [s for s in item["spans"] if s["text"].strip()]
-    italic = all(("Italic" in font_of(s) or "Oblique" in font_of(s)) for s in spans)
+    # Font names can be truncated (e.g. "HelveticaNeue-MediumItal"): also trust the span's italic flag.
+    italic = all(("Ital" in font_of(s) or "Oblique" in font_of(s) or s["flags"] & 2) for s in spans)
+    pattern = CFG["caption"].get("pattern")
+    if spans and pattern and re.match(pattern, item["text"].strip()) and item["x"] > CFG["caption"]["min_x"]:
+        return True
     return bool(spans) and (italic or not CFG["caption"]["italic"]) and item["x"] > CFG["caption"]["min_x"]
 
 

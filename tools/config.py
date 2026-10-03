@@ -23,7 +23,7 @@ DEFAULTS = {
     "heading": {"fonts": ["Bold", "Medium"], "min_size": 12, "levels_by_x": {}, "default_level": 2},
     "code": {"colors": [], "fonts": ["Mono", "Courier", "Menlo", "Consolas", "Monaco"], "indent": 5},
     "bullets": {"fonts": ["SymbolMT", "Wingdings-Regular"], "strip_fonts": ["ArialMT"]},
-    "caption": {"italic": True, "min_x": 0},
+    "caption": {"italic": True, "min_x": 0, "pattern": None},  # pattern: regex that also marks non-italic captions
     "table": {"size": None},        # font size used only by table cells, or null
     "paragraph": {"gap": 3, "short_line_x1": 470},
     "ocr": {"psm": 11, "min_conf": 30, "noise": r"^[E ]+$"},

@@ -41,7 +41,7 @@ The workflow and checkpoints are in `.github/copilot-instructions.md`. This file
 | `code.colors` | Hex colours of syntax-highlighted code spans (Word exports code as coloured text) |
 | `code.fonts` | Monospace font substrings; `code.indent` = minimum x offset for code continuation lines |
 | `bullets.fonts` / `strip_fonts` | Glyph fonts that mark list items / fonts of separator spans to drop |
-| `caption.italic`, `caption.min_x` | Captions are italic lines starting right of `min_x` |
+| `caption.italic`, `caption.min_x`, `caption.pattern` | Captions are italic lines (font name or italic flag) starting right of `min_x`; lines matching the optional regex `pattern` (e.g. `"^Figure \\d"`) count as captions even when not italic |
 | `table.size` | Font size used only by table cells (or null) |
 | `paragraph.gap`, `short_line_x1` | Start a new paragraph after a vertical gap > `gap`, or after a short line ending in `.` or `:` |
 | `ocr.psm`, `min_conf`, `noise` | Tesseract page-segmentation mode, word confidence threshold, regex of junk lines |
