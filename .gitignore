@@ -8,3 +8,10 @@ demo/*/Data/
 demo/*/Logs/
 demo/*/userPreferences.*/
 demo/*/Project/DerivedData/
+
+# Demo sample data is shipped (the release zip needs it); logs stay ignored
+!demo/*/Data/
+demo/*/Data/*
+!demo/*/Data/data.4DD
+!demo/*/Data/data.4DIndx
+!demo/*/Data/data.Match
