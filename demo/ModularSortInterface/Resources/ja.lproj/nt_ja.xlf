@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+
+<xliff version="1.0">
+  <file datatype="x-STR#" original="undefined" product-Version="v19" source-language="en" target-language="ja">
+    <header>
+      <note>application main menu</note>
+    </header>
+    <group resname="nt">
+
+        <trans-unit id="20000" resname="xlf_brandName">
+            <source>OrderBy Composer</source>
+            <target>OrderBy Composer</target>
+        </trans-unit>
+        <trans-unit id="20001" resname="xlf_brandTagline">
+            <source>Modular sorting interface</source>
+            <target>汎用並び替えエディター</target>
+        </trans-unit>
+        <trans-unit id="20002" resname="xlf_featText">
+            <source>● Sort by module
+● Sort on selection
+● Sort on selected entities
+● Search using simplified criteria
+● Save sorting parameters
+● Restore sorting parameters
+            </source>
+            <target>● モジュールによる並べ替え
+● セレクションの並べ替え
+● エンティティセレクションの並べ替え
+● 簡易条件による検索
+● 並べ替え設定の保存
+● 並べ替え設定の復元
+            </target>
+        </trans-unit>
+        <trans-unit id="20003" resname="xlf_eyebrow">
+            <source>How it works</source>
+            <target>しくみ</target>
+        </trans-unit>
+        <trans-unit id="20004" resname="xlf_heading">
+            <source>Principles</source>
+            <target>基本の考え方</target>
+        </trans-unit>
+        <trans-unit id="20005" resname="xlf_copyText">
+            <source>© 2026  ·  4D Tech Note</source>
+            <target>© 2026  ·  4D Tech Note</target>
+        </trans-unit>
+        <trans-unit id="20006" resname="xlf_descBody">
+            <source></source>
+            <target>このデータベースは、モジュール式の並べ替えの実装例です。従来のカレントセレクションとエンティティセレクションのどちらでも、モジュールを組み合わせて並べ替えを行えます。ダイアログは独立しているため、並べ替えの結果をリアルタイムで確認できます。
+
+使用するには、目的のセレクションモードに対応するボタンをクリックします。表示された画面で「並べ替え」ボタンをクリックするとダイアログが開き、各機能を使い始めることができます。</target>
+        </trans-unit>
+
+
+        <trans-unit id="20007" resname="xlf_primaryBtn1">
+            <source></source>
+            <target>従来のカレントセレクションでデモを起動 →</target>
+        </trans-unit>
+        <trans-unit id="20008" resname="xlf_primaryBtn2">
+            <source></source>
+            <target>ORDAセレクションでデモを起動 →</target>
+        </trans-unit>
+        <trans-unit id="20009" resname="xlf_windowTitle">
+            <source>OrderBy Composer  ·  4D Tech Note</source>
+            <target>OrderBy Composer  ·  4D Tech Note</target>
+        </trans-unit>
+        <trans-unit id="20010" resname="xlf_featHead">
+            <source>FEATURES</source>
+            <target>機能</target>
+        </trans-unit>
+        <trans-unit id="20011" resname="xlf_cardVersion">
+            <source>VERSION</source>
+            <target>バージョン</target>
+        </trans-unit>
+        <trans-unit id="20012" resname="xlf_cardDocs">
+            <source>DOCS &amp; BLOG</source>
+            <target>ドキュメント &amp; ブログ</target>
+        </trans-unit>
+    </group>
+  </file>
+</xliff>

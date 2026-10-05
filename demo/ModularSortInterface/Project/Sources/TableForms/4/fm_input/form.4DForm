@@ -1,0 +1,122 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 1024,
+	"windowMinHeight": 768,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload"
+	],
+	"windowTitle": "list Screen SERVICES",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"tField001": {
+					"type": "text",
+					"text": "ID : ",
+					"left": 114,
+					"top": 116,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField001": {
+					"type": "input",
+					"left": 294,
+					"top": 115,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[SERVICES:4]ID:1",
+					"class": "ss_default"
+				},
+				"tField002": {
+					"type": "text",
+					"text": "Name : ",
+					"left": 114,
+					"top": 141,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField002": {
+					"type": "input",
+					"left": 294,
+					"top": 140,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[SERVICES:4]Name:2",
+					"class": "ss_default"
+				},
+				"tField003": {
+					"type": "text",
+					"text": "UnitPrice : ",
+					"left": 114,
+					"top": 166,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField003": {
+					"type": "input",
+					"left": 294,
+					"top": 165,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[SERVICES:4]UnitPrice:3",
+					"class": "ss_default",
+					"dataSourceTypeHint": "number"
+				},
+				"tField004": {
+					"type": "text",
+					"text": "VATRate : ",
+					"left": 114,
+					"top": 191,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField004": {
+					"type": "input",
+					"left": 294,
+					"top": 190,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[SERVICES:4]VATRate:4",
+					"class": "ss_default",
+					"dataSourceTypeHint": "number"
+				}
+			}
+		}
+	],
+	"geometryStamp": 319,
+	"markerFooter": 767,
+	"markerBreak": 767,
+	"markerBody": 767,
+	"markerHeader": 65,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"inheritedForm": "fm_model_input",
+	"method": "method.4dm"
+}

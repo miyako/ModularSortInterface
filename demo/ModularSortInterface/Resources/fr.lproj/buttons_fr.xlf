@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+
+<xliff version="1.0">
+  <file datatype="x-STR#" original="undefined" product-Version="v19" source-language="en" target-language="fr">
+    <header>
+      <note>application main menu</note>
+    </header>
+
+        <!-- form button-->
+        <group resname="button">
+
+            <trans-unit id="14201" resname="bCancel">
+                <source>Cancel</source>
+                <target>Annuler</target>
+            </trans-unit>
+            <trans-unit id="14202" resname="bApply">
+                <source>Apply</source>
+                <target>Appliquer</target>
+            </trans-unit>
+            <trans-unit id="14203" resname="bValid">
+                <source>Validate</source>
+                <target>Valider</target>
+            </trans-unit>
+
+            <trans-unit id="14210" resname="bListAdd">
+                <source>Add</source>
+                <target>Ajouter</target>
+            </trans-unit>
+            <trans-unit id="14211" resname="bListDelete">
+                <source>Delete</source>
+                <target>Supprimer</target>
+            </trans-unit>
+            <trans-unit id="14212" resname="bListSelectAll">
+                <source>Select all</source>
+                <target>Tous selectionner</target>
+            </trans-unit>
+            <trans-unit id="14213" resname="bListSubSelect">
+                <source>Sub select</source>
+                <target>Sous selection</target>
+            </trans-unit>
+            <trans-unit id="14214" resname="bListQuery">
+                <source>Query</source>
+                <target>Chercher</target>
+            </trans-unit>
+            <trans-unit id="14215" resname="bListOrder">
+                <source>Order</source>
+                <target>Trier</target>
+            </trans-unit>
+            <trans-unit id="14216" resname="bListReport">
+                <source>Report</source>
+                <target>Rapport</target>
+            </trans-unit>
+            <trans-unit id="14217" resname="bListLabel">
+                <source>Label</source>
+                <target>Etiquette</target>
+            </trans-unit>
+            <trans-unit id="14218" resname="bListPrint">
+                <source>Print</source>
+                <target>Imprimer</target>
+            </trans-unit>
+            <trans-unit id="14219" resname="bListExport">
+                <source>Export</source>
+                <target>Exporter</target>
+            </trans-unit>
+            <trans-unit id="14220" resname="bListCancel">
+                <source>Quit</source>
+                <target>Quitter</target>
+            </trans-unit>
+
+            <trans-unit id="14221" resname="bRecFirst">
+                <source>First</source>
+                <target>Premier</target>
+            </trans-unit>
+            <trans-unit id="14222" resname="bRecPrevious">
+                <source>Previous</source>
+                <target>Précedent</target>
+            </trans-unit>
+            <trans-unit id="14223" resname="bRecNext">
+                <source>Next</source>
+                <target>Prochain</target>
+            </trans-unit>
+            <trans-unit id="14224" resname="bRecLast">
+                <source>Last</source>
+                <target>Dernier</target>
+            </trans-unit>
+            <trans-unit id="14225" resname="bRecDelete">
+                <source>Delete</source>
+                <target>Supprimer</target>
+            </trans-unit>
+            <trans-unit id="14226" resname="bRecCancel">
+                <source>Cancel</source>
+                <target>Annuler</target>
+            </trans-unit>
+            <trans-unit id="14227" resname="bRecApply">
+                <source>Apply</source>
+                <target>Appliquer</target>
+            </trans-unit>
+            <trans-unit id="14227" resname="bRecValid">
+                <source>Valid</source>
+                <target>Valider</target>
+            </trans-unit>
+
+            <trans-unit id="14228" resname="bYes">
+                <source>Yes</source>
+                <target>Oui</target>
+            </trans-unit>
+            <trans-unit id="14229" resname="bNo">
+                <source>No</source>
+                <target>Non</target>
+            </trans-unit>
+
+        </group>
+
+    </file>
+</xliff>

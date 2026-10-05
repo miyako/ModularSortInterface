@@ -1,0 +1,391 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"windowMinWidth": 800,
+	"windowMinHeight": 600,
+	"windowMaxWidth": 800,
+	"windowMaxHeight": 600,
+	"width": 800,
+	"height": 600,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"windowTitle": "Composeur de tri  ·  4D Tech Note",
+	"destination": "detailScreen",
+	"fluentUI": true,
+	"method": "method.4dm",
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"pages": [
+		{
+			"objects": {
+				"bgBase": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 800,
+					"height": 600,
+					"fill": "#eaeff7",
+					"stroke": "transparent"
+				},
+				"leftPanel": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 260,
+					"height": 600,
+					"fill": "#f6f8fb",
+					"stroke": "transparent"
+				},
+				"panelDivider": {
+					"type": "line",
+					"top": 0,
+					"left": 260,
+					"width": 0,
+					"height": 600,
+					"stroke": "#e3e8f0"
+				}
+			}
+		},
+		{
+			"objects": {
+				"brandIconBg": {
+					"type": "rectangle",
+					"top": 22,
+					"left": 22,
+					"width": 40,
+					"height": 40,
+					"fill": "#007AFF",
+					"stroke": "transparent",
+					"borderRadius": 11
+				},
+				"brandName": {
+					"type": "text",
+					"text": ":xliff:xlf_brandName",
+					"top": 24,
+					"left": 72,
+					"width": 176,
+					"height": 20,
+					"fontFamily": "Segoe UI",
+					"fontSize": 15,
+					"fontWeight": "bold",
+					"stroke": "#1d1d1f",
+					"textAlign": "left"
+				},
+				"brandTagline": {
+					"type": "text",
+					"text": ":xliff:xlf_brandTagline",
+					"top": 45,
+					"left": 72,
+					"width": 176,
+					"height": 16,
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"stroke": "#86868b",
+					"textAlign": "left"
+				},
+				"featHead": {
+					"type": "text",
+					"text": "FONCTIONNALITÉS",
+					"top": 94,
+					"left": 24,
+					"width": 212,
+					"height": 14,
+					"fontFamily": "Segoe UI",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"stroke": "#86868b",
+					"textAlign": "left"
+				},
+				"featText": {
+					"type": "text",
+					"text": ":xliff:xlf_featText",
+					"top": 114,
+					"left": 24,
+					"width": 214,
+					"height": 320,
+					"fontFamily": "Segoe UI",
+					"fontSize": 13,
+					"stroke": "#3c3c43",
+					"textAlign": "left"
+				},
+				"brandVer": {
+					"type": "text",
+					"text": "Version 1.0",
+					"top": 566,
+					"left": 24,
+					"width": 212,
+					"height": 16,
+					"fontFamily": "Consolas",
+					"fontSize": 12,
+					"stroke": "#86868b",
+					"textAlign": "left"
+				},
+				"eyebrow": {
+					"type": "text",
+					"text": ":xliff:xlf_eyebrow",
+					"top": 28,
+					"left": 300,
+					"width": 300,
+					"height": 16,
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"stroke": "#007AFF",
+					"textAlign": "left"
+				},
+				"heading": {
+					"type": "text",
+					"text": ":xliff:xlf_heading",
+					"top": 46,
+					"left": 300,
+					"width": 320,
+					"height": 34,
+					"fontFamily": "Segoe UI",
+					"fontSize": 28,
+					"fontWeight": "bold",
+					"stroke": "#1d1d1f",
+					"textAlign": "left"
+				},
+				"verChip": {
+					"type": "text",
+					"text": "4D 21 R3",
+					"top": 50,
+					"left": 660,
+					"width": 108,
+					"height": 24,
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"stroke": "#3c3c43",
+					"fill": "#e9edf3",
+					"borderRadius": 12,
+					"textAlign": "center",
+					"verticalAlign": "middle"
+				},
+				"descBody": {
+					"type": "text",
+					"text": ":xliff:xlf_descBody",
+					"top": 92,
+					"left": 300,
+					"width": 468,
+					"height": 108,
+					"fontFamily": "Segoe UI",
+					"fontSize": 14,
+					"stroke": "#3c3c43",
+					"textAlign": "left"
+				},
+				"cardBg1": {
+					"type": "rectangle",
+					"top": 212,
+					"left": 300,
+					"width": 150,
+					"height": 120,
+					"fill": "#ffffff",
+					"stroke": "#e3e8f0",
+					"borderRadius": 14
+				},
+				"cardLabel1": {
+					"type": "text",
+					"text": "VERSION",
+					"top": 226,
+					"left": 316,
+					"width": 120,
+					"height": 14,
+					"fontFamily": "Segoe UI",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"stroke": "#86868b",
+					"textAlign": "left"
+				},
+				"cardValue1": {
+					"type": "text",
+					"text": "4D 21",
+					"top": 246,
+					"left": 316,
+					"width": 120,
+					"height": 28,
+					"fontFamily": "Segoe UI",
+					"fontSize": 23,
+					"fontWeight": "bold",
+					"stroke": "#1d1d1f",
+					"textAlign": "left"
+				},
+				"rrBadge": {
+					"type": "text",
+					"text": "Release R3",
+					"top": 288,
+					"left": 316,
+					"width": 84,
+					"height": 20,
+					"fontFamily": "Consolas",
+					"fontSize": 11,
+					"stroke": "#3c3c43",
+					"fill": "#e9edf3",
+					"borderRadius": 7,
+					"textAlign": "center",
+					"verticalAlign": "middle"
+				},
+				"cardBg3": {
+					"type": "rectangle",
+					"top": 212,
+					"left": 466,
+					"width": 302,
+					"height": 120,
+					"fill": "#ffffff",
+					"stroke": "#e3e8f0",
+					"borderRadius": 14
+				},
+				"cardLabel3": {
+					"type": "text",
+					"text": "DOCS & BLOG",
+					"top": 226,
+					"left": 482,
+					"width": 270,
+					"height": 14,
+					"fontFamily": "Segoe UI",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"stroke": "#86868b",
+					"textAlign": "left"
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "Classes →",
+					"top": 250,
+					"left": 482,
+					"width": 270,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"textPlacement": "center",
+					"textAlign": "left",
+					"fontFamily": "Segoe UI",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"stroke": "#1d1d1f",
+					"fill": "transparent",
+					"method": "ObjectMethods/Bouton.4dm"
+				},
+				"Bouton1": {
+					"type": "button",
+					"text": "Web Area →",
+					"top": 276,
+					"left": 482,
+					"width": 270,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"textPlacement": "center",
+					"textAlign": "left",
+					"fontFamily": "Segoe UI",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"stroke": "#1d1d1f",
+					"fill": "transparent",
+					"method": "ObjectMethods/Bouton1.4dm"
+				},
+				"Bouton2": {
+					"type": "button",
+					"text": "i18next →",
+					"top": 302,
+					"left": 482,
+					"width": 270,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"textPlacement": "center",
+					"textAlign": "left",
+					"fontFamily": "Segoe UI",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"stroke": "#1d1d1f",
+					"fill": "transparent",
+					"method": "ObjectMethods/Bouton2.4dm"
+				},
+				"primaryBtn1": {
+					"type": "button",
+					"text": ":xliff:xlf_primaryBtn1",
+					"top": 360,
+					"left": 300,
+					"width": 468,
+					"height": 52,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"textPlacement": "center",
+					"textAlign": "center",
+					"fontFamily": "Segoe UI",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"stroke": "#ffffff",
+					"fill": "#007AFF",
+					"borderRadius": 14,
+					"method": "ObjectMethods/primaryBtn1.4dm"
+				},
+				"primaryBtn2": {
+					"type": "button",
+					"text": ":xliff:xlf_primaryBtn2",
+					"top": 424,
+					"left": 300,
+					"width": 468,
+					"height": 52,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"textPlacement": "center",
+					"textAlign": "center",
+					"fontFamily": "Segoe UI",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"stroke": "#1d1d1f",
+					"fill": "#ffffff",
+					"borderRadius": 14,
+					"method": "ObjectMethods/primaryBtn2.4dm"
+				},
+				"footerLine": {
+					"type": "line",
+					"top": 500,
+					"left": 300,
+					"width": 468,
+					"height": 0,
+					"stroke": "#e3e8f0"
+				},
+				"copyText": {
+					"type": "text",
+					"text": "© 2026  ·  4D Tech Note",
+					"top": 510,
+					"left": 300,
+					"width": 468,
+					"height": 16,
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"stroke": "#86868b",
+					"textAlign": "left"
+				}
+			}
+		}
+	],
+	"geometryStamp": 1300,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"menuBar": "Barre #1"
+}

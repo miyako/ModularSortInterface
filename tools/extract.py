@@ -55,7 +55,15 @@ def line_items(page):
     for info in page.get_image_info(xrefs=True):
         x0, y0, x1, y1 = info["bbox"]
         items.append({"kind": "image", "y0": y0, "y1": y1, "xref": info["xref"],
-                      "width_pt": x1 - x0})
+                      "width_pt": x1 - x0, "bbox": (x0, y0, x1, y1)})
+    for vf in CFG["vector_figures"]:  # vector diagrams: rasterise the clip as one figure
+        if vf["page"] != page.number + 1:
+            continue
+        clip = pymupdf.Rect(vf["clip"])
+        items = [it for it in items if not clip.contains(
+            pymupdf.Rect(it.get("bbox") or (it["x"], it["y0"], it["x1"], it["y1"])))]
+        items.append({"kind": "image", "y0": clip.y0, "y1": clip.y1, "clip": tuple(clip),
+                      "dpi": vf.get("dpi", 300), "width_pt": clip.width})
     items.sort(key=lambda it: (it["y0"], it.get("x", 0)))
     return items
 
@@ -81,7 +89,11 @@ def is_heading(fonts, size):
 
 def is_caption(item):
     spans = [s for s in item["spans"] if s["text"].strip()]
-    italic = all(("Italic" in font_of(s) or "Oblique" in font_of(s)) for s in spans)
+    # Font names can be truncated (e.g. "HelveticaNeue-MediumItal"): also trust the span's italic flag.
+    italic = all(("Ital" in font_of(s) or "Oblique" in font_of(s) or s["flags"] & 2) for s in spans)
+    pattern = CFG["caption"].get("pattern")
+    if spans and pattern and re.match(pattern, item["text"].strip()) and item["x"] > CFG["caption"]["min_x"]:
+        return True
     return bool(spans) and (italic or not CFG["caption"]["italic"]) and item["x"] > CFG["caption"]["min_x"]
 
 
@@ -183,7 +195,8 @@ def extract_body(doc):
         for it in line_items(doc[pno]):
             if it["kind"] == "image":
                 flush_all()
-                figures.append({"page": pno + 1, "xref": it["xref"], "width_pt": it["width_pt"]})
+                figures.append({"page": pno + 1, "width_pt": it["width_pt"],
+                                **{k: it[k] for k in ("xref", "clip", "dpi") if k in it}})
                 out.append(f"![](fig-{len(figures):02d})\n")
                 prev = None
                 continue
@@ -294,7 +307,10 @@ def extract_figures(doc, figures, force):
     for n, fig in enumerate(figures, 1):
         name = f"fig-{n:02d}"
         png = figdir / f"{name}.png"
-        if force or not png.exists():
+        if (force or not png.exists()) and "clip" in fig:
+            doc[fig["page"] - 1].get_pixmap(clip=pymupdf.Rect(fig["clip"]), dpi=fig["dpi"]).save(png)
+            print(f"wrote: {png.relative_to(ROOT)}")
+        elif force or not png.exists():
             pix = pymupdf.Pixmap(doc, fig["xref"])
             smask = doc.xref_get_key(fig["xref"], "SMask")
             if smask[0] == "xref":

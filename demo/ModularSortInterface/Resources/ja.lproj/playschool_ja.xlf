@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+
+<xliff version="1.0">
+
+  <file datatype="x-STR#" original="undefined" product-Version="v19" source-language="en"
+    target-language="ja">
+
+    <header>
+      <note></note>
+    </header>
+
+    <group resname="playschool_style">
+
+      <!-- table names -->
+
+      <trans-unit id="30100" resname="tTable1">
+        <source>Customers</source>
+        <target>顧客</target>
+      </trans-unit>
+      <trans-unit id="30200" resname="tTable2">
+        <source>Vehicles</source>
+        <target>車両</target>
+      </trans-unit>
+      <trans-unit id="30300" resname="tTable3">
+        <source>Interventions</source>
+        <target>整備</target>
+      </trans-unit>
+      <trans-unit id="30400" resname="tTable4">
+        <source>Services</source>
+        <target>サービス</target>
+      </trans-unit>
+      <trans-unit id="30500" resname="tTable5">
+        <source>Parts</source>
+        <target>部品</target>
+      </trans-unit>
+      <trans-unit id="30600" resname="tTable6">
+        <source>Invoices</source>
+        <target>請求書</target>
+      </trans-unit>
+      <trans-unit id="30700" resname="tTable7">
+        <source>Invoice lines</source>
+        <target>請求明細</target>
+      </trans-unit>
+      <trans-unit id="30800" resname="tTable8">
+        <source>Technicians</source>
+        <target>技術者</target>
+      </trans-unit>
+      <trans-unit id="30900" resname="tTable9">
+        <source>Demo Tables</source>
+        <target>デモテーブル</target>
+      </trans-unit>
+
+      <!-- explorer playschool-->
+
+      <trans-unit id="40001" resname="tReduce">
+        <source>Reduce</source>
+        <target>折りたたむ</target>
+      </trans-unit>
+      <trans-unit id="40002" resname="tExtend">
+        <source>Extend</source>
+        <target>展開する</target>
+      </trans-unit>
+
+      <trans-unit id="40003" resname="tBrandTag">
+        <source>Workshop · Management</source>
+        <target>整備工場 · 管理</target>
+      </trans-unit>
+      <trans-unit id="40003" resname="tToggleMode">
+        <source>Toggle to mode</source>
+        <target>モード切り替え</target>
+      </trans-unit>
+
+      <trans-unit id="40005" resname="tTablesHeader">
+          <source>TABLES</source>
+          <target>テーブル</target>
+      </trans-unit>
+    </group>
+
+  </file>
+
+</xliff>

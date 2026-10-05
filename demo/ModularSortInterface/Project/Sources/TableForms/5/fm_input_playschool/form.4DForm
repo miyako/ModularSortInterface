@@ -1,0 +1,251 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 1024,
+	"windowMinHeight": 626,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload"
+	],
+	"windowTitle": "list Screen PARTS",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"tField_5_1": {
+					"type": "text",
+					"text": "ID",
+					"left": 50,
+					"top": 45,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_5_1_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 71,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[PARTS:5]ID:1",
+					"class": "fm_input_ro",
+					"multiline": "no"
+				},
+				"tField_5_2": {
+					"type": "text",
+					"text": "Name",
+					"left": 50,
+					"top": 121,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_5_2_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 147,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[PARTS:5]Name:2",
+					"class": "fm_input",
+					"multiline": "no"
+				},
+				"tField_5_3": {
+					"type": "text",
+					"text": "UnitPrice",
+					"left": 50,
+					"top": 197,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_5_3_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 223,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[PARTS:5]UnitPrice:3",
+					"class": "fm_input",
+					"dataSourceTypeHint": "number",
+					"multiline": "no"
+				},
+				"tField_5_4": {
+					"type": "text",
+					"text": "VATRate",
+					"left": 50,
+					"top": 273,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_5_4_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 299,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[PARTS:5]VATRate:4",
+					"class": "fm_input",
+					"dataSourceTypeHint": "number",
+					"multiline": "no"
+				},
+				"tField_5_5": {
+					"type": "text",
+					"text": "OemReference",
+					"left": 50,
+					"top": 349,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_5_5_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 375,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[PARTS:5]OemReference:5",
+					"class": "fm_input",
+					"multiline": "no"
+				},
+				"tField_5_6": {
+					"type": "text",
+					"text": "StockQuantity",
+					"left": 50,
+					"top": 425,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_5_6_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 451,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[PARTS:5]StockQuantity:6",
+					"class": "fm_input",
+					"dataSourceTypeHint": "integer",
+					"multiline": "no"
+				},
+				"tField_5_7": {
+					"type": "text",
+					"text": "Supplier",
+					"left": 50,
+					"top": 501,
+					"width": 870,
+					"height": 16,
+					"class": "fm_label"
+				},
+				"iField_5_7_Classic": {
+					"type": "input",
+					"left": 50,
+					"top": 527,
+					"width": 870,
+					"height": 30,
+					"dataSource": "[PARTS:5]Supplier:7",
+					"class": "fm_input",
+					"multiline": "no"
+				},
+				"iField_5_1_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 71,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.ID",
+					"class": "fm_input_ro",
+					"multiline": "no"
+				},
+				"iField_5_2_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 147,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.Name",
+					"class": "fm_input",
+					"multiline": "no"
+				},
+				"iField_5_3_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 223,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.UnitPrice",
+					"class": "fm_input",
+					"dataSourceTypeHint": "number",
+					"multiline": "no"
+				},
+				"iField_5_4_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 299,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.VATRate",
+					"class": "fm_input",
+					"dataSourceTypeHint": "number",
+					"multiline": "no"
+				},
+				"iField_5_5_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 375,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.OemReference",
+					"class": "fm_input",
+					"multiline": "no"
+				},
+				"iField_5_6_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 451,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.StockQuantity",
+					"class": "fm_input",
+					"dataSourceTypeHint": "integer",
+					"multiline": "no"
+				},
+				"iField_5_7_Orda": {
+					"type": "input",
+					"left": 50,
+					"top": 527,
+					"width": 870,
+					"height": 30,
+					"dataSource": "Form:C1466.dataExplore.entity.Supplier",
+					"class": "fm_input",
+					"multiline": "no"
+				}
+			}
+		}
+	],
+	"geometryStamp": 824,
+	"markerFooter": 625,
+	"markerBreak": 625,
+	"markerBody": 625,
+	"markerHeader": 65,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"inheritedForm": "fm_model_input_playschool",
+	"method": "method.4dm"
+}

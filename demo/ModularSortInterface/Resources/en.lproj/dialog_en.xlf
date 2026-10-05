@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+
+<xliff version="1.0">
+
+  <file datatype="x-STR#" original="undefined" product-Version="v19" source-language="en" target-language="en">
+
+    <header>
+      <note></note>
+    </header>
+
+<!-- dialog -->
+  <group resname="dialog">
+
+    <trans-unit id="18001" resname="tEraseThisRec">
+      <source>Erase this record ?</source>
+      <target>Erase this record ?</target>
+    </trans-unit>
+    <trans-unit id="18002" resname="tEraseTheseRec">
+      <source>Erase these {x} records ?</source>
+      <target>Erase these {x} records ?</target>
+    </trans-unit>
+    <trans-unit id="18003" resname="tOptionRename">
+      <source>' {x} ' already exists!
+       It was automatically renamed to ' {x} '!</source>
+      <target>' {x} ' already exists!
+       It was automatically renamed to ' {x} '!</target>
+    </trans-unit>
+
+    <trans-unit id="18004" resname="tSortAscending">
+        <source>Ascending order</source>
+        <target>Ascending order</target>
+    </trans-unit>
+    <trans-unit id="18005" resname="tSortDescending">
+        <source>Descending order</source>
+        <target>Descending order</target>
+    </trans-unit>
+  </group>
+
+  </file>
+
+</xliff>

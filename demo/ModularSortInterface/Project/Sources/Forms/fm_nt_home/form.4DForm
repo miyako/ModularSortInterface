@@ -1,0 +1,435 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"windowMinWidth": 960,
+	"windowMinHeight": 680,
+	"windowMaxWidth": 960,
+	"windowMaxHeight": 680,
+	"width": 960,
+	"height": 680,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"windowTitle": ":xliff:xlf_windowTitle",
+	"destination": "detailScreen",
+	"fluentUI": true,
+	"method": "method.4dm",
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"pages": [
+		{
+			"objects": {
+				"bgBase": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 960,
+					"height": 680,
+					"fill": "#eaeff7",
+					"stroke": "transparent"
+				},
+				"leftPanel": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 280,
+					"height": 680,
+					"fill": "#f6f8fb",
+					"stroke": "transparent"
+				},
+				"panelDivider": {
+					"type": "line",
+					"top": 0,
+					"left": 280,
+					"width": 0,
+					"height": 680,
+					"stroke": "#e3e8f0"
+				}
+			}
+		},
+		{
+			"objects": {
+				"brandName": {
+					"type": "text",
+					"text": ":xliff:xlf_brandName",
+					"top": 26,
+					"left": 74,
+					"width": 196,
+					"height": 20,
+					"fontFamily": "Segoe UI",
+					"fontSize": 15,
+					"fontWeight": "bold",
+					"stroke": "#1d1d1f",
+					"textAlign": "left"
+				},
+				"brandTagline": {
+					"type": "text",
+					"text": ":xliff:xlf_brandTagline",
+					"top": 47,
+					"left": 74,
+					"width": 196,
+					"height": 16,
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"stroke": "#86868b",
+					"textAlign": "left"
+				},
+				"featHead": {
+					"type": "text",
+					"text": ":xliff:xlf_featHead",
+					"top": 98,
+					"left": 26,
+					"width": 232,
+					"height": 14,
+					"fontFamily": "Segoe UI",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"stroke": "#86868b",
+					"textAlign": "left"
+				},
+				"featText": {
+					"type": "text",
+					"text": ":xliff:xlf_featText",
+					"top": 120,
+					"left": 26,
+					"width": 232,
+					"height": 380,
+					"fontFamily": "Segoe UI",
+					"fontSize": 13,
+					"stroke": "#3c3c43",
+					"textAlign": "left"
+				},
+				"brandVer": {
+					"type": "text",
+					"text": "Version 1.0",
+					"top": 646,
+					"left": 26,
+					"width": 232,
+					"height": 16,
+					"fontFamily": "Consolas",
+					"fontSize": 12,
+					"stroke": "#86868b",
+					"textAlign": "left"
+				},
+				"eyebrow": {
+					"type": "text",
+					"text": ":xliff:xlf_eyebrow",
+					"top": 32,
+					"left": 312,
+					"width": 400,
+					"height": 16,
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"stroke": "#007AFF",
+					"textAlign": "left"
+				},
+				"heading": {
+					"type": "text",
+					"text": ":xliff:xlf_heading",
+					"top": 52,
+					"left": 312,
+					"width": 400,
+					"height": 36,
+					"fontFamily": "Segoe UI",
+					"fontSize": 28,
+					"fontWeight": "bold",
+					"stroke": "#1d1d1f",
+					"textAlign": "left"
+				},
+				"verChipBg": {
+					"type": "rectangle",
+					"top": 54,
+					"left": 812,
+					"width": 116,
+					"height": 26,
+					"fill": "#e9edf3",
+					"stroke": "#dfe4ec",
+					"borderRadius": 13
+				},
+				"verChip": {
+					"type": "text",
+					"text": "4D 21 R3",
+					"top": 54,
+					"left": 812,
+					"width": 116,
+					"height": 26,
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"stroke": "#3c3c43",
+					"textAlign": "center",
+					"verticalAlign": "middle",
+					"textDecoration": "none"
+				},
+				"descBody": {
+					"type": "text",
+					"text": ":xliff:xlf_descBody",
+					"top": 98,
+					"left": 312,
+					"width": 600,
+					"height": 150,
+					"fontFamily": "Segoe UI",
+					"fontSize": 14,
+					"stroke": "#3c3c43",
+					"textAlign": "left"
+				},
+				"cardBg1": {
+					"type": "rectangle",
+					"top": 258,
+					"left": 312,
+					"width": 160,
+					"height": 130,
+					"fill": "#ffffff",
+					"stroke": "#e3e8f0",
+					"borderRadius": 14
+				},
+				"cardLabel1": {
+					"type": "text",
+					"text": ":xliff:xlf_cardVersion",
+					"top": 272,
+					"left": 328,
+					"width": 130,
+					"height": 14,
+					"fontFamily": "Segoe UI",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"stroke": "#86868b",
+					"textAlign": "left"
+				},
+				"cardValue1": {
+					"type": "text",
+					"text": "4D 21",
+					"top": 292,
+					"left": 328,
+					"width": 130,
+					"height": 30,
+					"fontFamily": "Segoe UI",
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"stroke": "#1d1d1f",
+					"textAlign": "left"
+				},
+				"rrBadgeBg": {
+					"type": "rectangle",
+					"top": 334,
+					"left": 328,
+					"width": 92,
+					"height": 22,
+					"fill": "#e9edf3",
+					"stroke": "#dfe4ec",
+					"borderRadius": 7
+				},
+				"rrBadge": {
+					"type": "text",
+					"text": "Release R3",
+					"top": 334,
+					"left": 328,
+					"width": 92,
+					"height": 22,
+					"fontFamily": "Consolas",
+					"fontSize": 11,
+					"stroke": "#3c3c43",
+					"textAlign": "center",
+					"verticalAlign": "middle",
+					"fontWeight": "bold"
+				},
+				"cardBg3": {
+					"type": "rectangle",
+					"top": 258,
+					"left": 488,
+					"width": 440,
+					"height": 130,
+					"fill": "#ffffff",
+					"stroke": "#e3e8f0",
+					"borderRadius": 14
+				},
+				"cardLabel3": {
+					"type": "text",
+					"text": ":xliff:xlf_cardDocs",
+					"top": 272,
+					"left": 504,
+					"width": 410,
+					"height": 14,
+					"fontFamily": "Segoe UI",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"stroke": "#86868b",
+					"textAlign": "left"
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "Classes →",
+					"top": 298,
+					"left": 504,
+					"width": 410,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"textPlacement": "center",
+					"textAlign": "left",
+					"fontFamily": "Segoe UI",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"stroke": "#1d1d1f",
+					"fill": "transparent",
+					"method": "ObjectMethods/Bouton.4dm"
+				},
+				"Bouton1": {
+					"type": "button",
+					"text": "Web Area →",
+					"top": 326,
+					"left": 504,
+					"width": 410,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"textPlacement": "center",
+					"textAlign": "left",
+					"fontFamily": "Segoe UI",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"stroke": "#1d1d1f",
+					"fill": "transparent",
+					"method": "ObjectMethods/Bouton1.4dm"
+				},
+				"Bouton2": {
+					"type": "button",
+					"text": "i18next →",
+					"top": 354,
+					"left": 504,
+					"width": 410,
+					"height": 24,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"textPlacement": "center",
+					"textAlign": "left",
+					"fontFamily": "Segoe UI",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"stroke": "#1d1d1f",
+					"fill": "transparent",
+					"method": "ObjectMethods/Bouton2.4dm"
+				},
+				"primaryBg1": {
+					"type": "rectangle",
+					"top": 410,
+					"left": 312,
+					"width": 616,
+					"height": 54,
+					"fill": "#007AFF",
+					"stroke": "transparent",
+					"borderRadius": 14
+				},
+				"primaryBtn1": {
+					"type": "button",
+					"text": ":xliff:xlf_primaryBtn1",
+					"top": 410,
+					"left": 312,
+					"width": 616,
+					"height": 54,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"textPlacement": "center",
+					"textAlign": "center",
+					"fontFamily": "Segoe UI",
+					"fontSize": 15,
+					"fontWeight": "bold",
+					"stroke": "#ffffff",
+					"fill": "transparent",
+					"method": "ObjectMethods/primaryBtn1.4dm"
+				},
+				"primaryBg2": {
+					"type": "rectangle",
+					"top": 476,
+					"left": 312,
+					"width": 616,
+					"height": 54,
+					"fill": "#ffffff",
+					"stroke": "#d7dde7",
+					"borderRadius": 14
+				},
+				"primaryBtn2": {
+					"type": "button",
+					"text": ":xliff:xlf_primaryBtn2",
+					"top": 476,
+					"left": 312,
+					"width": 616,
+					"height": 54,
+					"events": [
+						"onClick"
+					],
+					"style": "custom",
+					"textPlacement": "center",
+					"textAlign": "center",
+					"fontFamily": "Segoe UI",
+					"fontSize": 15,
+					"fontWeight": "bold",
+					"stroke": "#1d1d1f",
+					"fill": "transparent",
+					"method": "ObjectMethods/primaryBtn2.4dm"
+				},
+				"footerLine": {
+					"type": "line",
+					"top": 560,
+					"left": 312,
+					"width": 616,
+					"height": 0,
+					"stroke": "#e3e8f0"
+				},
+				"copyText": {
+					"type": "text",
+					"text": "© 2026  ·  4D Tech Note",
+					"top": 646,
+					"left": 312,
+					"width": 616,
+					"height": 16,
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"stroke": "#86868b",
+					"textAlign": "left"
+				},
+				"rBrandIcon": {
+					"type": "rectangle",
+					"top": 16,
+					"left": 16,
+					"width": 40,
+					"height": 40,
+					"stroke": "transparent",
+					"class": "fm_headerIcon",
+					"fill": "#FFFFFF"
+				},
+				"Static Picture1": {
+					"type": "picture",
+					"top": 23,
+					"left": 20,
+					"width": 28,
+					"height": 26,
+					"picture": "Images/Static Picture1.png"
+				}
+			}
+		}
+	],
+	"geometryStamp": 1403,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"menuBar": "Edit"
+}

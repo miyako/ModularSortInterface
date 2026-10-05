@@ -1,0 +1,974 @@
+﻿@media (prefers-color-scheme: light) {
+
+    /* >>> Design tokens for fm_explorer restyle (light) */
+    .fm_accent {
+        fill: #007AFF;
+        stroke: #007AFF
+    }
+
+    .fm_accent_hover {
+        fill: #1A86FF;
+        stroke: #1A86FF
+    }
+
+    .fm_accent_pressed {
+        fill: #0062CC;
+        stroke: #0062CC
+    }
+
+    .fm_status_error {
+        fill: #FF3B30
+    }
+
+    .fm_status_ok {
+        fill: #34C759
+    }
+
+    .fm_status_warn {
+        fill: #FF9F0A
+    }
+
+    .fm_text_primary {
+        stroke: #1D1D1F;
+        fill: transparent
+    }
+
+    .fm_text_secondary {
+        stroke: #3C3C43;
+        fill: transparent
+    }
+
+    .fm_text_tertiary {
+        stroke: #86868B;
+        fill: transparent
+    }
+
+    .fm_window_bg {
+        fill: #F5F7FB
+    }
+
+    .fm_card_bg {
+        fill: #FFFFFF;
+        stroke: #EBEBEB;
+        borderRadius: 14
+    }
+
+    .fm_field_fill {
+        fill: #FFFFFF;
+        stroke: #DBDBDB;
+        borderRadius: 10
+    }
+
+    .fm_field_readonly {
+        fill: #F0F1F4;
+        stroke: #E6E6E6;
+        borderRadius: 10
+    }
+
+    .fm_mono {
+        font-family: "SF Mono", ui-monospace, "Cascadia Code", "Segoe UI Mono", Menlo, monospace;
+        fontSize: 12;
+        stroke: #86868B
+    }
+
+    /* Reference field recipes (.in / .in[readonly] / .in.num / .adorn) — light.
+   Backdrop blur, focus ring and :hover are unsupported in 4D desktop CSS,
+   so fields degrade to near-opaque fill + .5px border. */
+    .fm_input {
+        fill: #FFFFFF;
+        stroke: #1D1D1F;
+        border-color: #D2D5DC;
+        border-width: 1px;
+        border-style: solid;
+        borderRadius: 10;
+        font-family: "Segoe UI Variable", "SF Pro Text", -apple-system, "Segoe UI", Roboto, sans-serif;
+        font-size: 14px
+    }
+
+    .fm_input_ro {
+        fill: #F0F1F4;
+        stroke: #6E6E73;
+        border-color: #E1E3E8;
+        border-width: 1px;
+        border-style: solid;
+        borderRadius: 10;
+        font-family: "SF Mono", ui-monospace, "Cascadia Code", "Segoe UI Mono", Menlo, monospace;
+        font-size: 12px
+    }
+
+    .fm_input_num {
+        fill: #FFFFFF;
+        stroke: #1D1D1F;
+        border-color: #D2D5DC;
+        border-width: 1px;
+        border-style: solid;
+        borderRadius: 10;
+        font-family: "Segoe UI Variable", "SF Pro Text", -apple-system, "Segoe UI", Roboto, sans-serif;
+        font-size: 14px;
+        text-align: right
+    }
+
+    .fm_adorn {
+        fontSize: 13;
+        fontWeight: bold;
+        stroke: #86868B;
+        fill: transparent;
+        text-align: right
+    }
+
+    /* Fiche chrome recipes — light */
+    .fm_keychip {
+        fontSize: 9;
+        fontWeight: bold;
+        stroke: #86868B;
+        fill: #EDEEF1;
+        borderRadius: 5;
+        text-align: center
+    }
+
+    .fm_divider {
+        stroke: #E3E6EC;
+        fill: #E3E6EC
+    }
+
+    .fm_dot_ok {
+        fill: #34C759;
+        stroke: transparent;
+        borderRadius: 4
+    }
+
+    .fm_subtitle {
+        fontSize: 12;
+        stroke: #86868B;
+        fill: transparent
+    }
+
+    .fm_radius_sm {
+        borderRadius: 8
+    }
+
+    .fm_radius_md {
+        borderRadius: 10
+    }
+
+    .fm_radius_lg {
+        borderRadius: 14
+    }
+
+    .fm_radius_xl {
+        borderRadius: 20
+    }
+
+    .fm_title {
+        fontSize: 22;
+        fontWeight: bold;
+        stroke: #1D1D1F
+    }
+
+    .fm_sectionHeader {
+        fontSize: 11;
+        fontWeight: bold;
+        stroke: #86868B;
+        text-transform: uppercase;
+        letterSpacing: 0.6
+    }
+
+    .fm_label {
+        fontSize: 12;
+        fontWeight: bold;
+        stroke: #3C3C43
+    }
+
+    .fm_inputText {
+        fontSize: 14;
+        stroke: #1D1D1F
+    }
+
+    .fm_headerIcon {
+        fill: #007AFF;
+        stroke: #007AFF;
+        borderRadius: 11
+    }
+
+    /* fm_explorer1 native restyle */
+    .fm_pageTitle {
+        fontSize: 28;
+        fontWeight: bold;
+        stroke: #1D1D1F;
+        fill: transparent
+    }
+
+    .fm_navitem {
+        fontSize: 13;
+        fontWeight: bold;
+        stroke: #3C3C43;
+        fill: transparent
+    }
+
+    .fm_navitem_sel {
+        fontSize: 13;
+        fontWeight: bold;
+        stroke: #007AFF;
+        fill: transparent
+    }
+
+    .fm_navsel_bg {
+        fill: #E0EFFF;
+        stroke: transparent;
+        borderRadius: 10
+    }
+
+    .fm_badge {
+        fill: #007AFF;
+        stroke: transparent;
+        borderRadius: 9
+    }
+
+    .fm_badge_txt {
+        fontSize: 11;
+        fontWeight: bold;
+        stroke: #FFFFFF;
+        fill: transparent;
+        text-align: center
+    }
+
+    .fm_statusRight {
+        fontSize: 12;
+        stroke: #86868B;
+        fill: transparent;
+        text-align: right
+    }
+
+    .fm_transparent {
+        fill: transparent;
+        stroke: transparent
+    }
+
+    .fm_btn_primary_txt {
+        fontSize: 13;
+        fontWeight: bold;
+        stroke: #FFFFFF;
+        fill: transparent
+    }
+
+    .fm_btn_txt {
+        fontSize: 13;
+        fontWeight: bold;
+        stroke: #3C3C43;
+        fill: transparent
+    }
+
+    .fm_chip_txt {
+        fontSize: 13;
+        fontWeight: bold;
+        stroke: #3C3C43;
+        fill: transparent
+    }
+
+    /* <<< end tokens */
+
+    /* Buttons & list tokens */
+    .fm_btn_primary {
+        fill: #007AFF;
+        stroke: transparent;
+        fontSize: 13;
+        fontWeight: bold;
+        borderRadius: 10;
+        color: #ffffff
+    }
+
+    .fm_btn_primary_pressed {
+        fill: #0062CC
+    }
+
+    .fm_btn_ghost {
+        fill: transparent;
+        stroke: #F0F0F0;
+        fontSize: 13;
+        fontWeight: bold;
+        borderRadius: 10
+    }
+
+    .fm_btn_danger {
+        fill: #FF3B30;
+        stroke: transparent;
+        fontSize: 13;
+        fontWeight: bold;
+        borderRadius: 10;
+        color: #ffffff
+    }
+
+    .fm_btn_del_soft {
+        fill: #FFE9E7;
+        stroke: transparent;
+        borderRadius: 10
+    }
+
+    .fm_btn_del_txt {
+        fontSize: 13;
+        fontWeight: bold;
+        stroke: #FF3B30;
+        fill: transparent
+    }
+
+    .fm_pager_btn {
+        fill: #F7F9FC;
+        stroke: #F0F0F0;
+        borderRadius: 12
+    }
+
+    .fm_pager_counter {
+        fontSize: 13;
+        stroke: #3C3C43
+    }
+
+    .fm_sidebar_bg {
+        fill: #F4F6FA;
+        stroke: transparent
+    }
+
+    .fm_statusbar_bg {
+        fill: #EFF2F7;
+        stroke: transparent
+    }
+
+    .fm_chip {
+        fill: #FFFFFF;
+        stroke: #DBDBDB;
+        borderRadius: 10
+    }
+
+    .fm_navlist {
+        font-family: "Segoe UI Variable", "SF Pro Text", -apple-system, "Segoe UI", Roboto, sans-serif;
+        font-size: 13px;
+        fill: transparent;
+        color: #1D1D1F
+    }
+
+    .fm_brand {
+        fontSize: 13;
+        fontWeight: bold;
+        stroke: #1D1D1F
+    }
+
+    .fm_listbox {
+        font-family: "Segoe UI Variable", "SF Pro Text", -apple-system, "Segoe UI", Roboto, sans-serif;
+        font-size: 13px;
+        color: #1D1D1F;
+        text-align: left
+    }
+
+    .fm_listbox_header {
+        font-weight: 600;
+        font-size: 12px;
+        color: #3C3C43;
+        text-align: left
+    }
+
+
+    /* tech notes */
+
+    .snt_bgBase {
+        fill: #FFFFFF;
+        stroke: #FFFFFF;
+    }
+
+    .snt_leftPanel {
+        fill: #007AFF;
+        stroke: #007AFF;
+    }
+
+    .snt_brandIconBg {
+        fill: #FFFFFF;
+        stroke: #FFFFFF;
+        borderRadius: 10;
+    }
+
+    .snt_brandName {
+        stroke: #ffffff;
+        fill: transparent;
+        fontSize: 17;
+        fontWeight: bold;
+    }
+
+    .snt_brandTagline {
+        fontSize: 12;
+        fill: transparent;
+        stroke: #CDE3FF;
+    }
+
+    .snt_featText {
+        fontSize: 13;
+        fill: transparent;
+        stroke: #EAF2FF;
+    }
+
+    .snt_brandVer {
+        stroke: #ffffff;
+        fill: transparent;
+        fontSize: 9;
+        fontWeight: bold;
+    }
+
+    .snt_eyebrow {
+        stroke: #007AFF;
+        fill: transparent;
+        fontSize: 12;
+        fontWeight: bold;
+    }
+
+    .snt_heading {
+        stroke: #1d1d1f;
+        fill: transparent;
+        fontSize: 17;
+        fontWeight: bold;
+    }
+
+    .snt_descBody {
+        stroke: #1d1d1f;
+        fill: transparent;
+        fontSize: 12;
+        wordWrap: true;
+    }
+
+    .snt_cardBg {
+        fill: #FFFFFF;
+        stroke: #E5E5E7;
+        borderRadius: 10;
+    }
+
+    .snt_cardLabel {
+        fontSize: 9;
+        fontWeight: bold;
+        stroke: #86868b;
+    }
+
+    .snt_cardValue {
+        fontSize: 15;
+        fontWeight: bold;
+        stroke: #1d1d1f;
+    }
+
+    .snt_copyText {
+        stroke: #86868b;
+        fill: #ffffff;
+        fontSize: 9;
+        text-align: center;
+    }
+
+    .snt_panelDivider {
+        fill: #4DA0FF;
+        stroke: #4DA0FF;
+    }
+
+    .snt_footerLine {
+        fill: #E5E5E7;
+        stroke: #E5E5E7;
+    }
+
+    .snt_primaryBtn {
+        fill: #E5E5E7;
+        stroke: #007AFF;
+        fontSize: 13;
+        fontWeight: bold;
+        borderRadius: 8;
+    }
+
+    /**/
+    /* database style */
+
+    .ss_default {
+        font-family: "San Francisco", "Segoe UI", "Arial";
+        font-size: 13px;
+    }
+
+    .ss_title {
+        font-family: "San Francisco", "Segoe UI", "Arial";
+        font-size: 23px;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+
+    .ss_bold {
+        font-family: "San Francisco", "Segoe UI", "Arial";
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .ss_label {
+        font-family: "San Francisco", "Segoe UI", "Arial";
+        font-size: 13px;
+        font-weight: bold;
+        text-align: right;
+        color: #000633;
+    }
+
+    .ss_button {
+        font-family: "San Francisco", "Segoe UI", "Arial";
+        font-size: 12px;
+        color: #000633;
+    }
+
+    .ss_password {
+        font-family: "%password";
+        font-size: 13px;
+    }
+
+    .ss_listbox_header {
+        font-family: "San Francisco", "Segoe UI", "Arial";
+        font-size: 12px;
+        font-weight: bold;
+        color: #000633;
+    }
+
+    .ss_listbox {
+        font-family: "San Francisco", "Segoe UI", "Arial";
+        font-size: 12px;
+    }
+
+    .ss_unprop {
+        font-family: "Courier";
+        font-size: 13px;
+    }
+
+    .ss_uuid {
+        font-family: "Courier";
+        font-size: 13px;
+        color: red;
+    }
+
+    .ss_macros {
+        font-family: "San Francisco", "Segoe UI", "Arial";
+        font-size: 9px;
+        color: red;
+    }
+
+    .ss_path {
+        font-family: "San Francisco", "Segoe UI", "Arial";
+        font-size: 15px;
+    }
+
+    .ss_rectback {
+        background-color: #FFFFFF;
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+    /* >>> Design tokens for fm_explorer restyle (dark) */
+    .fm_accent {
+        fill: #0A84FF;
+        stroke: #0A84FF
+    }
+
+    .fm_accent_hover {
+        fill: #3A9BFF;
+        stroke: #3A9BFF
+    }
+
+    .fm_accent_pressed {
+        fill: #0064D1;
+        stroke: #0064D1
+    }
+
+    .fm_status_error {
+        fill: #FF3B30
+    }
+
+    .fm_status_ok {
+        fill: #34C759
+    }
+
+    .fm_status_warn {
+        fill: #FF9F0A
+    }
+
+    .fm_text_primary {
+        stroke: #F5F5F7;
+        fill: transparent
+    }
+
+    .fm_text_secondary {
+        stroke: #D6D6DB;
+        fill: transparent
+    }
+
+    .fm_text_tertiary {
+        stroke: #8E8E93;
+        fill: transparent
+    }
+
+    .fm_window_bg {
+        fill: #141824
+    }
+
+    .fm_card_bg {
+        fill: #2A2C33;
+        stroke: #35373F;
+        borderRadius: 14
+    }
+
+    .fm_field_fill {
+        fill: #313339;
+        stroke: #3A3C44;
+        borderRadius: 10
+    }
+
+    .fm_field_readonly {
+        fill: #2D2F35;
+        stroke: #383A42;
+        borderRadius: 10
+    }
+
+    .fm_mono {
+        font-family: "SF Mono", ui-monospace, "Cascadia Code", "Segoe UI Mono", Menlo, monospace;
+        fontSize: 12;
+        stroke: #8E8E93
+    }
+
+    /* Reference field recipes (.in / .in[readonly] / .in.num / .adorn) — dark.
+   Backdrop blur, focus ring and :hover are unsupported in 4D desktop CSS,
+   so fields degrade to near-opaque fill + .5px border. */
+    .fm_input {
+        fill: #313339;
+        stroke: #F5F5F7;
+        border-color: #4A4C54;
+        border-width: 1px;
+        border-style: solid;
+        borderRadius: 10;
+        font-family: "Segoe UI Variable", "SF Pro Text", -apple-system, "Segoe UI", Roboto, sans-serif;
+        font-size: 14px
+    }
+
+    .fm_input_ro {
+        fill: #2D2F35;
+        stroke: #A0A0A6;
+        border-color: #3E4048;
+        border-width: 1px;
+        border-style: solid;
+        borderRadius: 10;
+        font-family: "SF Mono", ui-monospace, "Cascadia Code", "Segoe UI Mono", Menlo, monospace;
+        font-size: 12px
+    }
+
+    .fm_input_num {
+        fill: #313339;
+        stroke: #F5F5F7;
+        border-color: #4A4C54;
+        border-width: 1px;
+        border-style: solid;
+        borderRadius: 10;
+        font-family: "Segoe UI Variable", "SF Pro Text", -apple-system, "Segoe UI", Roboto, sans-serif;
+        font-size: 14px;
+        text-align: right
+    }
+
+    .fm_adorn {
+        fontSize: 13;
+        fontWeight: bold;
+        stroke: #8E8E93;
+        fill: transparent;
+        text-align: right
+    }
+
+    /* Fiche chrome recipes — dark (incl. dark variants for previously light-only tokens) */
+    .fm_keychip {
+        fontSize: 9;
+        fontWeight: bold;
+        stroke: #8E8E93;
+        fill: #3A3C44;
+        borderRadius: 5;
+        text-align: center
+    }
+
+    .fm_divider {
+        stroke: #35373F;
+        fill: #35373F
+    }
+
+    .fm_dot_ok {
+        fill: #34C759;
+        stroke: transparent;
+        borderRadius: 4
+    }
+
+    .fm_subtitle {
+        fontSize: 12;
+        stroke: #8E8E93;
+        fill: transparent
+    }
+
+    .fm_chip {
+        fill: #2A2C33;
+        stroke: #3A3C44;
+        borderRadius: 10
+    }
+
+    .fm_statusbar_bg {
+        fill: #23252B;
+        stroke: transparent
+    }
+
+    .fm_title {
+        fontSize: 22;
+        fontWeight: bold;
+        stroke: #F5F5F7
+    }
+
+    .fm_sectionHeader {
+        fontSize: 11;
+        fontWeight: bold;
+        stroke: #8E8E93;
+        text-transform: uppercase;
+        letterSpacing: 0.6
+    }
+
+    .fm_label {
+        fontSize: 12;
+        fontWeight: bold;
+        stroke: #D6D6DB
+    }
+
+    .fm_inputText {
+        fontSize: 14;
+        stroke: #F5F5F7
+    }
+
+    .fm_headerIcon {
+        fill: #0A84FF;
+        stroke: #0A84FF;
+        borderRadius: 11
+    }
+
+    /* fm_explorer1 native restyle (dark) */
+    .fm_pageTitle {
+        fontSize: 28;
+        fontWeight: bold;
+        stroke: #F5F5F7;
+        fill: transparent
+    }
+
+    .fm_navitem {
+        fontSize: 13;
+        fontWeight: bold;
+        stroke: #D6D6DB;
+        fill: transparent
+    }
+
+    .fm_navitem_sel {
+        fontSize: 13;
+        fontWeight: bold;
+        stroke: #0A84FF;
+        fill: transparent
+    }
+
+    .fm_navsel_bg {
+        fill: #24344D;
+        stroke: transparent;
+        borderRadius: 8
+    }
+
+    .fm_badge {
+        fill: #0A84FF;
+        stroke: transparent;
+        borderRadius: 9
+    }
+
+    .fm_badge_txt {
+        fontSize: 11;
+        fontWeight: bold;
+        stroke: #FFFFFF;
+        fill: transparent;
+        text-align: center
+    }
+
+    .fm_statusRight {
+        fontSize: 12;
+        stroke: #8E8E93;
+        fill: transparent;
+        text-align: right
+    }
+
+    .fm_transparent {
+        fill: transparent;
+        stroke: transparent
+    }
+
+    .fm_btn_primary_txt {
+        fontSize: 13;
+        fontWeight: bold;
+        stroke: #FFFFFF;
+        fill: transparent
+    }
+
+    .fm_btn_txt {
+        fontSize: 13;
+        fontWeight: bold;
+        stroke: #D6D6DB;
+        fill: transparent
+    }
+
+    .fm_chip_txt {
+        fontSize: 13;
+        fontWeight: bold;
+        stroke: #D6D6DB;
+        fill: transparent
+    }
+
+    /* <<< end tokens */
+
+    /* Buttons & list tokens (dark) */
+    .fm_btn_primary {
+        fill: #0A84FF;
+        stroke: transparent;
+        fontSize: 13;
+        fontWeight: bold;
+        borderRadius: 10;
+        color: #ffffff
+    }
+
+    .fm_btn_primary_pressed {
+        fill: #0064D1
+    }
+
+    .fm_btn_ghost {
+        fill: transparent;
+        stroke: #313339;
+        fontSize: 13;
+        fontWeight: bold;
+        borderRadius: 10
+    }
+
+    .fm_btn_danger {
+        fill: #FF3B30;
+        stroke: transparent;
+        fontSize: 13;
+        fontWeight: bold;
+        borderRadius: 10;
+        color: #ffffff
+    }
+
+    .fm_btn_del_soft {
+        fill: #3A1F1D;
+        stroke: transparent;
+        borderRadius: 10
+    }
+
+    .fm_btn_del_txt {
+        fontSize: 13;
+        fontWeight: bold;
+        stroke: #FF6961;
+        fill: transparent
+    }
+
+    .fm_pager_btn {
+        fill: #2A2C33;
+        stroke: #313339;
+        borderRadius: 12
+    }
+
+    .fm_pager_counter {
+        fontSize: 13;
+        stroke: #D6D6DB
+    }
+
+    .fm_listbox {
+        font-family: "Segoe UI Variable", "SF Pro Text", -apple-system, "Segoe UI", Roboto, sans-serif;
+        font-size: 13px;
+        color: #F5F5F7;
+        text-align: left
+    }
+
+    .fm_listbox_header {
+        font-weight: 600;
+        font-size: 12px;
+        color: #D6D6DB;
+        text-align: left
+    }
+
+
+    /* database style */
+
+    .ss_default {
+        font-family: "San Francisco", "Segoe UI", "Arial";
+        font-size: 13px;
+        color: #C0CAF5;
+    }
+
+    .ss_title {
+        font-family: "San Francisco", "Segoe UI", "Arial";
+        font-size: 23px;
+        font-weight: bold;
+        color: #7AA2F7;
+    }
+
+    .ss_bold {
+        font-family: "San Francisco", "Segoe UI", "Arial";
+        font-size: 13px;
+        font-weight: bold;
+        color: #E5E9F0;
+    }
+
+    .ss_label {
+        font-family: "San Francisco", "Segoe UI", "Arial";
+        font-size: 13px;
+        font-weight: bold;
+        text-align: right;
+        color: #9ECE6A;
+    }
+
+    .ss_button {
+        font-family: "San Francisco", "Segoe UI", "Arial";
+        font-size: 12px;
+        color: #C0CAF5;
+    }
+
+    .ss_password {
+        font-family: "%password";
+        font-size: 13px;
+        color: #C0CAF5;
+    }
+
+    .ss_listbox_header {
+        font-family: "San Francisco", "Segoe UI", "Arial";
+        font-size: 12px;
+        font-weight: bold;
+        color: #7DCFFF;
+    }
+
+    .ss_listbox {
+        font-family: "San Francisco", "Segoe UI", "Arial";
+        font-size: 12px;
+        color: #C0CAF5;
+    }
+
+    .ss_unprop {
+        font-family: "Courier";
+        font-size: 13px;
+        color: #C0CAF5;
+    }
+
+    .ss_uuid {
+        font-family: "Courier";
+        font-size: 13px;
+        color: #F7768E;
+    }
+
+    .ss_macros {
+        font-family: "San Francisco", "Segoe UI", "Arial";
+        font-size: 9px;
+        color: #FF9E64;
+    }
+
+    .ss_path {
+        font-family: "San Francisco", "Segoe UI", "Arial";
+        font-size: 15px;
+        color: #7DCFFF;
+    }
+
+    .ss_rectback {
+        background-color: #2C3133
+    }
+
+}

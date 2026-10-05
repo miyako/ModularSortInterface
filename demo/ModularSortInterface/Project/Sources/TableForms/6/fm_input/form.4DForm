@@ -1,0 +1,305 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 1024,
+	"windowMinHeight": 768,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload"
+	],
+	"windowTitle": "list Screen INVOICES",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"tField001": {
+					"type": "text",
+					"text": "ID : ",
+					"left": 114,
+					"top": 116,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField001": {
+					"type": "input",
+					"left": 294,
+					"top": 115,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INVOICES:6]ID:1",
+					"class": "ss_default"
+				},
+				"tField002": {
+					"type": "text",
+					"text": "InvoiceDate : ",
+					"left": 114,
+					"top": 141,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField002": {
+					"type": "input",
+					"left": 294,
+					"top": 140,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INVOICES:6]InvoiceDate:2",
+					"class": "ss_default",
+					"dataSourceTypeHint": "date"
+				},
+				"tField003": {
+					"type": "text",
+					"text": "TotalExclTax : ",
+					"left": 114,
+					"top": 166,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField003": {
+					"type": "input",
+					"left": 294,
+					"top": 165,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INVOICES:6]TotalExclTax:3",
+					"class": "ss_default",
+					"dataSourceTypeHint": "number"
+				},
+				"tField004": {
+					"type": "text",
+					"text": "TotalVAT : ",
+					"left": 114,
+					"top": 191,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField004": {
+					"type": "input",
+					"left": 294,
+					"top": 190,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INVOICES:6]TotalVAT:4",
+					"class": "ss_default",
+					"dataSourceTypeHint": "number"
+				},
+				"tField005": {
+					"type": "text",
+					"text": "TotalInclTax : ",
+					"left": 114,
+					"top": 216,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField005": {
+					"type": "input",
+					"left": 294,
+					"top": 215,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INVOICES:6]TotalInclTax:5",
+					"class": "ss_default",
+					"dataSourceTypeHint": "number"
+				},
+				"tField006": {
+					"type": "text",
+					"text": "Status : ",
+					"left": 114,
+					"top": 241,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField006": {
+					"type": "input",
+					"left": 294,
+					"top": 240,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INVOICES:6]Status:6",
+					"class": "ss_default",
+					"dataSourceTypeHint": "boolean"
+				},
+				"tField007": {
+					"type": "text",
+					"text": "ID_Customer : ",
+					"left": 114,
+					"top": 266,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField007": {
+					"type": "input",
+					"left": 294,
+					"top": 265,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INVOICES:6]ID_Customer:7",
+					"class": "ss_default"
+				},
+				"tField008": {
+					"type": "text",
+					"text": "ID_Intervention : ",
+					"left": 114,
+					"top": 291,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField008": {
+					"type": "input",
+					"left": 294,
+					"top": 290,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INVOICES:6]ID_Intervention:8",
+					"class": "ss_default"
+				},
+				"tField009": {
+					"type": "text",
+					"text": "PaymentDate : ",
+					"left": 114,
+					"top": 316,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField009": {
+					"type": "input",
+					"left": 294,
+					"top": 315,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INVOICES:6]PaymentDate:9",
+					"class": "ss_default",
+					"dataSourceTypeHint": "date"
+				},
+				"tField010": {
+					"type": "text",
+					"text": "PaymentMethod : ",
+					"left": 114,
+					"top": 341,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField010": {
+					"type": "input",
+					"left": 294,
+					"top": 340,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INVOICES:6]PaymentMethod:10",
+					"class": "ss_default",
+					"dataSourceTypeHint": "integer"
+				},
+				"tField011": {
+					"type": "text",
+					"text": "Notes : ",
+					"left": 114,
+					"top": 366,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField011": {
+					"type": "input",
+					"left": 294,
+					"top": 365,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INVOICES:6]Notes:11",
+					"class": "ss_default"
+				},
+				"tField012": {
+					"type": "text",
+					"text": "k_client : ",
+					"left": 114,
+					"top": 572,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"tField013": {
+					"type": "text",
+					"text": "k_invoice_line : ",
+					"left": 114,
+					"top": 416,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"Sous formulaire": {
+					"type": "subform",
+					"left": 100,
+					"top": 452,
+					"width": 875,
+					"height": 103,
+					"table": 7,
+					"listForm": "fm_output",
+					"borderStyle": "sunken",
+					"scrollbarVertical": "visible"
+				},
+				"itField013": {
+					"type": "input",
+					"left": 294,
+					"top": 416,
+					"width": 300,
+					"height": 16,
+					"dataSource": "Records in selection:C76([INVOICE_LINES:7])",
+					"dataSourceTypeHint": "number",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"borderStyle": "none",
+					"class": "ss_default"
+				}
+			}
+		}
+	],
+	"geometryStamp": 349,
+	"markerFooter": 767,
+	"markerBreak": 767,
+	"markerBody": 767,
+	"markerHeader": 65,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"inheritedForm": "fm_model_input",
+	"method": "method.4dm"
+}

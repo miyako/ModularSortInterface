@@ -1,0 +1,47 @@
+{
+	"users": {
+		"designer": {
+			"alias": "Master"
+		},
+		"administrator": {
+			"alias": "Admin"
+		}
+	},
+	"groups": {
+		"Group_Developement": {
+			"users": [
+				"Admin"
+			]
+		},
+		"Group_Data_ReadAndWrite": {
+			"users": [
+				"Admin"
+			]
+		},
+		"Group_Data_Read": {
+			"users": [
+				"Admin"
+			]
+		}
+	},
+	"sqlSchemaGranters": {
+		"DEFAULT_SCHEMA": {
+			"readOnlyAccessGroup": "Group_Data_Read",
+			"readWriteAccessGroup": "Group_Data_ReadAndWrite",
+			"allAccessGroup": "Group_Developement"
+		}
+	},
+	"remoteGranters": {
+		"web": "*",
+		"soap": "*",
+		"write": "*",
+		"view": "*"
+	},
+	"settings": {
+		"localGenericWebUser": "Master",
+		"designAccessGroup": "Group_Developement",
+		"localMobileAccessGroupRW": "Group_Data_ReadAndWrite",
+		"remoteGenericWebUser": "Master",
+		"remoteDefaultUser": ""
+	}
+}

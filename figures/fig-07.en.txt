@@ -1,0 +1,17 @@
+Web Area
+1 — Click on execute
+The user triggers the action
+2 — Building the sort in JSON
+Serializing the parameters
+3 — Call to 4D via $4d
+Callback to the 4D server
+web → 4D transition
+4D Area
+4 — Hub call
+Internal 4D routing
+5 — JSON interpretation
+Parsing and validation on the 4D side
+6 — Sort execution
+Native processing in 4D
+Web Area
+4D Area

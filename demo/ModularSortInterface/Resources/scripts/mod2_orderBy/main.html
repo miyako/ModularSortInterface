@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="Pragma" content="no-cache" />
+
+  <title>MOD2 OrderBy</title>
+
+  <link rel="stylesheet" href="styles/tabler-icons.min.css" />
+  <link rel="stylesheet" href="styles/tabler-4d.css" />
+  
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/piece.css" />
+  <link rel="stylesheet" href="styles/search.css" />
+
+</head>
+
+<body>
+
+<!-- header palette -->
+
+  <header>
+
+    <!-- title -->
+    <section class="ss_title">
+      <div data-i18n="xlf_title">Composeur de trie cible</div>
+      <div>...</div>
+    </section>
+
+    <!-- modules -->
+
+    <section>
+
+      <div class="ss_tabs-container">
+
+        <!-- tabs header -->
+
+        <div class="ss_tabs-header">
+
+          <!-- tabs -->
+
+          <div class="ss_tabs">
+            <button class="ss_tab-btn active" data-tab="table">
+              <div class="ss_legend-dot" style="background:#AFA9EC"></div><span data-i18n="xlf_table">Table</span>
+            </button>
+            <button class="ss_tab-btn" data-tab="field">
+              <div class="ss_legend-dot" style="background:#85B7EB"></div><span data-i18n="xlf_field">Champ</span>
+            </button>
+            <button class="ss_tab-btn" data-tab="direction">
+              <div class="ss_legend-dot" style="background:#5DCAA5"></div><span data-i18n="xlf_direction">Direction</span>
+            </button>
+            <button class="ss_tab-btn" data-tab="operator" style="display: none;">
+              <div class="ss_legend-dot" style="background:#F0997B"></div>Operateur
+            </button>
+            <button class="ss_tab-btn" data-tab="unction" style="display: none;">
+              <div class="ss_legend-dot" style="background:#EF9F27"></div>Fonction
+            </button>
+          </div>
+
+          <!-- search -->
+
+          <div class="ss_search-box">
+            <input type="text" id="searchInput" placeholder="Rechercher..." data-i18n-placeholder="xlf_search" oninput="filterPieces(this.value)">
+             <i class="ti ti-circle-x ss_search-clear" id="clearBtn" aria-label="Effacer la recherche" data-i18n-aria-label="xlf_serach_erase" onclick="filterPiecesCancel()"></i>
+          </div>
+
+        </div>
+
+        <!-- tabs body -->
+
+        <div class="ss_tab-content" id="palette">
+
+          <p class="no-result" id="noResult" data-i18n="xlf_not_found">
+            Aucun résultat trouvé.
+          </p>
+
+          <!--
+          <div class="ss_piece type-table" draggable="true" title="Source de données A">
+            <i class="ti ti-table" aria-hidden="true" style="font-size:14px"></i>Table A<span
+              class="ss_badge-type">(table)</span>
+          </div>
+
+          <div class="ss_piece type-table" draggable="true" title="Source de données B">
+            <i class="ti ti-table" aria-hidden="true" style="font-size:14px"></i>Table B<span
+              class="ss_badge-type">(table)</span>
+          </div>
+          -->
+        
+        </div>
+
+      </div>
+
+    </section>
+
+  </header>
+
+<!-- spliter-->
+
+  <div class="ss_splitter" id="splitter"></div>
+
+<!-- order by lanes -->
+
+  <section>
+    <div class="ss_canvas-wrap">
+
+      <p class="ss_panel-title"><span data-i18n="xlf_Criteria">Critères de tri</span><span
+          style="text-transform:none;letter-spacing:0;font-size:11px;font-weight:400;margin-left:0.5em;" data-i18n="xlf_drop_here">— déposez les pièces ici</span>
+      </p>
+
+      <div class="ss_lanes-wrap" id="lanes-wrap">
+        <div class="ss_lane-row"><span class="ss_lane-num">1</span>
+          <div class="ss_sort-lane"><span class="ss_lane-placeholder"><i class="ti ti-drag-drop" aria-hidden="true"
+                style="font-size:16px"></i><span data-i18n="xlf_lane_hint">table → champ → ASC/DESC</span></span></div><button class="ss_btn-remove-lane"
+            title="Supprimer ce critère" data-i18n-title="xlf_b_delete_criterion"><i class="ti ti-x"></i></button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- footer actions -->
+
+  <footer>
+
+    <div class="ss_group-left">
+      <button onclick="plansResetAll()">
+        <i class="ti ti-trash"></i><span data-i18n="xlf_b_reset">Réinitialiser</span>
+      </button>
+      <button onclick="plansAddLane()">
+        <i class="ti ti-plus"></i><span data-i18n="xlf_b_add">Ajouter</span>
+      </button>
+      <button onclick="plansExecute()">
+        <i class="ti ti-player-play"></i><span data-i18n="xlf_b_exe">Executer</span>
+      </button>
+    </div>
+
+    <div class="ss_group-center">
+      <button onclick="plansSave()">
+        <i class="ti ti-file-export"></i><span data-i18n="xlf_b_save">Sauver</span>
+      </button>
+      <button onclick="plansLoad()">
+        <i class="ti ti-file-import"></i><span data-i18n="xlf_b_load">Charger</span>
+      </button>
+    </div>
+
+    <div class="ss_group-right">
+      <button onclick="closeWin()">
+        <i class="ti ti-xbox-x"></i><span data-i18n="xlf_b_close">Fermer</span>
+      </button>
+    </div>
+
+  </footer>
+
+  <!-- script init -->
+
+  <script src="scripts/i18next.min.js"></script>
+  <script src="scripts/i18next.core.js"></script>
+
+  <script src="scripts/tabs.js"></script>
+  <script src="scripts/buttons.js"></script>
+  <script src="scripts/engine.js"></script> 
+  <script src="scripts/search.js"></script>
+  
+</body>
+
+</html>

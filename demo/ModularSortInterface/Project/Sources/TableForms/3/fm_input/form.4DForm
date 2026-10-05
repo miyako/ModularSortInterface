@@ -1,0 +1,270 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 1024,
+	"windowMinHeight": 768,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload"
+	],
+	"windowTitle": "list Screen INTERVENTIONS",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"tField001": {
+					"type": "text",
+					"text": "ID : ",
+					"left": 115,
+					"top": 117,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField001": {
+					"type": "input",
+					"left": 295,
+					"top": 116,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INTERVENTIONS:3]ID:1",
+					"class": "ss_default"
+				},
+				"tField002": {
+					"type": "text",
+					"text": "DateStart : ",
+					"left": 115,
+					"top": 142,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField002": {
+					"type": "input",
+					"left": 295,
+					"top": 141,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INTERVENTIONS:3]DateStart:2",
+					"class": "ss_default",
+					"dataSourceTypeHint": "date"
+				},
+				"tField003": {
+					"type": "text",
+					"text": "Description : ",
+					"left": 115,
+					"top": 167,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField003": {
+					"type": "input",
+					"left": 295,
+					"top": 166,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INTERVENTIONS:3]Description:3",
+					"class": "ss_default"
+				},
+				"tField004": {
+					"type": "text",
+					"text": "Mileage : ",
+					"left": 115,
+					"top": 192,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField004": {
+					"type": "input",
+					"left": 295,
+					"top": 191,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INTERVENTIONS:3]Mileage:4",
+					"class": "ss_default",
+					"dataSourceTypeHint": "integer"
+				},
+				"tField005": {
+					"type": "text",
+					"text": "Status : ",
+					"left": 115,
+					"top": 217,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField005": {
+					"type": "input",
+					"left": 295,
+					"top": 216,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INTERVENTIONS:3]Status:5",
+					"class": "ss_default",
+					"dataSourceTypeHint": "integer"
+				},
+				"tField006": {
+					"type": "text",
+					"text": "ID_Vehicle : ",
+					"left": 115,
+					"top": 242,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField006": {
+					"type": "input",
+					"left": 295,
+					"top": 241,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INTERVENTIONS:3]ID_Vehicle:6",
+					"class": "ss_default"
+				},
+				"tField007": {
+					"type": "text",
+					"text": "DateEnd : ",
+					"left": 115,
+					"top": 267,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField007": {
+					"type": "input",
+					"left": 295,
+					"top": 266,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INTERVENTIONS:3]DateEnd:7",
+					"class": "ss_default",
+					"dataSourceTypeHint": "date"
+				},
+				"tField008": {
+					"type": "text",
+					"text": "TimeStart : ",
+					"left": 115,
+					"top": 292,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField008": {
+					"type": "input",
+					"left": 295,
+					"top": 291,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INTERVENTIONS:3]TimeStart:8",
+					"class": "ss_default",
+					"dataSourceTypeHint": "time"
+				},
+				"tField009": {
+					"type": "text",
+					"text": "TimeEnd : ",
+					"left": 115,
+					"top": 317,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField009": {
+					"type": "input",
+					"left": 295,
+					"top": 316,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INTERVENTIONS:3]TimeEnd:9",
+					"class": "ss_default",
+					"dataSourceTypeHint": "time"
+				},
+				"tField010": {
+					"type": "text",
+					"text": "ID_Technician : ",
+					"left": 115,
+					"top": 342,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField010": {
+					"type": "input",
+					"left": 295,
+					"top": 341,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[INTERVENTIONS:3]ID_Technician:10",
+					"class": "ss_default"
+				},
+				"tField011": {
+					"type": "text",
+					"text": "k_vehicle : ",
+					"left": 115,
+					"top": 367,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"tField012": {
+					"type": "text",
+					"text": "k_technician : ",
+					"left": 115,
+					"top": 392,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"tField013": {
+					"type": "text",
+					"text": "k_invoice_line_list : ",
+					"left": 115,
+					"top": 417,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				}
+			}
+		}
+	],
+	"geometryStamp": 329,
+	"markerFooter": 767,
+	"markerBreak": 767,
+	"markerBody": 767,
+	"markerHeader": 65,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"inheritedForm": "fm_model_input",
+	"method": "method.4dm"
+}

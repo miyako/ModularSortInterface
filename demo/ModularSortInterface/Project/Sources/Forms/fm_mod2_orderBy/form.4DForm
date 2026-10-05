@@ -1,0 +1,59 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 640,
+	"windowMinHeight": 480,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload"
+	],
+	"windowTitle": "",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"aOrderBy": {
+					"type": "webArea",
+					"left": 0,
+					"top": 0,
+					"width": 800,
+					"height": 600,
+					"urlSource": "aOrderBy_url",
+					"progressSource": "aOrderBy_progress",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"borderStyle": "none",
+					"webEngine": "embedded",
+					"events": [
+						"onEndURLLoading",
+						"onWindowOpeningDenied"
+					],
+					"method": "ObjectMethods/aOrderBy.4dm",
+					"methodsAccessibility": "all"
+				}
+			}
+		}
+	],
+	"geometryStamp": 507,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm",
+	"menuBar": "Edit"
+}

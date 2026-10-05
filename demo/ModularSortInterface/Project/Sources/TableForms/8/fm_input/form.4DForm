@@ -1,0 +1,92 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 1024,
+	"windowMinHeight": 768,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload"
+	],
+	"windowTitle": "list Screen TECHNICIANS",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"tField001": {
+					"type": "text",
+					"text": "ID : ",
+					"left": 124,
+					"top": 126,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField001": {
+					"type": "input",
+					"left": 304,
+					"top": 125,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[TECHNICIANS:8]ID:1",
+					"class": "ss_default"
+				},
+				"tField002": {
+					"type": "text",
+					"text": "Name : ",
+					"left": 124,
+					"top": 151,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				},
+				"iField002": {
+					"type": "input",
+					"left": 304,
+					"top": 150,
+					"width": 300,
+					"height": 16,
+					"dataSource": "[TECHNICIANS:8]Name:2",
+					"class": "ss_default"
+				},
+				"tField003": {
+					"type": "text",
+					"text": "k_intervention_list : ",
+					"left": 124,
+					"top": 176,
+					"width": 165,
+					"height": 16,
+					"textAlign": "right",
+					"class": "ss_label"
+				}
+			}
+		}
+	],
+	"geometryStamp": 323,
+	"markerFooter": 767,
+	"markerBreak": 767,
+	"markerBody": 767,
+	"markerHeader": 65,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"inheritedForm": "fm_model_input",
+	"method": "method.4dm"
+}

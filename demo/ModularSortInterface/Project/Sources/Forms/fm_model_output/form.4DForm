@@ -1,0 +1,394 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onUnload"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {
+				"rHeader": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1024,
+					"height": 64,
+					"sizingX": "grow",
+					"stroke": "transparent",
+					"class": "snt_leftPanel"
+				},
+				"snt_panelDivider": {
+					"type": "line",
+					"top": 64,
+					"left": 0,
+					"width": 1024,
+					"height": 0,
+					"sizingX": "grow",
+					"stroke": "#000f87"
+				},
+				"rBody": {
+					"type": "rectangle",
+					"top": 100,
+					"left": 0,
+					"width": 1004,
+					"height": 24,
+					"sizingX": "grow",
+					"stroke": "transparent",
+					"right": 1004,
+					"class": "ss_rectback"
+				},
+				"nFooter": {
+					"type": "line",
+					"top": 125,
+					"left": 0,
+					"width": 1004,
+					"height": 0,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"stroke": "#000f87",
+					"right": 1004
+				},
+				"rFooter": {
+					"type": "rectangle",
+					"top": 126,
+					"left": 0,
+					"width": 1004,
+					"height": 84,
+					"sizingX": "grow",
+					"stroke": "transparent",
+					"sizingY": "move",
+					"right": 1004,
+					"class": "ss_rectback"
+				},
+				"nFooter1": {
+					"type": "line",
+					"top": 124,
+					"left": 0,
+					"width": 1004,
+					"height": 0,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"stroke": "#c0c0c0",
+					"right": 1004
+				},
+				"nHeader1": {
+					"type": "line",
+					"top": 99,
+					"left": 0,
+					"width": 1004,
+					"height": 0,
+					"sizingX": "grow",
+					"stroke": "automatic",
+					"right": 1004
+				},
+				"pLogoBeast": {
+					"type": "picture",
+					"top": 10,
+					"left": 20,
+					"width": 166,
+					"height": 89,
+					"picture": "/RESOURCES/images/logo/beast.png",
+					"pictureFormat": "scaled"
+				}
+			}
+		},
+		{
+			"objects": {
+				"bListAdd": {
+					"type": "button",
+					"text": ":xliff:bListAdd",
+					"top": 128,
+					"left": 0,
+					"width": 88,
+					"height": 68,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/images/buttons/NewRecord.svg",
+					"iconFrames": 4,
+					"class": "ss_button",
+					"style": "custom",
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"action": "",
+					"borderStyle": "none",
+					"method": "ObjectMethods/bListAdd.4dm"
+				},
+				"bListDelete": {
+					"type": "button",
+					"text": ":xliff:bListDelete",
+					"top": 128,
+					"left": 89,
+					"width": 88,
+					"height": 68,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/images/buttons/DeleteRecord.svg",
+					"iconFrames": 4,
+					"class": "ss_button",
+					"style": "custom",
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"action": "",
+					"borderStyle": "none",
+					"method": "ObjectMethods/bListDelete.4dm"
+				},
+				"bListSelectAll": {
+					"type": "button",
+					"text": ":xliff:bListSelectAll",
+					"top": 128,
+					"left": 188,
+					"width": 88,
+					"height": 68,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/images/buttons/ShowAll.svg",
+					"iconFrames": 4,
+					"class": "ss_button",
+					"style": "custom",
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"action": "",
+					"borderStyle": "none",
+					"method": "ObjectMethods/bListSelectAll.4dm"
+				},
+				"bListSubSelect": {
+					"type": "button",
+					"text": ":xliff:bListSubSelect",
+					"top": 128,
+					"left": 277,
+					"width": 88,
+					"height": 68,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/images/buttons/ShowSubset.svg",
+					"iconFrames": 4,
+					"class": "ss_button",
+					"style": "custom",
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"action": "",
+					"borderStyle": "none",
+					"method": "ObjectMethods/bListSubSelect.4dm"
+				},
+				"bListQuery": {
+					"type": "button",
+					"text": ":xliff:bListQuery",
+					"top": 128,
+					"left": 366,
+					"width": 88,
+					"height": 68,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/images/buttons/Query.svg",
+					"iconFrames": 4,
+					"class": "ss_button",
+					"style": "custom",
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"action": "",
+					"borderStyle": "none",
+					"method": "ObjectMethods/bListQuery.4dm"
+				},
+				"bListOrder": {
+					"type": "button",
+					"text": ":xliff:bListOrder",
+					"top": 128,
+					"left": 455,
+					"width": 88,
+					"height": 68,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/images/buttons/OrderBy.svg",
+					"iconFrames": 4,
+					"class": "ss_button",
+					"style": "custom",
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"action": "",
+					"borderStyle": "none",
+					"method": "ObjectMethods/bListOrder.4dm"
+				},
+				"bListReport": {
+					"type": "button",
+					"text": ":xliff:bListReport",
+					"top": 128,
+					"left": 550,
+					"width": 88,
+					"height": 68,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/images/buttons/Report.svg",
+					"iconFrames": 4,
+					"class": "ss_button",
+					"style": "custom",
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"action": "",
+					"borderStyle": "none",
+					"method": "ObjectMethods/bListReport.4dm"
+				},
+				"bListLabel": {
+					"type": "button",
+					"text": ":xliff:bListLabel",
+					"top": 128,
+					"left": 639,
+					"width": 88,
+					"height": 68,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/images/buttons/Label.svg",
+					"iconFrames": 4,
+					"class": "ss_button",
+					"style": "custom",
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"action": "",
+					"borderStyle": "none",
+					"method": "ObjectMethods/bListLabel.4dm"
+				},
+				"bListPrint": {
+					"type": "button",
+					"text": ":xliff:bListPrint",
+					"top": 128,
+					"left": 728,
+					"width": 88,
+					"height": 68,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/images/buttons/Print.svg",
+					"iconFrames": 4,
+					"class": "ss_button",
+					"style": "custom",
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"action": "",
+					"borderStyle": "none",
+					"method": "ObjectMethods/bListPrint.4dm"
+				},
+				"bListExport": {
+					"type": "button",
+					"text": ":xliff:bListExport",
+					"top": 128,
+					"left": 817,
+					"width": 88,
+					"height": 68,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/images/buttons/SyncExport.svg",
+					"iconFrames": 4,
+					"class": "ss_button",
+					"style": "custom",
+					"sizingX": "fixed",
+					"sizingY": "move",
+					"action": "",
+					"borderStyle": "none",
+					"method": "ObjectMethods/bListExport.4dm"
+				},
+				"nListButtonSplit1": {
+					"type": "line",
+					"top": 142,
+					"left": 177,
+					"width": 0,
+					"height": 40,
+					"sizingY": "move",
+					"sizingX": "fixed",
+					"stroke": "#000f87"
+				},
+				"nListButtonSplit2": {
+					"type": "line",
+					"top": 142,
+					"left": 543,
+					"width": 0,
+					"height": 40,
+					"sizingY": "move",
+					"sizingX": "fixed",
+					"stroke": "#000f87"
+				},
+				"bListCancel": {
+					"type": "button",
+					"text": ":xliff:bListCancel",
+					"top": 128,
+					"left": 916,
+					"width": 78,
+					"height": 68,
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/images/buttons/Done.svg",
+					"iconFrames": 4,
+					"class": "ss_button",
+					"style": "custom",
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "cancel",
+					"borderStyle": "none"
+				},
+				"nListButtonSplit3": {
+					"type": "line",
+					"top": 142,
+					"left": 910,
+					"width": 0,
+					"height": 40,
+					"sizingX": "move",
+					"sizingY": "move",
+					"stroke": "#000f87"
+				},
+				"tTitle": {
+					"type": "text",
+					"text": "Beast garage",
+					"top": 10,
+					"left": 199,
+					"width": 480,
+					"height": 32,
+					"class": "ss_title"
+				},
+				"tTitleSub": {
+					"type": "text",
+					"text": "...",
+					"top": 35,
+					"left": 300,
+					"width": 480,
+					"height": 24,
+					"class": "ss_title"
+				}
+			}
+		}
+	],
+	"geometryStamp": 68,
+	"markerFooter": 210,
+	"markerBreak": 126,
+	"markerBody": 125,
+	"markerHeader": 100,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"menuBar": "Edit"
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+
+<xliff version="1.0">
+  <file datatype="x-STR#" original="undefined" product-Version="v19" source-language="en" target-language="en">
+    <header>
+      <note>application main menu</note>
+    </header>
+    <group resname="nt">
+
+        <trans-unit id="20000" resname="xlf_brandName">
+            <source>OrderBy Composer</source>
+            <target>OrderBy Composer</target>
+        </trans-unit>
+        <trans-unit id="20001" resname="xlf_brandTagline">
+            <source>Modular sorting interface</source>
+            <target>Modular sorting interface</target>
+        </trans-unit>
+        <trans-unit id="20002" resname="xlf_featText">
+            <source>● Sort by module
+● Sort on selection
+● Sort on selected entities
+● Search using simplified criteria
+● Save sorting parameters
+● Restore sorting parameters
+            </source>
+            <target>● Sort by module
+● Sort on selection
+● Sort on selected entities
+● Search using simplified criteria
+● Save sorting parameters
+● Restore sorting parameters
+            </target>
+        </trans-unit>
+        <trans-unit id="20003" resname="xlf_eyebrow">
+            <source>How it works</source>
+            <target>How it works</target>
+        </trans-unit>
+        <trans-unit id="20004" resname="xlf_heading">
+            <source>Principles</source>
+            <target>Principles</target>
+        </trans-unit>
+        <trans-unit id="20005" resname="xlf_copyText">
+            <source>© 2026  ·  4D Tech Note</source>
+            <target>© 2026  ·  4D Tech Note</target>
+        </trans-unit>
+        <trans-unit id="20006" resname="xlf_descBody">
+            <source></source>
+            <target>The following database demonstrates the implementation of modular sorting. It lets you sort by module, either in Selection mode or in Entity Selection mode. Since the dialog is independent, it lets you view the sorting in real time.
+
+To use the database, click the button corresponding to the selection mode you want. In the interface, then click the Sort button to open the dialog and start using the various features.</target>
+        </trans-unit>
+
+
+        <trans-unit id="20007" resname="xlf_primaryBtn1">
+            <source></source>
+            <target>Launch the demo in classic selection →</target>
+        </trans-unit>
+        <trans-unit id="20008" resname="xlf_primaryBtn2">
+            <source></source>
+            <target>Launch the demo in ORDA selection →</target>
+        </trans-unit>
+        <trans-unit id="20009" resname="xlf_windowTitle">
+            <source>OrderBy Composer  ·  4D Tech Note</source>
+            <target>OrderBy Composer  ·  4D Tech Note</target>
+        </trans-unit>
+        <trans-unit id="20010" resname="xlf_featHead">
+            <source>FEATURES</source>
+            <target>FEATURES</target>
+        </trans-unit>
+        <trans-unit id="20011" resname="xlf_cardVersion">
+            <source>VERSION</source>
+            <target>VERSION</target>
+        </trans-unit>
+        <trans-unit id="20012" resname="xlf_cardDocs">
+            <source>DOCS &amp; BLOG</source>
+            <target>DOCS &amp; BLOG</target>
+        </trans-unit>
+    </group>
+  </file>
+</xliff>

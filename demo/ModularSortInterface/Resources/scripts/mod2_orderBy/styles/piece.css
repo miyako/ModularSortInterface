@@ -1,0 +1,68 @@
+
+/* ---- Piece (shared style) ---- */
+
+.ss_piece {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: grab;
+  user-select: none;
+  border: 0.5px solid transparent;
+  transition: transform 0.12s, opacity 0.12s, box-shadow 0.12s;
+}
+
+.ss_piece:active {
+  cursor: grabbing;
+  transform: scale(1.05);
+}
+
+.ss_piece.dragging {
+  opacity: 0.4;
+}
+
+/* ---- Piece type colours ---- */
+
+.ss_piece.nature-table {
+  background: #EEEDFE;
+  color: #3C3489;
+  border-color: #AFA9EC;
+}
+
+.ss_piece.nature-field {
+  background: #E6F1FB;
+  color: #0C447C;
+  border-color: #85B7EB;
+}
+
+.ss_piece.nature-direction {
+  background: #E1F5EE;
+  color: #085041;
+  border-color: #5DCAA5;
+}
+
+.ss_piece.nature-function {
+  background: #FAEEDA;
+  color: #633806;
+  border-color: #EF9F27;
+}
+
+.ss_piece.nature-operator {
+  background: #FAECE7;
+  color: #712B13;
+  border-color: #F0997B;
+}
+
+.ss_piece .ss_badge-nature {
+  font-size: 10px;
+  font-weight: 400;
+  opacity: 0.65;
+}
+
+.ss_piece.hidden { 
+    display: none;
+}

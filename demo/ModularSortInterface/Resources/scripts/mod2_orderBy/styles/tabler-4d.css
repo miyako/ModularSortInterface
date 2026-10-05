@@ -1,0 +1,52 @@
+
+
+@font-face {
+    font-family: "tabler-4d";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/tabler-4d.ttf") format("truetype")
+}
+
+.t4 {
+    font-family: "tabler-4d" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.t4-string:before {
+    content: "i"
+}
+
+.t4-date:before {
+    content: "c"
+}
+
+.t4-time:before {
+    content: "j"
+}
+
+.t4-number:before {
+    content: "e"
+}
+
+.t4-bool:before {
+    content: "b"
+}
+
+.t4-blob:before {
+    content: "a"
+}
+
+.t4-image:before {
+    content: "g"
+}
+
+.t4-object:before {
+    content: "f"
+}

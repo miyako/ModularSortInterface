@@ -1,0 +1,17 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="512"
+    height="64">
+
+    <g id="searchField">
+    	<rect width="492" height="44" x="10" y="10" ry="22" stroke="rgb(118, 118, 118)" stroke-width="2" fill="rgb(255, 255, 255)" />
+		</g>
+
+	<g id="buttonLoop">
+		<circle cx="32" cy="30" r="8" stroke="rgb(118, 118, 118)" stroke-width="3" fill="none" />
+		<line x1="40" y1="38" x2="46" y2="44" stroke="rgb(118, 118, 118)" stroke-width="4" />
+		<path d="M50 30 L60 30 L55 38 Z" fill="rgb(118, 118, 118)"/>
+	</g>
+
+</svg>
