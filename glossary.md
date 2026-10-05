@@ -46,7 +46,7 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 | Modular Sort Interface | モジュール式並べ替えインターフェース | タイトル |
 | modular | モジュール式 | |
 | module | モジュール | |
-| classic selection / classic mode | クラシックセレクション / クラシックモード | |
+| classic selection / classic mode | 従来のカレントセレクション / クラシックモード | 編集者指示 |
 | ORDA mode | ORDAモード | |
 | sort criterion / criteria | 並べ替え条件 / 条件 | |
 | multi-criteria sort | 複数条件の並べ替え | |
@@ -63,7 +63,7 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 | context | コンテキスト | current context → カレントコンテキスト |
 | serialize / deserialize | シリアライズ / デシリアライズ | |
 | internationalization / localization | 国際化 / ローカライズ | |
-| tooltip | ツールチップ | 要確認：4D公式は「ヘルプTips」 |
+| tooltip | ヘルプTips | 4D公式用語（編集者指示） |
 | Web Area / 4D Area (Figure 5) | Webエリア / 4Dエリア | |
 | Note | 注記 | |
 
@@ -79,7 +79,7 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 | Search... / Clear search | 検索... / 検索をクリア | |
 | — drop items here | — ここにモジュールをドロップ | |
 | table → field → ASC/DESC | テーブル → フィールド → ASC/DESC | 空の条件行のヒント |
-| Ascending order / Descending order | 昇順 / 降順 | ASC/DESCモジュールのツールチップ |
+| Ascending order / Descending order | 昇順 / 降順 | ASC/DESCモジュールのヘルプTips |
 | OrderBy Composer | OrderBy Composer | ホーム画面のブランド名（翻訳しない） |
 | Beast garage™ | Beast garage™ | デモアプリ名（翻訳しない） |
 | Order (list button) | 並べ替え | ダイアログを開くボタン |
@@ -93,3 +93,4 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 | TECHNICIANS / Name | TECHNICIANS / Name | デモのテーブル名・フィールド名（翻訳しない） |
 | sample records | 架空の日本の顧客・技術者、円建て価格、消費税10% | `Resources/ja.lproj/SQLExport/`（フランス語の原本はフォールバックの `en.lproj/SQLExport/`）。VEHICLES・日付・UUIDは原文ママ |
 | Olivier Marolleau | Olivier Marolleau | 著者名はラテン文字のまま |
+| Quality Support Engineer | クオリティサポートエンジニア | 著者の肩書き（編集者指示） |
