@@ -14,7 +14,7 @@
         </trans-unit>
         <trans-unit id="20001" resname="xlf_brandTagline">
             <source>Modular sorting interface</source>
-            <target>モジュール式並べ替えインターフェース</target>
+            <target>汎用並び替えエディター</target>
         </trans-unit>
         <trans-unit id="20002" resname="xlf_featText">
             <source>● Sort by module

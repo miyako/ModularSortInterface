@@ -43,7 +43,7 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 
 | English | 日本語 | Notes |
 |---|---|---|
-| Modular Sort Interface | モジュール式並べ替えインターフェース | タイトル |
+| Modular Sort Interface | 汎用並び替えエディター | タイトル・ホーム画面のタグライン（編集者指示。「4D用」は省略） |
 | modular | モジュール式 | |
 | module | モジュール | |
 | classic selection / classic mode | 従来のカレントセレクション / クラシックモード | 編集者指示 |
@@ -55,7 +55,7 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 | sort plan | 並べ替えプラン | |
 | sort editor | 並べ替えエディター | |
 | palette | パレット | |
-| composition area | 組み立てエリア | |
+| composition area | 編集エリア | 編集者指示 |
 | compose / composition | 組み立てる / 組み立て | |
 | hub / central hub | ハブ / 中央ハブ | Lib_Mod2クラス |
 | business logic | ビジネスロジック | |

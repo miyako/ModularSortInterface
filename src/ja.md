@@ -1,4 +1,4 @@
-# 4D用モジュール式並べ替えインターフェース（ORDAおよびクラシックモード）
+# 汎用並び替えエディター（ORDAおよびクラシックモード）
 
 Olivier Marolleau（4D Franceクオリティサポートエンジニア）
 
@@ -110,7 +110,7 @@ cs.Lib_Mod2.me.orderBy(Form.dataExplore.exSelection; "Form.dataExplore.exSelecti
 
 エディターはモジュールの仕組みに基づいており、各モジュールが並べ替えの定義の1つの要素を表します。
 
-条件を組み立てるには、パレット（palette）から必要なモジュールを選択し、ドラッグ＆ドロップで組み立てエリア（composition area）に置きます。
+条件を組み立てるには、パレット（palette）から必要なモジュールを選択し、ドラッグ＆ドロップで編集エリア（composition area）に置きます。
 
 条件の作成は、通常次の手順で行います：
 
