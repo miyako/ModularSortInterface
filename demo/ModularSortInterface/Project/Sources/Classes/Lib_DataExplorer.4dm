@@ -147,7 +147,7 @@ Function drawFields()
 		
 		For each ($field; This:C1470.exDataClass)
 			
-			If (This:C1470.exDataClass[$field].kind="storage") & (This:C1470.exDataClass[$field].fieldType#Est un BLOB:K8:12)
+			If (This:C1470.exDataClass[$field].kind="storage") & (This:C1470.exDataClass[$field].fieldType#Is BLOB:K8:12)
 				
 				$c:=$c+1
 				$top:=$top+5+27
@@ -193,7 +193,7 @@ Function drawFields()
 				
 				// only storage field as show, and squiz blob
 				
-				If (This:C1470.exDataClass[$field].kind="storage") & (This:C1470.exDataClass[$field].fieldType#Est un BLOB:K8:12) & (This:C1470.exDataClass[$field].fieldType#Est une image:K8:10)
+				If (This:C1470.exDataClass[$field].kind="storage") & (This:C1470.exDataClass[$field].fieldType#Is BLOB:K8:12) & (This:C1470.exDataClass[$field].fieldType#Is picture:K8:10)
 					
 					// init column
 					
@@ -217,9 +217,10 @@ Function drawFields()
 						OBJECT SET FONT:C164(*; $headerName; "Arial")
 						OBJECT SET FONT SIZE:C165(*; $columnName; 12)
 						OBJECT SET FONT SIZE:C165(*; $headerName; 12)
-						OBJECT SET FONT STYLE:C166(*; $headerName; Gras:K14:2)
+						OBJECT SET FONT STYLE:C166(*; $headerName; Bold:K14:2)
 						
 						LISTBOX SET COLUMN WIDTH:C833(*; $columnName; 120; 96)
+						LISTBOX SET PROPERTY:C1440(*; $columnName; lk truncate:K53:37; lk without ellipsis:K53:64)
 						
 					Else 
 						
@@ -241,18 +242,18 @@ Function drawFields()
 					
 					OBJECT SET TITLE:C194(*; $headerName; This:C1470.exDataClass[$field].name)
 					OBJECT SET FORMAT:C236(*; $headerName; "#images/internals/Icon_Field_"+String:C10(This:C1470.exDataClass[$field].fieldType; "00")+".svg;1")
-					OBJECT SET RGB COLORS:C628(*; $headerName; 0x0633; Coul arrière plan:K23:2)
+					OBJECT SET RGB COLORS:C628(*; $headerName; 0x0633; Background color:K23:2)
 					
 					Case of 
 						: (Position:C15("ID"; $formula)>0)
 							
 							OBJECT SET FONT:C164(*; $columnName; "Courier")
-							OBJECT SET RGB COLORS:C628(*; $columnName; 0x00FF0000; Coul arrière plan:K23:2)
+							OBJECT SET RGB COLORS:C628(*; $columnName; 0x00FF0000; Background color:K23:2)
 							OBJECT SET FORMAT:C236(*; $columnName; "#### #### #### #### #### #### #### ####")
 						Else 
 							
 							OBJECT SET FONT:C164(*; $columnName; "Arial")
-							OBJECT SET RGB COLORS:C628(*; $columnName; Coul premier plan:K23:1; Coul arrière plan:K23:2)
+							OBJECT SET RGB COLORS:C628(*; $columnName; Foreground color:K23:1; Background color:K23:2)
 							OBJECT SET FORMAT:C236(*; $columnName; "")
 					End case 
 					
@@ -339,7 +340,7 @@ Function searchStop()
 	
 	// clear interface
 	
-	OBJECT Get pointer:C1124(Objet nommé:K67:5; "iSearch")->:=""
+	OBJECT Get pointer:C1124(Object named:K67:5; "iSearch")->:=""
 	OBJECT SET FORMAT:C236(*; "pSearch"; "Path:/RESOURCES/images/search/searchNormal.svg")
 	
 Function searchMenu()
@@ -379,10 +380,10 @@ Function searchMenu()
 		
 		// reset
 		
-		OBJECT Get pointer:C1124(Objet nommé:K67:5; "iSearch")->:=""
+		OBJECT Get pointer:C1124(Object named:K67:5; "iSearch")->:=""
 		
 		For each ($field; This:C1470.exFields)
-			OBJECT SET RGB COLORS:C628(*; $field.boxColumnName; Coul premier plan:K23:1; Coul arrière plan:K23:2)
+			OBJECT SET RGB COLORS:C628(*; $field.boxColumnName; Foreground color:K23:1; Background color:K23:2)
 			$field.targeted:=False:C215
 		End for each 
 		
@@ -390,38 +391,38 @@ Function searchMenu()
 		If ($fields.length>0)
 			
 			$fields[0].targeted:=True:C214
-			OBJECT SET RGB COLORS:C628(*; $fields[0].boxColumnName; Coul premier plan:K23:1; 0x00FFEBCC)
+			OBJECT SET RGB COLORS:C628(*; $fields[0].boxColumnName; Foreground color:K23:1; 0x00FFEBCC)
 			OBJECT SET SCROLL POSITION:C906(*; "xDataStore"; 1; $fields[0].boxColumnIndex)
 			
 			// set target
 			
 			Case of 
-				: ($fields[0].fieldType=Est un champ alpha:K8:1) | ($fields[0].fieldType=Est un texte:K8:3)  // text
+				: ($fields[0].fieldType=Is alpha field:K8:1) | ($fields[0].fieldType=Is text:K8:3)  // text
 					
 					OBJECT SET PLACEHOLDER:C1295(*; "iSearch"; "ex : Dupond")
 					OBJECT SET FILTER:C235(*; "iSearch"; "")
 					
-				: ($fields[0].fieldType=Est une date:K8:7)  // date
+				: ($fields[0].fieldType=Is date:K8:7)  // date
 					
 					OBJECT SET PLACEHOLDER:C1295(*; "iSearch"; "ex : 01/01/2001 | >= 01/01/2000 < 01/02/2000")
 					OBJECT SET FILTER:C235(*; "iSearch"; "&\"0-9;:;>;<;=; ;\"")
 					
-				: ($fields[0].fieldType=Est une heure:K8:8)  // time
+				: ($fields[0].fieldType=Is time:K8:8)  // time
 					
 					OBJECT SET PLACEHOLDER:C1295(*; "iSearch"; "ex : 14:00 | > 14:00 < 14:30")
 					OBJECT SET FILTER:C235(*; "iSearch"; "&\"0-9;/;>;<;=; ;\"")
 					
-				: ($fields[0].fieldType=Est un booléen:K8:9)  // boolean
+				: ($fields[0].fieldType=Is boolean:K8:9)  // boolean
 					
 					OBJECT SET PLACEHOLDER:C1295(*; "iSearch"; "ex : 1 | 0")
 					OBJECT SET FILTER:C235(*; "iSearch"; "&\"0-9\"")
 					
-				: ($fields[0].fieldType=Est un entier:K8:5) | ($fields[0].fieldType=Est un entier long:K8:6) | ($fields[0].fieldType=Est un entier 64 bits:K8:25) | ($fields[0].fieldType=Est un numérique:K8:4) | ($fields[0].fieldType=35)  // number
+				: ($fields[0].fieldType=Is integer:K8:5) | ($fields[0].fieldType=Is longint:K8:6) | ($fields[0].fieldType=Is integer 64 bits:K8:25) | ($fields[0].fieldType=Is real:K8:4) | ($fields[0].fieldType=35)  // number
 					
 					OBJECT SET PLACEHOLDER:C1295(*; "iSearch"; "ex : 45 | > 45 < 50")
 					OBJECT SET FILTER:C235(*; "iSearch"; "&\"0-9;.;,;>;<;=; ;-\"")
 					
-				: ($fields[0].fieldType=Est un objet:K8:27)  // object
+				: ($fields[0].fieldType=Is object:K8:27)  // object
 					
 					OBJECT SET PLACEHOLDER:C1295(*; "iSearch"; "in dev (. Y .)")
 					OBJECT SET FILTER:C235(*; "iSearch"; "")
@@ -444,7 +445,7 @@ Function searchInput($evs : Integer)
 	
 	var $value : Text:=Get edited text:C655
 	
-	var $objCurent : Text:=OBJECT Get name:C1087(Objet avec focus:K67:3)
+	var $objCurent : Text:=OBJECT Get name:C1087(Object with focus:K67:3)
 	
 	var $field : Object
 	
@@ -458,25 +459,25 @@ Function searchInput($evs : Integer)
 	// code
 	
 	Case of 
-		: ((($evs=Sur après frappe clavier:K2:26) | ($evs=Sur gain focus:K2:7) | ($evs=Sur activation:K2:9)) & ($value#"") & ($objCurent="iSearch"))
+		: ((($evs=On After Keystroke:K2:26) | ($evs=On Getting Focus:K2:7) | ($evs=On Activate:K2:9)) & ($value#"") & ($objCurent="iSearch"))
 			
 			// set interface
 			
 			OBJECT SET FORMAT:C236(*; "pSearch"; "Path:/RESOURCES/images/search/searchActiveEdit.svg")
 			
-		: ((($evs=Sur après frappe clavier:K2:26) | ($evs=Sur gain focus:K2:7) | ($evs=Sur activation:K2:9)) & ($value>="") & ($objCurent="iSearch"))
+		: ((($evs=On After Keystroke:K2:26) | ($evs=On Getting Focus:K2:7) | ($evs=On Activate:K2:9)) & ($value>="") & ($objCurent="iSearch"))
 			
 			// set inteface
 			
 			OBJECT SET FORMAT:C236(*; "pSearch"; "Path:/RESOURCES/images/search/searchActive.svg")
 			
-		: ((($evs=Sur perte focus:K2:8) | ($evs=Sur désactivation:K2:10)) & ($value#""))
+		: ((($evs=On Losing Focus:K2:8) | ($evs=On Deactivate:K2:10)) & ($value#""))
 			
 			// set inteface
 			
 			OBJECT SET FORMAT:C236(*; "pSearch"; "Path:/RESOURCES/images/search/searchNormalEdit.svg")
 			
-		: ((($evs=Sur perte focus:K2:8) | ($evs=Sur désactivation:K2:10)) & ($value=""))
+		: ((($evs=On Losing Focus:K2:8) | ($evs=On Deactivate:K2:10)) & ($value=""))
 			
 			// set inteface
 			
@@ -486,32 +487,32 @@ Function searchInput($evs : Integer)
 	
 	// execute
 	
-	If (This:C1470.exFields.query("targeted = :1"; True:C214).length=1) & ($evs=Sur après frappe clavier:K2:26)
+	If (This:C1470.exFields.query("targeted = :1"; True:C214).length=1) & ($evs=On After Keystroke:K2:26)
 		
 		$field:=This:C1470.exFields.query("targeted = :1"; True:C214)[0]
 		
 		Case of 
-			: ($field.fieldType=Est un champ alpha:K8:1) | ($field.fieldType=Est un texte:K8:3)
+			: ($field.fieldType=Is alpha field:K8:1) | ($field.fieldType=Is text:K8:3)
 				
 				This:C1470.exSelection:=This:C1470.exDataClass.query($field.name+" = :1"; "@"+$value+"@")
 				
-			: ($field.fieldType=Est une date:K8:7)
+			: ($field.fieldType=Is date:K8:7)
 				
 				This:C1470.exSelection:=This:C1470.exDataClass.query($field.name+" = :1"; Date:C102($value))
 				
-			: ($field.fieldType=Est une heure:K8:8)
+			: ($field.fieldType=Is time:K8:8)
 				
 				This:C1470.exSelection:=This:C1470.exDataClass.query($field.name+" = :1"; Time:C179($value))
 				
-			: ($field.fieldType=Est un booléen:K8:9)
+			: ($field.fieldType=Is boolean:K8:9)
 				
 				This:C1470.exSelection:=This:C1470.exDataClass.query($field.name+" = :1"; (($value="1") | ($value="true") | ($value="vrai")))
 				
-			: ($field.fieldType=Est un entier:K8:5) | ($field.fieldType=Est un entier long:K8:6) | ($field.fieldType=Est un entier 64 bits:K8:25) | ($field.fieldType=Est un numérique:K8:4) | ($field.fieldType=35)
+			: ($field.fieldType=Is integer:K8:5) | ($field.fieldType=Is longint:K8:6) | ($field.fieldType=Is integer 64 bits:K8:25) | ($field.fieldType=Is real:K8:4) | ($field.fieldType=35)
 				
 				// found pattern
 				
-				$pattern:=Split string:C1554($value; " "; sk ignorer chaîne vide:K86:1)
+				$pattern:=Split string:C1554($value; " "; sk ignore empty strings:K86:1)
 				If ($pattern.length>1)
 					
 					// init field targeted
@@ -563,11 +564,11 @@ Function searchInput($evs : Integer)
 				End if 
 				
 				
-			: ($field.fieldType=Est un BLOB:K8:12)
+			: ($field.fieldType=Is BLOB:K8:12)
 				
-			: ($field.fieldType=Est une image:K8:10)
+			: ($field.fieldType=Is picture:K8:10)
 				
-			: ($field.fieldType=Est un objet:K8:27)
+			: ($field.fieldType=Is object:K8:27)
 				
 		End case 
 		
@@ -598,11 +599,11 @@ Function edit()
 		// custom event
 		
 		Case of 
-			: ($evs=Sur nouvelle sélection:K2:29)
+			: ($evs=On Selection Change:K2:29)
 				
 				This:C1470.update()
 				
-			: ($evs=Sur double clic:K2:5)
+			: ($evs=On Double Clicked:K2:5)
 				
 				If (This:C1470.exUserSet.length>0)
 					
@@ -614,7 +615,7 @@ Function edit()
 	
 Function add()
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		If (cs:C1710.Lib_Mod2.me.isClassicMode())
 			
@@ -638,7 +639,7 @@ Function deleteSet()
 		
 		// event
 		
-		If (FORM Event:C1606.code=Sur clic:K2:4) & (Records in set:C195("UserSet")>0)
+		If (FORM Event:C1606.code=On Clicked:K2:4) & (Records in set:C195("UserSet")>0)
 			
 			If (Records in set:C195("UserSet")=1)
 				
@@ -674,7 +675,7 @@ Function deleteSet()
 		
 		// event
 		
-		If (FORM Event:C1606.code=Sur clic:K2:4) & (This:C1470.exUserSet.length>0)
+		If (FORM Event:C1606.code=On Clicked:K2:4) & (This:C1470.exUserSet.length>0)
 			
 			If (This:C1470.exUserSet.length=1)
 				
@@ -723,7 +724,7 @@ Function selectAll()
 	
 	var $evs : Integer:=FORM Event:C1606.code
 	
-	If ($evs=Sur clic:K2:4) | ($evs=Sur chargement:K2:1) | (Count parameters:C259=0)
+	If ($evs=On Clicked:K2:4) | ($evs=On Load:K2:1) | (Count parameters:C259=0)
 		
 		If (cs:C1710.Lib_Mod2.me.isClassicMode())
 			
@@ -743,7 +744,7 @@ Function selectAll()
 	
 Function selectSub()
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		If (cs:C1710.Lib_Mod2.me.isClassicMode())
 			
@@ -763,7 +764,7 @@ Function selectSub()
 	
 Function orderBy()
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		If (cs:C1710.Lib_Mod2.me.isClassicMode())
 			
@@ -778,7 +779,7 @@ Function orderBy()
 	
 Function report()
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		If (cs:C1710.Lib_Mod2.me.isClassicMode())
 			
@@ -794,7 +795,7 @@ Function report()
 	
 Function query()
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		// declare var
 		
@@ -841,7 +842,7 @@ Function query()
 	
 Function print()
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		If (cs:C1710.Lib_Mod2.me.isClassicMode())
 			
@@ -859,7 +860,7 @@ Function print()
 	
 Function label()
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		If (cs:C1710.Lib_Mod2.me.isClassicMode())
 			
@@ -883,7 +884,7 @@ Function export()
 	
 	// events
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		// pre build export 
 		
@@ -902,43 +903,43 @@ Function export()
 			For each ($field; This:C1470.exFields)
 				
 				Case of 
-					: ($field.fieldType=Est un champ alpha:K8:1)
+					: ($field.fieldType=Is alpha field:K8:1)
 						$exportType:="alpha"
 						
-					: ($field.fieldType=Est un texte:K8:3)
+					: ($field.fieldType=Is text:K8:3)
 						$exportType:="text"
 						
-					: ($field.fieldType=Est une date:K8:7)
+					: ($field.fieldType=Is date:K8:7)
 						$exportType:="Date"
 						
-					: ($field.fieldType=Est une heure:K8:8)
+					: ($field.fieldType=Is time:K8:8)
 						$exportType:="time"
 						
-					: ($field.fieldType=Est un booléen:K8:9)
+					: ($field.fieldType=Is boolean:K8:9)
 						$exportType:="boolean"
 						
-					: ($field.fieldType=Est un entier:K8:5)
+					: ($field.fieldType=Is integer:K8:5)
 						$exportType:="int16"
 						
-					: ($field.fieldType=Est un entier long:K8:6)
+					: ($field.fieldType=Is longint:K8:6)
 						$exportType:="int32"
 						
-					: ($field.fieldType=Est un entier 64 bits:K8:25)
+					: ($field.fieldType=Is integer 64 bits:K8:25)
 						$exportType:="int64"
 						
-					: ($field.fieldType=Est un numérique:K8:4)
+					: ($field.fieldType=Is real:K8:4)
 						$exportType:="real"
 						
 					: ($field.fieldType=35)
 						$exportType:="float"
 						
-					: ($field.fieldType=Est un BLOB:K8:12)
+					: ($field.fieldType=Is BLOB:K8:12)
 						$exportType:="blob"
 						
-					: ($field.fieldType=Est une image:K8:10)
+					: ($field.fieldType=Is picture:K8:10)
 						$exportType:="picture"
 						
-					: ($field.fieldType=Est un objet:K8:27)
+					: ($field.fieldType=Is object:K8:27)
 						$exportType:="object"
 						
 				End case 
@@ -972,7 +973,7 @@ Function first()
 	
 	// go to first entity
 	
-	LISTBOX SELECT ROW:C912(*; "xDataStore"; 1; lk remplacer sélection:K53:1)
+	LISTBOX SELECT ROW:C912(*; "xDataStore"; 1; lk replace selection:K53:1)
 	
 	This:C1470.update()
 	
@@ -988,7 +989,7 @@ Function previous()
 		$index:=0
 	End if 
 	
-	LISTBOX SELECT ROW:C912(*; "xDataStore"; $index+1; lk remplacer sélection:K53:1)
+	LISTBOX SELECT ROW:C912(*; "xDataStore"; $index+1; lk replace selection:K53:1)
 	
 	This:C1470.update()
 	
@@ -1004,19 +1005,19 @@ Function next()
 		$index:=This:C1470.exSelection.length
 	End if 
 	
-	LISTBOX SELECT ROW:C912(*; "xDataStore"; $index+1; lk remplacer sélection:K53:1)
+	LISTBOX SELECT ROW:C912(*; "xDataStore"; $index+1; lk replace selection:K53:1)
 	
 	This:C1470.update()
 	
 Function last()
 	
-	LISTBOX SELECT ROW:C912(*; "xDataStore"; This:C1470.exSelection.length; lk remplacer sélection:K53:1)
+	LISTBOX SELECT ROW:C912(*; "xDataStore"; This:C1470.exSelection.length; lk replace selection:K53:1)
 	
 	This:C1470.update()
 	
 Function delete()
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		If (This:C1470.exEntity.drop().success=True:C214)
 			
@@ -1030,7 +1031,7 @@ Function delete()
 	
 Function cancel()
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		This:C1470.exEntity:=New object:C1471()
 		
@@ -1042,7 +1043,7 @@ Function cancel()
 	
 Function apply()->$status : Object
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		// save common
 		
@@ -1065,7 +1066,7 @@ Function valid()
 	
 	// events
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		// save common
 		
@@ -1085,7 +1086,7 @@ Function valid()
 			
 			GOTO OBJECT:C206(*; "xDataStore")
 			OBJECT SET SCROLL POSITION:C906(*; "xDataStore"; $index)
-			LISTBOX SELECT ROW:C912(*; "xDataStore"; $index; lk remplacer sélection:K53:1)
+			LISTBOX SELECT ROW:C912(*; "xDataStore"; $index; lk replace selection:K53:1)
 			
 		Else 
 			

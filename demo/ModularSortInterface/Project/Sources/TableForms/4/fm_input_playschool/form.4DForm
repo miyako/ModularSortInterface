@@ -40,7 +40,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[SERVICES:4]ID:1",
-					"class": "fm_input_ro"
+					"class": "fm_input_ro",
+					"multiline": "no"
 				},
 				"tField_4_2": {
 					"type": "text",
@@ -58,7 +59,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[SERVICES:4]Name:2",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"tField_4_3": {
 					"type": "text",
@@ -77,7 +79,8 @@
 					"height": 30,
 					"dataSource": "[SERVICES:4]UnitPrice:3",
 					"class": "fm_input",
-					"dataSourceTypeHint": "number"
+					"dataSourceTypeHint": "number",
+					"multiline": "no"
 				},
 				"tField_4_4": {
 					"type": "text",
@@ -96,7 +99,8 @@
 					"height": 30,
 					"dataSource": "[SERVICES:4]VATRate:4",
 					"class": "fm_input",
-					"dataSourceTypeHint": "number"
+					"dataSourceTypeHint": "number",
+					"multiline": "no"
 				},
 				"iField_4_1_Orda": {
 					"type": "input",
@@ -105,7 +109,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.ID",
-					"class": "fm_input_ro"
+					"class": "fm_input_ro",
+					"multiline": "no"
 				},
 				"iField_4_2_Orda": {
 					"type": "input",
@@ -114,7 +119,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.Name",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"iField_4_3_Orda": {
 					"type": "input",
@@ -124,7 +130,8 @@
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.UnitPrice",
 					"class": "fm_input",
-					"dataSourceTypeHint": "number"
+					"dataSourceTypeHint": "number",
+					"multiline": "no"
 				},
 				"iField_4_4_Orda": {
 					"type": "input",
@@ -134,7 +141,8 @@
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.VATRate",
 					"class": "fm_input",
-					"dataSourceTypeHint": "number"
+					"dataSourceTypeHint": "number",
+					"multiline": "no"
 				}
 			}
 		}

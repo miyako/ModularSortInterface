@@ -40,7 +40,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[TECHNICIANS:8]ID:1",
-					"class": "fm_input_ro"
+					"class": "fm_input_ro",
+					"multiline": "no"
 				},
 				"tField_8_2": {
 					"type": "text",
@@ -58,7 +59,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[TECHNICIANS:8]Name:2",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"iField_8_1_Orda": {
 					"type": "input",
@@ -67,7 +69,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.ID",
-					"class": "fm_input_ro"
+					"class": "fm_input_ro",
+					"multiline": "no"
 				},
 				"iField_8_2_Orda": {
 					"type": "input",
@@ -76,7 +79,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.Name",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				}
 			}
 		}

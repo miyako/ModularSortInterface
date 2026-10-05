@@ -14,7 +14,7 @@ Function changeTable($store : Variant; $mode : Text)
 	
 	// init target
 	
-	If (Value type:C1509($store)=Est un pointeur:K8:14)
+	If (Value type:C1509($store)=Is pointer:K8:14)
 		
 		$tableName:=Table name:C256($store)
 		$tableId:=Table:C252($store)
@@ -58,7 +58,7 @@ Function changeTable($store : Variant; $mode : Text)
 	// init fields
 	
 	For each ($field; Form:C1466.dataExplore.dataClass)
-		If (Form:C1466.dataExplore.dataClass[$field].kind="storage") & (Form:C1466.dataExplore.dataClass[$field].fieldType#Est un BLOB:K8:12)
+		If (Form:C1466.dataExplore.dataClass[$field].kind="storage") & (Form:C1466.dataExplore.dataClass[$field].fieldType#Is BLOB:K8:12)
 			
 			// increment column index
 			
@@ -81,7 +81,7 @@ Function drawColumns($fieldNames : Text)
 	
 	// declare var
 	
-	var $fieldFilters : Collection:=Split string:C1554($fieldNames; ";"; sk ignorer chaîne vide:K86:1)
+	var $fieldFilters : Collection:=Split string:C1554($fieldNames; ";"; sk ignore empty strings:K86:1)
 	
 	var $f : Integer
 	
@@ -98,7 +98,7 @@ Function drawColumns($fieldNames : Text)
 	
 	OBJECT SET TITLE:C194(*; "tListTableName"; Localized string:C991("tTable"+String:C10(Form:C1466.dataExplore.dataClassId)))
 	
-	OBJECT Get pointer:C1124(Objet nommé:K67:5; "iMode")->:="Mode · <span style=\"color:orange;font-weight:bold\">"+Form:C1466.mode+"</span>"
+	OBJECT Get pointer:C1124(Object named:K67:5; "iMode")->:="Mode · <span style=\"color:orange;font-weight:bold\">"+Form:C1466.mode+"</span>"
 	
 	OBJECT SET VISIBLE:C603(*; "xListBoxClassic"; (Form:C1466.mode="Classic"))
 	OBJECT SET VISIBLE:C603(*; "xListBoxOrda"; (Form:C1466.mode="Orda"))
@@ -109,8 +109,8 @@ Function drawColumns($fieldNames : Text)
 	
 	// update table list
 	
-	OBJECT SET RGB COLORS:C628(*; "rNav@"; Coul fond transparent:K23:10; 0x00E0EFFF)
-	OBJECT SET RGB COLORS:C628(*; "rNav"+String:C10(Form:C1466.dataExplore.dataClassId); Coul fond transparent:K23:10; 0xCC44)
+	OBJECT SET RGB COLORS:C628(*; "rNav@"; Background color none:K23:10; 0x00E0EFFF)
+	OBJECT SET RGB COLORS:C628(*; "rNav"+String:C10(Form:C1466.dataExplore.dataClassId); Background color none:K23:10; 0xCC44)
 	
 	// loop on field
 	
@@ -143,11 +143,13 @@ Function drawColumns($fieldNames : Text)
 			
 			OBJECT SET FONT:C164(*; $headerName; "Segoe UI Variable")
 			OBJECT SET FONT SIZE:C165(*; $headerName; 12)
-			OBJECT SET RGB COLORS:C628(*; "$headerName"; 0x003C3C43; Coul arrière plan:K23:2)
+			OBJECT SET RGB COLORS:C628(*; $headerName; 0x003C3C43; Background color:K23:2)
 			
 			OBJECT SET FONT:C164(*; $columnName; "Segoe UI Variable")
 			OBJECT SET FONT SIZE:C165(*; $columnName; 13)
-			OBJECT SET RGB COLORS:C628(*; "$headerName"; 0x001D1D1F; Coul arrière plan:K23:2)
+			OBJECT SET RGB COLORS:C628(*; $headerName; 0x001D1D1F; Background color:K23:2)
+			
+			LISTBOX SET PROPERTY:C1440(*; $columnName; lk truncate:K53:37; lk without ellipsis:K53:64)
 			
 		Else 
 			
@@ -161,7 +163,7 @@ Function drawColumns($fieldNames : Text)
 		
 		OBJECT SET TITLE:C194(*; $headerName; "  "+Form:C1466.dataExplore.fields[$listBoxColumnIdx].name)
 		OBJECT SET FORMAT:C236(*; $headerName; "#images/internals/Icon_Field_"+String:C10(Form:C1466.dataExplore.fields[$listBoxColumnIdx].fieldType; "00")+".svg;1")
-		OBJECT SET RGB COLORS:C628(*; $headerName; 0x0633; Coul arrière plan:K23:2)
+		OBJECT SET RGB COLORS:C628(*; $headerName; 0x0633; Background color:K23:2)
 		
 		// cleaner
 		
@@ -191,7 +193,7 @@ Function bExport()
 	
 	// event
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		// pre build export 
 		
@@ -210,43 +212,43 @@ Function bExport()
 			For each ($field; Form:C1466.dataExplore.fields)
 				
 				Case of 
-					: ($field.fieldType=Est un champ alpha:K8:1)
+					: ($field.fieldType=Is alpha field:K8:1)
 						$exportType:="alpha"
 						
-					: ($field.fieldType=Est un texte:K8:3)
+					: ($field.fieldType=Is text:K8:3)
 						$exportType:="text"
 						
-					: ($field.fieldType=Est une date:K8:7)
+					: ($field.fieldType=Is date:K8:7)
 						$exportType:="Date"
 						
-					: ($field.fieldType=Est une heure:K8:8)
+					: ($field.fieldType=Is time:K8:8)
 						$exportType:="time"
 						
-					: ($field.fieldType=Est un booléen:K8:9)
+					: ($field.fieldType=Is boolean:K8:9)
 						$exportType:="boolean"
 						
-					: ($field.fieldType=Est un entier:K8:5)
+					: ($field.fieldType=Is integer:K8:5)
 						$exportType:="int16"
 						
-					: ($field.fieldType=Est un entier long:K8:6)
+					: ($field.fieldType=Is longint:K8:6)
 						$exportType:="int32"
 						
-					: ($field.fieldType=Est un entier 64 bits:K8:25)
+					: ($field.fieldType=Is integer 64 bits:K8:25)
 						$exportType:="int64"
 						
-					: ($field.fieldType=Est un numérique:K8:4)
+					: ($field.fieldType=Is real:K8:4)
 						$exportType:="real"
 						
 					: ($field.fieldType=35)
 						$exportType:="float"
 						
-					: ($field.fieldType=Est un BLOB:K8:12)
+					: ($field.fieldType=Is BLOB:K8:12)
 						$exportType:="blob"
 						
-					: ($field.fieldType=Est une image:K8:10)
+					: ($field.fieldType=Is picture:K8:10)
 						$exportType:="picture"
 						
-					: ($field.fieldType=Est un objet:K8:27)
+					: ($field.fieldType=Is object:K8:27)
 						$exportType:="object"
 						
 				End case 
@@ -273,7 +275,7 @@ Function bPrint()
 	
 	// event
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		If (Form:C1466.mode="Classic")
 			
@@ -289,7 +291,7 @@ Function bQuery()
 	
 	// event
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		If (Form:C1466.mode="Classic")
 			
@@ -305,7 +307,7 @@ Function bLabel()
 	
 	// event
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		If (Form:C1466.mode="Classic")
 			
@@ -321,7 +323,7 @@ Function bReport()
 	
 	// event
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		If (Form:C1466.mode="Classic")
 			
@@ -337,7 +339,7 @@ Function bListOrder()
 	
 	// event
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		If (Form:C1466.mode="Classic")
 			
@@ -352,7 +354,7 @@ Function bListDelete()
 	
 	// event
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		If (Form:C1466.mode="Classic")
 			
@@ -416,7 +418,7 @@ Function bListAdd()
 	
 	// event
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		If (Form:C1466.mode="Classic")
 			
@@ -447,14 +449,14 @@ Function bListEdit()
 	// event
 	
 	Case of 
-		: ($evs=Sur nouvelle sélection:K2:29)
+		: ($evs=On Selection Change:K2:29)
 			
 			MOUSE POSITION:C468($mouseX; $mouseY; $mouseB)
 			
 			LISTBOX GET CELL POSITION:C971(*; "xListBox"+Form:C1466.mode; $mouseX; $mouseY; $column; $line)
 			Form:C1466.dataExplore.position:=$line
 			
-		: ($evs=Sur double clic:K2:5) & (Form:C1466.mode="Classic")
+		: ($evs=On Double Clicked:K2:5) & (Form:C1466.mode="Classic")
 			
 			GOTO SELECTED RECORD:C245($table->; Form:C1466.dataExplore.position)
 			
@@ -485,7 +487,7 @@ Function bListEdit()
 			This:C1470.helperNavMenu(False:C215)
 			This:C1470.update()
 			
-		: ($evs=Sur double clic:K2:5) & (Form:C1466.mode="Orda")
+		: ($evs=On Double Clicked:K2:5) & (Form:C1466.mode="Orda")
 			
 			Case of 
 				: (Form:C1466.dataExplore.selection.length<2)
@@ -520,7 +522,7 @@ Function bRecFirst()
 	
 	// event
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		If (Form:C1466.mode="Classic")
 			
@@ -535,7 +537,7 @@ Function bRecFirst()
 			// Orda
 			
 			Form:C1466.dataExplore.position:=1
-			LISTBOX SELECT ROWS:C1715(*; "xListBoxOrda"; Form:C1466.dataExplore.dataClass.query("ID = :1"; Form:C1466.dataExplore.selection[0].ID); lk remplacer sélection:K53:1)
+			LISTBOX SELECT ROWS:C1715(*; "xListBoxOrda"; Form:C1466.dataExplore.dataClass.query("ID = :1"; Form:C1466.dataExplore.selection[0].ID); lk replace selection:K53:1)
 		End if 
 		
 		// update go buttons
@@ -551,7 +553,7 @@ Function bRecLast()
 	
 	// event
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		If (Form:C1466.mode="Classic")
 			
@@ -566,7 +568,7 @@ Function bRecLast()
 			// Orda
 			
 			Form:C1466.dataExplore.position:=Form:C1466.dataExplore.selection.length
-			LISTBOX SELECT ROWS:C1715(*; "xListBoxOrda"; Form:C1466.dataExplore.dataClass.query("ID = :1"; Form:C1466.dataExplore.selection[Form:C1466.dataExplore.selection.length-1].ID); lk remplacer sélection:K53:1)
+			LISTBOX SELECT ROWS:C1715(*; "xListBoxOrda"; Form:C1466.dataExplore.dataClass.query("ID = :1"; Form:C1466.dataExplore.selection[Form:C1466.dataExplore.selection.length-1].ID); lk replace selection:K53:1)
 		End if 
 		
 		// update go buttons
@@ -582,7 +584,7 @@ Function bRecPrevious()
 	
 	// event
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		If (Form:C1466.mode="Classic")
 			
@@ -616,7 +618,7 @@ Function bRecPrevious()
 			If ((Form:C1466.dataExplore.position-1)>0)
 				
 				Form:C1466.dataExplore.position:=Form:C1466.dataExplore.position-1
-				LISTBOX SELECT ROWS:C1715(*; "xListBoxOrda"; Form:C1466.dataExplore.dataClass.query("ID = :1"; Form:C1466.dataExplore.selection[Form:C1466.dataExplore.position-1].ID); lk remplacer sélection:K53:1)
+				LISTBOX SELECT ROWS:C1715(*; "xListBoxOrda"; Form:C1466.dataExplore.dataClass.query("ID = :1"; Form:C1466.dataExplore.selection[Form:C1466.dataExplore.position-1].ID); lk replace selection:K53:1)
 				
 				OBJECT SET ENABLED:C1123(*; "bGoFirst"; True:C214)
 				OBJECT SET ENABLED:C1123(*; "bGoPrevious"; True:C214)
@@ -624,7 +626,7 @@ Function bRecPrevious()
 			Else 
 				
 				Form:C1466.dataExplore.position:=1
-				LISTBOX SELECT ROWS:C1715(*; "xListBoxOrda"; Form:C1466.dataExplore.dataClass.query("ID = :1"; Form:C1466.dataExplore.selection[0].ID); lk remplacer sélection:K53:1)
+				LISTBOX SELECT ROWS:C1715(*; "xListBoxOrda"; Form:C1466.dataExplore.dataClass.query("ID = :1"; Form:C1466.dataExplore.selection[0].ID); lk replace selection:K53:1)
 				
 				OBJECT SET ENABLED:C1123(*; "bGoFirst"; False:C215)
 				OBJECT SET ENABLED:C1123(*; "bGoPrevious"; False:C215)
@@ -643,7 +645,7 @@ Function bRecNext()
 	
 	// event
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		If (Form:C1466.mode="Classic")
 			
@@ -676,7 +678,7 @@ Function bRecNext()
 			
 			If ((Form:C1466.dataExplore.position+1)<Form:C1466.dataExplore.selection.length)
 				
-				LISTBOX SELECT ROWS:C1715(*; "xListBoxOrda"; Form:C1466.dataExplore.dataClass.query("ID = :1"; Form:C1466.dataExplore.selection[Form:C1466.dataExplore.position].ID); lk remplacer sélection:K53:1)
+				LISTBOX SELECT ROWS:C1715(*; "xListBoxOrda"; Form:C1466.dataExplore.dataClass.query("ID = :1"; Form:C1466.dataExplore.selection[Form:C1466.dataExplore.position].ID); lk replace selection:K53:1)
 				Form:C1466.dataExplore.position:=Form:C1466.dataExplore.position+1
 				
 				OBJECT SET ENABLED:C1123(*; "bGoNext"; True:C214)
@@ -685,7 +687,7 @@ Function bRecNext()
 			Else 
 				
 				Form:C1466.dataExplore.position:=Form:C1466.dataExplore.selection.length
-				LISTBOX SELECT ROWS:C1715(*; "xListBoxOrda"; Form:C1466.dataExplore.dataClass.query("ID = :1"; Form:C1466.dataExplore.selection[Form:C1466.dataExplore.selection.length-1].ID); lk remplacer sélection:K53:1)
+				LISTBOX SELECT ROWS:C1715(*; "xListBoxOrda"; Form:C1466.dataExplore.dataClass.query("ID = :1"; Form:C1466.dataExplore.selection[Form:C1466.dataExplore.selection.length-1].ID); lk replace selection:K53:1)
 				
 				OBJECT SET ENABLED:C1123(*; "bGoNext"; False:C215)
 				OBJECT SET ENABLED:C1123(*; "bGoLast"; False:C215)
@@ -756,7 +758,7 @@ Function bRecCancel()
 	
 	// event
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		This:C1470.helperNavMenu(True:C214)
 		
@@ -770,7 +772,7 @@ Function bRecValid()
 	
 	// event
 	
-	If (FORM Event:C1606.code=Sur clic:K2:4)
+	If (FORM Event:C1606.code=On Clicked:K2:4)
 		
 		If (Form:C1466.mode="Classic")
 			
@@ -795,7 +797,7 @@ Function bRecValid()
 				var $id : Text:=Form:C1466.dataExplore.entity.ID
 				
 				Form:C1466.dataExplore.selection:=Form:C1466.dataExplore.dataClass.all()
-				LISTBOX SELECT ROWS:C1715(*; "xListBoxOrda"; Form:C1466.dataExplore.dataClass.query("ID = :1"; $id); lk remplacer sélection:K53:1)
+				LISTBOX SELECT ROWS:C1715(*; "xListBoxOrda"; Form:C1466.dataExplore.dataClass.query("ID = :1"; $id); lk replace selection:K53:1)
 				
 				This:C1470.helperNavMenu(True:C214)
 			Else 

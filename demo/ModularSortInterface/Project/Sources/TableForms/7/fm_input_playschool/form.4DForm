@@ -40,7 +40,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[INVOICE_LINES:7]ID:1",
-					"class": "fm_input_ro"
+					"class": "fm_input_ro",
+					"multiline": "no"
 				},
 				"tField_7_2": {
 					"type": "text",
@@ -59,7 +60,8 @@
 					"height": 30,
 					"dataSource": "[INVOICE_LINES:7]ItemType:2",
 					"class": "fm_input",
-					"dataSourceTypeHint": "boolean"
+					"dataSourceTypeHint": "boolean",
+					"multiline": "no"
 				},
 				"tField_7_3": {
 					"type": "text",
@@ -77,7 +79,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[INVOICE_LINES:7]ID_Invoice:3",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"tField_7_4": {
 					"type": "text",
@@ -95,7 +98,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[INVOICE_LINES:7]ID_Intervention:4",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"tField_7_5": {
 					"type": "text",
@@ -114,7 +118,8 @@
 					"height": 30,
 					"dataSource": "[INVOICE_LINES:7]Quantity:5",
 					"class": "fm_input",
-					"dataSourceTypeHint": "integer"
+					"dataSourceTypeHint": "integer",
+					"multiline": "no"
 				},
 				"tField_7_6": {
 					"type": "text",
@@ -133,7 +138,8 @@
 					"height": 30,
 					"dataSource": "[INVOICE_LINES:7]UnitPrice:6",
 					"class": "fm_input",
-					"dataSourceTypeHint": "number"
+					"dataSourceTypeHint": "number",
+					"multiline": "no"
 				},
 				"tField_7_7": {
 					"type": "text",
@@ -152,7 +158,8 @@
 					"height": 30,
 					"dataSource": "[INVOICE_LINES:7]VATRate:7",
 					"class": "fm_input",
-					"dataSourceTypeHint": "number"
+					"dataSourceTypeHint": "number",
+					"multiline": "no"
 				},
 				"tField_7_8": {
 					"type": "text",
@@ -171,7 +178,8 @@
 					"height": 30,
 					"dataSource": "[INVOICE_LINES:7]LineTotal:8",
 					"class": "fm_input",
-					"dataSourceTypeHint": "number"
+					"dataSourceTypeHint": "number",
+					"multiline": "no"
 				},
 				"tField_7_9": {
 					"type": "text",
@@ -189,7 +197,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[INVOICE_LINES:7]ID_Parts:9",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"iField_7_1_Orda": {
 					"type": "input",
@@ -198,7 +207,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.ID",
-					"class": "fm_input_ro"
+					"class": "fm_input_ro",
+					"multiline": "no"
 				},
 				"iField_7_2_Orda": {
 					"type": "input",
@@ -208,7 +218,8 @@
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.ItemType",
 					"class": "fm_input",
-					"dataSourceTypeHint": "boolean"
+					"dataSourceTypeHint": "boolean",
+					"multiline": "no"
 				},
 				"iField_7_3_Orda": {
 					"type": "input",
@@ -217,7 +228,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.ID_Invoice",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"iField_7_4_Orda": {
 					"type": "input",
@@ -226,7 +238,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.ID_Intervention",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"iField_7_5_Orda": {
 					"type": "input",
@@ -236,7 +249,8 @@
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.Quantity",
 					"class": "fm_input",
-					"dataSourceTypeHint": "integer"
+					"dataSourceTypeHint": "integer",
+					"multiline": "no"
 				},
 				"iField_7_6_Orda": {
 					"type": "input",
@@ -246,7 +260,8 @@
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.UnitPrice",
 					"class": "fm_input",
-					"dataSourceTypeHint": "number"
+					"dataSourceTypeHint": "number",
+					"multiline": "no"
 				},
 				"iField_7_7_Orda": {
 					"type": "input",
@@ -256,7 +271,8 @@
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.VATRate",
 					"class": "fm_input",
-					"dataSourceTypeHint": "number"
+					"dataSourceTypeHint": "number",
+					"multiline": "no"
 				},
 				"iField_7_8_Orda": {
 					"type": "input",
@@ -266,7 +282,8 @@
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.LineTotal",
 					"class": "fm_input",
-					"dataSourceTypeHint": "number"
+					"dataSourceTypeHint": "number",
+					"multiline": "no"
 				},
 				"iField_7_9_Orda": {
 					"type": "input",
@@ -275,7 +292,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.ID_Parts",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				}
 			}
 		}

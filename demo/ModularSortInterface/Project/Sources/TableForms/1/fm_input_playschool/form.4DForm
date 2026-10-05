@@ -40,7 +40,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[CUSTOMERS:1]ID:1",
-					"class": "fm_input_ro"
+					"class": "fm_input_ro",
+					"multiline": "no"
 				},
 				"tField_1_2": {
 					"type": "text",
@@ -58,7 +59,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[CUSTOMERS:1]LastName:2",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"tField_1_3": {
 					"type": "text",
@@ -76,7 +78,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[CUSTOMERS:1]FirstName:3",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"tField_1_4": {
 					"type": "text",
@@ -94,7 +97,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[CUSTOMERS:1]Phone:4",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"tField_1_5": {
 					"type": "text",
@@ -112,7 +116,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[CUSTOMERS:1]Email:5",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"tField_1_6": {
 					"type": "text",
@@ -130,7 +135,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[CUSTOMERS:1]Address:6",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"iField_1_1_Orda": {
 					"type": "input",
@@ -139,7 +145,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.ID",
-					"class": "fm_input_ro"
+					"class": "fm_input_ro",
+					"multiline": "no"
 				},
 				"iField_1_2_Orda": {
 					"type": "input",
@@ -148,7 +155,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.LastName",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"iField_1_3_Orda": {
 					"type": "input",
@@ -157,7 +165,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.FirstName",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"iField_1_4_Orda": {
 					"type": "input",
@@ -166,7 +175,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.Phone",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"iField_1_5_Orda": {
 					"type": "input",
@@ -175,7 +185,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.Email",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"iField_1_6_Orda": {
 					"type": "input",
@@ -184,7 +195,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.Address",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				}
 			}
 		}

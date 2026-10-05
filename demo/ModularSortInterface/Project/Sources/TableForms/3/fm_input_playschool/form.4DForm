@@ -40,7 +40,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[INTERVENTIONS:3]ID:1",
-					"class": "fm_input_ro"
+					"class": "fm_input_ro",
+					"multiline": "no"
 				},
 				"tField_3_2": {
 					"type": "text",
@@ -59,7 +60,8 @@
 					"height": 30,
 					"dataSource": "[INTERVENTIONS:3]DateStart:2",
 					"class": "fm_input",
-					"dataSourceTypeHint": "date"
+					"dataSourceTypeHint": "date",
+					"multiline": "no"
 				},
 				"tField_3_3": {
 					"type": "text",
@@ -77,7 +79,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[INTERVENTIONS:3]Description:3",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"tField_3_4": {
 					"type": "text",
@@ -96,7 +99,8 @@
 					"height": 30,
 					"dataSource": "[INTERVENTIONS:3]Mileage:4",
 					"class": "fm_input",
-					"dataSourceTypeHint": "integer"
+					"dataSourceTypeHint": "integer",
+					"multiline": "no"
 				},
 				"tField_3_5": {
 					"type": "text",
@@ -115,7 +119,8 @@
 					"height": 30,
 					"dataSource": "[INTERVENTIONS:3]Status:5",
 					"class": "fm_input",
-					"dataSourceTypeHint": "integer"
+					"dataSourceTypeHint": "integer",
+					"multiline": "no"
 				},
 				"tField_3_6": {
 					"type": "text",
@@ -133,7 +138,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[INTERVENTIONS:3]ID_Vehicle:6",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"tField_3_7": {
 					"type": "text",
@@ -152,7 +158,8 @@
 					"height": 30,
 					"dataSource": "[INTERVENTIONS:3]DateEnd:7",
 					"class": "fm_input",
-					"dataSourceTypeHint": "date"
+					"dataSourceTypeHint": "date",
+					"multiline": "no"
 				},
 				"tField_3_8": {
 					"type": "text",
@@ -171,7 +178,8 @@
 					"height": 30,
 					"dataSource": "[INTERVENTIONS:3]TimeStart:8",
 					"class": "fm_input",
-					"dataSourceTypeHint": "time"
+					"dataSourceTypeHint": "time",
+					"multiline": "no"
 				},
 				"tField_3_9": {
 					"type": "text",
@@ -190,7 +198,8 @@
 					"height": 30,
 					"dataSource": "[INTERVENTIONS:3]TimeEnd:9",
 					"class": "fm_input",
-					"dataSourceTypeHint": "time"
+					"dataSourceTypeHint": "time",
+					"multiline": "no"
 				},
 				"tField_3_10": {
 					"type": "text",
@@ -208,7 +217,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[INTERVENTIONS:3]ID_Technician:10",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"iField_3_1_Orda": {
 					"type": "input",
@@ -217,7 +227,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.ID",
-					"class": "fm_input_ro"
+					"class": "fm_input_ro",
+					"multiline": "no"
 				},
 				"iField_3_2_Orda": {
 					"type": "input",
@@ -227,7 +238,8 @@
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.DateStart",
 					"class": "fm_input",
-					"dataSourceTypeHint": "date"
+					"dataSourceTypeHint": "date",
+					"multiline": "no"
 				},
 				"iField_3_3_Orda": {
 					"type": "input",
@@ -236,7 +248,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.Description",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"iField_3_4_Orda": {
 					"type": "input",
@@ -246,7 +259,8 @@
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.Mileage",
 					"class": "fm_input",
-					"dataSourceTypeHint": "integer"
+					"dataSourceTypeHint": "integer",
+					"multiline": "no"
 				},
 				"iField_3_5_Orda": {
 					"type": "input",
@@ -256,7 +270,8 @@
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.Status",
 					"class": "fm_input",
-					"dataSourceTypeHint": "integer"
+					"dataSourceTypeHint": "integer",
+					"multiline": "no"
 				},
 				"iField_3_6_Orda": {
 					"type": "input",
@@ -265,7 +280,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.ID_Vehicle",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"iField_3_7_Orda": {
 					"type": "input",
@@ -275,7 +291,8 @@
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.DateEnd",
 					"class": "fm_input",
-					"dataSourceTypeHint": "date"
+					"dataSourceTypeHint": "date",
+					"multiline": "no"
 				},
 				"iField_3_8_Orda": {
 					"type": "input",
@@ -285,7 +302,8 @@
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.TimeStart",
 					"class": "fm_input",
-					"dataSourceTypeHint": "time"
+					"dataSourceTypeHint": "time",
+					"multiline": "no"
 				},
 				"iField_3_9_Orda": {
 					"type": "input",
@@ -295,7 +313,8 @@
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.TimeEnd",
 					"class": "fm_input",
-					"dataSourceTypeHint": "time"
+					"dataSourceTypeHint": "time",
+					"multiline": "no"
 				},
 				"iField_3_10_Orda": {
 					"type": "input",
@@ -304,7 +323,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.ID_Technician",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				}
 			}
 		}

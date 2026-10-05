@@ -40,7 +40,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[VEHICLES:2]ID:1",
-					"class": "fm_input_ro"
+					"class": "fm_input_ro",
+					"multiline": "no"
 				},
 				"tField_2_2": {
 					"type": "text",
@@ -58,7 +59,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[VEHICLES:2]LicensePlate:2",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"tField_2_3": {
 					"type": "text",
@@ -76,7 +78,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[VEHICLES:2]Brand:3",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"tField_2_4": {
 					"type": "text",
@@ -94,7 +97,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[VEHICLES:2]Model:4",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"tField_2_5": {
 					"type": "text",
@@ -112,7 +116,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[VEHICLES:2]Year:5",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"tField_2_6": {
 					"type": "text",
@@ -130,7 +135,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[VEHICLES:2]ID_Customer:6",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"tField_2_7": {
 					"type": "text",
@@ -148,7 +154,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "[VEHICLES:2]WIN:7",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"iField_2_1_Orda": {
 					"type": "input",
@@ -157,7 +164,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.ID",
-					"class": "fm_input_ro"
+					"class": "fm_input_ro",
+					"multiline": "no"
 				},
 				"iField_2_2_Orda": {
 					"type": "input",
@@ -166,7 +174,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.LicensePlate",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"iField_2_3_Orda": {
 					"type": "input",
@@ -175,7 +184,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.Brand",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"iField_2_4_Orda": {
 					"type": "input",
@@ -184,7 +194,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.Model",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"iField_2_5_Orda": {
 					"type": "input",
@@ -193,7 +204,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.Year",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"iField_2_6_Orda": {
 					"type": "input",
@@ -202,7 +214,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.ID_Customer",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				},
 				"iField_2_7_Orda": {
 					"type": "input",
@@ -211,7 +224,8 @@
 					"width": 870,
 					"height": 30,
 					"dataSource": "Form:C1466.dataExplore.entity.WIN",
-					"class": "fm_input"
+					"class": "fm_input",
+					"multiline": "no"
 				}
 			}
 		}
