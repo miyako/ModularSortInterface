@@ -32,10 +32,11 @@ function plansExecute(){
 function plansResetAll() {
     lanes = [[]];
     renderLanes();
-    refreshFieldList();
+    syncPalette(lanes[0]);
 }
 
 function plansAddLane() {
     lanes.push([]);
     renderLanes();
+    syncPalette(lanes[lanes.length - 1]);
 }

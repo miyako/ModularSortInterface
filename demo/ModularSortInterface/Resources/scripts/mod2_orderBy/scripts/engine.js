@@ -100,17 +100,20 @@ function showCategory(tabId) {
 
 }
 
-// after a table leaves the composition area, the field list must not keep its fields
-function refreshFieldList() {
+// show the category the given criterion needs next:
+// empty → tables, table → its fields, table+field (or complete) → directions
+function syncPalette(lane) {
 
-    const active = document.querySelector('.ss_tab-btn.active');
-    if (!active || active.dataset.tab !== 'field') return;
+    const pieces = (lane || []).map(getPiece);
+    const table = pieces.find(p => p?.nature === 'table');
+    const hasField = pieces.some(p => p?.nature === 'field');
 
-    const tableId = contextTableId();
-    if (tableId) {
-        showFieldsFor(tableId);
-    } else {
+    if (!table) {
         showCategory('table');
+    } else if (!hasField) {
+        showFieldsFor(table.id);
+    } else {
+        showCategory('direction');
     }
 
 }
@@ -269,8 +272,7 @@ function renderLanes() {
             if (canDrop(lane, p)) {
                 lanes[li].push(dragPieceId);
                 renderLanes();
-                // a table was just added: offer only its fields
-                if (p.nature === 'table') showFieldsFor(p.id);
+                syncPalette(lanes[li]);
             } else {
                 // Flash invalid
                 laneEl.classList.add('invalid');
@@ -303,7 +305,7 @@ function removeLane(i) {
     }
 
     renderLanes();
-    refreshFieldList();
+    syncPalette(lanes[lanes.length - 1]);
 
 }
 
@@ -312,7 +314,7 @@ function removePiece(laneIdx, pieceIdx) {
     // each module depends on the one before it: remove the rest of the criterion too
     lanes[laneIdx].splice(pieceIdx);
     renderLanes();
-    refreshFieldList();
+    syncPalette(lanes[laneIdx]);
 
 }
 
