@@ -59,6 +59,34 @@ function canDrop(lane, newPiece) {
 
 }
 
+// table whose fields the Field tab should offer: the last criterion that has a table but no field yet
+function contextTableId() {
+
+    for (let i = lanes.length - 1; i >= 0; i--) {
+        const pieces = lanes[i].map(getPiece);
+        const table = pieces.find(p => p?.nature === 'table');
+        if (table && !pieces.some(p => p?.nature === 'field')) return table.id;
+    }
+    return null;
+
+}
+
+// select the Field tab and list only the fields of the given table (all fields if none)
+function showFieldsFor(tableId) {
+
+    document.querySelectorAll('.ss_tab-btn').forEach(btn =>
+        btn.classList.toggle('active', btn.dataset.tab === 'field'));
+
+    filterPiecesCancel();
+
+    PIECES = Object.values(ALL_PIECES).filter(item =>
+        item.nature === 'field' &&
+        (!tableId || new RegExp(`^${tableId}F\\d+$`).test(item.id))
+    );
+    renderPalette();
+
+}
+
 function copyDomTree() {
 
     const serializer = new XMLSerializer();
@@ -163,19 +191,7 @@ function renderLanes() {
                     el.addEventListener('click', (e) => {
                         if (e.target.classList.contains('ss_remove-btn')) return; // ignorer le ×
 
-                        const buttons = document.querySelectorAll('.ss_tab-btn');
-                        buttons.forEach(btn => btn.classList.remove('active'));
-
-                        const fieldTab = document.querySelector('.ss_tab-btn[data-tab="field"]');
-                        if (fieldTab) fieldTab.classList.add('active');
-
-                        filterPiecesCancel();
-
-                        PIECES = Object.values(ALL_PIECES).filter(item => 
-                            item.nature === "field" && 
-                            new RegExp(`^${p.id}F\\d+$`).test(item.id)
-                        );
-                        renderPalette();
+                        showFieldsFor(p.id);
 
                     });
                 }
@@ -225,6 +241,8 @@ function renderLanes() {
             if (canDrop(lane, p)) {
                 lanes[li].push(dragPieceId);
                 renderLanes();
+                // a table was just added: offer only its fields
+                if (p.nature === 'table') showFieldsFor(p.id);
             } else {
                 // Flash invalid
                 laneEl.classList.add('invalid');
