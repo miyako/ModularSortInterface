@@ -43,8 +43,8 @@
         <target>Invoice lines</target>
       </trans-unit>
       <trans-unit id="30800" resname="tTable8">
-        <source>Techicians</source>
-        <target>Techicians</target>
+        <source>Technicians</source>
+        <target>Technicians</target>
       </trans-unit>
       <trans-unit id="30900" resname="tTable9">
         <source>Demo Tables</source>
@@ -71,6 +71,10 @@
         <target>Toggle to mode</target>
       </trans-unit>
 
+      <trans-unit id="40005" resname="tTablesHeader">
+          <source>TABLES</source>
+          <target>TABLES</target>
+      </trans-unit>
     </group>
 
   </file>

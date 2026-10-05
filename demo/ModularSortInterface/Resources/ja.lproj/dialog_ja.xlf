@@ -3,7 +3,7 @@
 
 <xliff version="1.0">
 
-  <file datatype="x-STR#" original="undefined" product-Version="v19" source-language="en" target-language="fr">
+  <file datatype="x-STR#" original="undefined" product-Version="v19" source-language="en" target-language="ja">
 
     <header>
       <note></note>
@@ -14,26 +14,26 @@
 
     <trans-unit id="18001" resname="tEraseThisRec">
       <source>Erase this record ?</source>
-      <target>Effacer cet enregistrement ?</target>
+      <target>このレコードを削除しますか？</target>
     </trans-unit>
     <trans-unit id="18002" resname="tEraseTheseRec">
       <source>Erase these {x} records ?</source>
-      <target>Effacer ces {x} enregistrements ?</target>
+      <target>{x}件のレコードを削除しますか？</target>
     </trans-unit>
     <trans-unit id="18003" resname="tOptionRename">
       <source>' {x} ' already exists!
        It was automatically renamed to ' {x} '!</source>
-      <target>' {x} ' existe déjà !
-       il va être automatiquement renomer en ' {x} ' !</target>
+      <target>「{x}」はすでに存在します。
+       「{x}」に名前を変更しました。</target>
     </trans-unit>
 
     <trans-unit id="18004" resname="tSortAscending">
         <source>Ascending order</source>
-        <target>Ordre croissant</target>
+        <target>昇順</target>
     </trans-unit>
     <trans-unit id="18005" resname="tSortDescending">
         <source>Descending order</source>
-        <target>Ordre décroissant</target>
+        <target>降順</target>
     </trans-unit>
   </group>
 

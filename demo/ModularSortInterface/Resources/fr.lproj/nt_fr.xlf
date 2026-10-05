@@ -33,11 +33,11 @@
             </target>
         </trans-unit>
         <trans-unit id="20003" resname="xlf_eyebrow">
-            <source>How to it works</source>
+            <source>How it works</source>
             <target>Comment ça marche</target>
         </trans-unit>
         <trans-unit id="20004" resname="xlf_heading">
-            <source>Principes</source>
+            <source>Principles</source>
             <target>Principes</target>
         </trans-unit>
         <trans-unit id="20005" resname="xlf_copyText">
@@ -59,6 +59,22 @@ Pour utiliser la base, cliquez sur le bouton correspondant au mode de sélection
         <trans-unit id="20008" resname="xlf_primaryBtn2">
             <source></source>
             <target>Lancer la démo en sélection orda →</target>
+        </trans-unit>
+        <trans-unit id="20009" resname="xlf_windowTitle">
+            <source>OrderBy Composer  ·  4D Tech Note</source>
+            <target>Composeur de tri  ·  4D Tech Note</target>
+        </trans-unit>
+        <trans-unit id="20010" resname="xlf_featHead">
+            <source>FEATURES</source>
+            <target>FONCTIONNALITÉS</target>
+        </trans-unit>
+        <trans-unit id="20011" resname="xlf_cardVersion">
+            <source>VERSION</source>
+            <target>VERSION</target>
+        </trans-unit>
+        <trans-unit id="20012" resname="xlf_cardDocs">
+            <source>DOCS &amp; BLOG</source>
+            <target>DOCS &amp; BLOG</target>
         </trans-unit>
     </group>
   </file>

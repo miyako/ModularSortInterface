@@ -149,7 +149,7 @@ Function paletteLoadDictionary()->$result : Text
 		"nature"; "direction"; \
 		"icon"; "ti-sort-ascending"; \
 		"emits"; "direction"; \
-		"hint"; "Ordre croissant"))
+		"hint"; Localized string:C991("tSortAscending")))
 	
 	$data.push(New object:C1471(\
 		"id"; "desc"; \
@@ -157,7 +157,7 @@ Function paletteLoadDictionary()->$result : Text
 		"nature"; "direction"; \
 		"icon"; "ti-sort-descending"; \
 		"emits"; "direction"; \
-		"hint"; "Ordre décroissant"))
+		"hint"; Localized string:C991("tSortDescending")))
 	
 	// transmute
 	

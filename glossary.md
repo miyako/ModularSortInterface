@@ -75,12 +75,21 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 | Reset / Add / Execute | リセット / 追加 / 実行 | |
 | Save / Load / Close | 保存 / 読み込み / 閉じる | |
 | Sorting criteria | 並べ替え条件 | |
-| Target Sort Composer | （Phase 5で決定） | ダイアログのタイトル |
+| Target Sort Composer | 並び替えエディター | ダイアログのタイトル。4D旧版の「並び替えエディター」に合わせる（編集者指示）。本文の「並べ替え」はそのまま |
+| Search... / Clear search | 検索... / 検索をクリア | |
+| — drop items here | — ここにモジュールをドロップ | |
+| table → field → ASC/DESC | テーブル → フィールド → ASC/DESC | 空の条件行のヒント |
+| Ascending order / Descending order | 昇順 / 降順 | ASC/DESCモジュールのツールチップ |
+| OrderBy Composer | OrderBy Composer | ホーム画面のブランド名（翻訳しない） |
+| Beast garage™ | Beast garage™ | デモアプリ名（翻訳しない） |
+| Order (list button) | 並べ替え | ダイアログを開くボタン |
+| Customers / Vehicles / Interventions | 顧客 / 車両 / 整備 | テーブル表示名・メニュー（テーブル名自体は翻訳しない） |
+| Services / Parts / Invoices / Invoice lines / Technicians | サービス / 部品 / 請求書 / 請求明細 / 技術者 | 同上 |
 
 ## Proper nouns in examples
 
 | English | 日本語 | Notes |
 |---|---|---|
 | TECHNICIANS / Name | TECHNICIANS / Name | デモのテーブル名・フィールド名（翻訳しない） |
-| sample records | 架空の日本の顧客・技術者、円建て価格、消費税10% | `Resources/ja.lproj/SQLExport/`（原本は `fr.lproj/SQLExport/`）。VEHICLES・日付・UUIDは原文ママ |
+| sample records | 架空の日本の顧客・技術者、円建て価格、消費税10% | `Resources/ja.lproj/SQLExport/`（フランス語の原本はフォールバックの `en.lproj/SQLExport/`）。VEHICLES・日付・UUIDは原文ママ |
 | Olivier Marolleau | Olivier Marolleau | 著者名はラテン文字のまま |

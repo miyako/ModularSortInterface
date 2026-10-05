@@ -310,7 +310,7 @@ Function update()
 		
 		$tableName:=This:C1470.exDataClass.getInfo().name
 		
-		OBJECT SET TITLE:C194(*; "tTitleSub"; Localized string:C991("tTable")+String:C10(This:C1470.exDataClass.getInfo().tableNumber))
+		OBJECT SET TITLE:C194(*; "tTitleSub"; Localized string:C991("tTable"+String:C10(This:C1470.exDataClass.getInfo().tableNumber)))
 		SET WINDOW TITLE:C213("Beast garage™  |  "+This:C1470.exDataClass.getInfo().name+"  |  "+String:C10(This:C1470.exSelection.length)+" / "+String:C10(This:C1470.exDataClass.all().length); Current form window:C827)
 		
 		// update buttons

@@ -13,7 +13,7 @@
 	"height": 680,
 	"rightMargin": 0,
 	"bottomMargin": 0,
-	"windowTitle": "Composeur de tri  ·  4D Tech Note",
+	"windowTitle": ":xliff:xlf_windowTitle",
 	"destination": "detailScreen",
 	"fluentUI": true,
 	"method": "method.4dm",
@@ -81,7 +81,7 @@
 				},
 				"featHead": {
 					"type": "text",
-					"text": "FONCTIONNALITÉS",
+					"text": ":xliff:xlf_featHead",
 					"top": 98,
 					"left": 26,
 					"width": 232,
@@ -191,7 +191,7 @@
 				},
 				"cardLabel1": {
 					"type": "text",
-					"text": "VERSION",
+					"text": ":xliff:xlf_cardVersion",
 					"top": 272,
 					"left": 328,
 					"width": 130,
@@ -251,7 +251,7 @@
 				},
 				"cardLabel3": {
 					"type": "text",
-					"text": "DOCS & BLOG",
+					"text": ":xliff:xlf_cardDocs",
 					"top": 272,
 					"left": 504,
 					"width": 410,

@@ -21,12 +21,20 @@
       <target>Erase these {x} records ?</target>
     </trans-unit>
     <trans-unit id="18003" resname="tOptionRename">
-      <source>' {x} ' already exist !
-       he was automaticly renamed in ' {x} ' !</source>
-      <target>' {x} ' already exist !
-       he was automaticly renamed in ' {x} ' !</target>
+      <source>' {x} ' already exists!
+       It was automatically renamed to ' {x} '!</source>
+      <target>' {x} ' already exists!
+       It was automatically renamed to ' {x} '!</target>
     </trans-unit>
 
+    <trans-unit id="18004" resname="tSortAscending">
+        <source>Ascending order</source>
+        <target>Ascending order</target>
+    </trans-unit>
+    <trans-unit id="18005" resname="tSortDescending">
+        <source>Descending order</source>
+        <target>Descending order</target>
+    </trans-unit>
   </group>
 
   </file>

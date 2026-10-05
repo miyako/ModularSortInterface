@@ -19,8 +19,8 @@
                 <target>Apply</target>
             </trans-unit>
             <trans-unit id="14203" resname="bValid">
-                <source>Valide</source>
-                <target>Valide</target>
+                <source>Validate</source>
+                <target>Validate</target>
             </trans-unit>
 
             <trans-unit id="14210" resname="bListAdd">
