@@ -58,8 +58,7 @@ The interface addresses the following needs in particular:
 - Applying the same criteria to an ORDA entity selection;
 - Easily changing the priority order of the criteria;
 - Saving sort plans so they can be reused later;
-
-Sharing a sort configuration between several users or several applications.
+- Sharing a sort configuration between several users or several applications.
 
 **Note**: Support for sorts based on formulas or custom expressions is not yet available. This feature is part of the planned future developments.
 
@@ -161,8 +160,7 @@ Several commands are available at the bottom of the window to manage the sort cr
 - **Add**: creates a new sort criterion. This feature makes it possible to build multi-criteria sorts by defining several priority levels.
 - **Execute**: immediately applies the sort criteria to the current selection. Unlike 4D's native sort editor, the dialog remains open after execution, making it possible to test different configurations without having to reopen the window.
 - **Save**: saves the complete sort definition to a file in **.4od** format for later reuse.
-
-**Load**: reloads a previously saved **.4od** file and automatically restores the full set of sort criteria in the editor.
+- **Load**: reloads a previously saved **.4od** file and automatically restores the full set of sort criteria in the editor.
 
 ## Technical Architecture
 
