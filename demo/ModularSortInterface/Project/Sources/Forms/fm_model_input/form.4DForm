@@ -261,5 +261,6 @@
 	"markerFooter": 769,
 	"markerBreak": 769,
 	"markerBody": 769,
-	"markerHeader": 65
+	"markerHeader": 65,
+	"menuBar": "Edit"
 }

@@ -1158,5 +1158,6 @@
 		"views": {
 			"View 1": {}
 		}
-	}
+	},
+	"menuBar": "Edit"
 }

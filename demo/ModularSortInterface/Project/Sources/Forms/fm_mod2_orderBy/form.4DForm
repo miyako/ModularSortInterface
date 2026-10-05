@@ -16,7 +16,7 @@
 		"onClick",
 		"onUnload"
 	],
-	"windowTitle": "window title",
+	"windowTitle": "",
 	"destination": "detailScreen",
 	"pages": [
 		{
@@ -54,5 +54,6 @@
 			"View 1": {}
 		}
 	},
-	"method": "method.4dm"
+	"method": "method.4dm",
+	"menuBar": "Edit"
 }
