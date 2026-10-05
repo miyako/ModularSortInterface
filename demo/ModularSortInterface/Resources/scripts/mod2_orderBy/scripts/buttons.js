@@ -32,6 +32,7 @@ function plansExecute(){
 function plansResetAll() {
     lanes = [[]];
     renderLanes();
+    refreshFieldList();
 }
 
 function plansAddLane() {

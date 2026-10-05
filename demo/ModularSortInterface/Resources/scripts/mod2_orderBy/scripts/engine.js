@@ -87,6 +87,34 @@ function showFieldsFor(tableId) {
 
 }
 
+// select a tab and list all modules of its category
+function showCategory(tabId) {
+
+    document.querySelectorAll('.ss_tab-btn').forEach(btn =>
+        btn.classList.toggle('active', btn.dataset.tab === tabId));
+
+    filterPiecesCancel();
+
+    PIECES = Object.values(ALL_PIECES).filter(item => item.nature === tabId);
+    renderPalette();
+
+}
+
+// after a table leaves the composition area, the field list must not keep its fields
+function refreshFieldList() {
+
+    const active = document.querySelector('.ss_tab-btn.active');
+    if (!active || active.dataset.tab !== 'field') return;
+
+    const tableId = contextTableId();
+    if (tableId) {
+        showFieldsFor(tableId);
+    } else {
+        showCategory('table');
+    }
+
+}
+
 function copyDomTree() {
 
     const serializer = new XMLSerializer();
@@ -275,13 +303,17 @@ function removeLane(i) {
     }
 
     renderLanes();
+    refreshFieldList();
 
 }
 
 function removePiece(laneIdx, pieceIdx) {
 
+    const removed = getPiece(lanes[laneIdx][pieceIdx]);
+
     lanes[laneIdx].splice(pieceIdx, 1);
     renderLanes();
+    if (removed?.nature === 'table') refreshFieldList();
 
 }
 
