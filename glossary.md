@@ -81,5 +81,6 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 
 | English | 日本語 | Notes |
 |---|---|---|
-| TECHNICIANS / Name | TECHNICIANS / Name | デモのテーブル名・フィールド名。データのローカライズはPhase 4で判断 |
+| TECHNICIANS / Name | TECHNICIANS / Name | デモのテーブル名・フィールド名（翻訳しない） |
+| sample records | 架空の日本の顧客・技術者、円建て価格、消費税10% | `Resources/ja.lproj/SQLExport/`（原本は `fr.lproj/SQLExport/`）。VEHICLES・日付・UUIDは原文ママ |
 | Olivier Marolleau | Olivier Marolleau | 著者名はラテン文字のまま |
