@@ -1,4 +1,5 @@
 var $dataClassName : Text
+var $path : Text
 For each ($dataClassName; ds:C1482)
 	If (ds:C1482[$dataClassName].getCount()=0)
 		$path:=Localized document path:C1105(["SQLExport"; $dataClassName; "Export.sql"].join("/"))

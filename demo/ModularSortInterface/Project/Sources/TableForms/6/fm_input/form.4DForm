@@ -277,7 +277,7 @@
 					"top": 416,
 					"width": 300,
 					"height": 16,
-					"dataSource": "Enregistrements trouvés([INVOICE_LINES:7])",
+					"dataSource": "Records in selection:C76([INVOICE_LINES:7])",
 					"dataSourceTypeHint": "number",
 					"enterable": false,
 					"focusable": false,
