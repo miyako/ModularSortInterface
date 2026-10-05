@@ -309,11 +309,10 @@ function removeLane(i) {
 
 function removePiece(laneIdx, pieceIdx) {
 
-    const removed = getPiece(lanes[laneIdx][pieceIdx]);
-
-    lanes[laneIdx].splice(pieceIdx, 1);
+    // each module depends on the one before it: remove the rest of the criterion too
+    lanes[laneIdx].splice(pieceIdx);
     renderLanes();
-    if (removed?.nature === 'table') refreshFieldList();
+    refreshFieldList();
 
 }
 
