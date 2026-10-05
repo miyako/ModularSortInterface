@@ -43,13 +43,13 @@
 
           <div class="ss_tabs">
             <button class="ss_tab-btn active" data-tab="table">
-              <div class="ss_legend-dot" style="background:#AFA9EC"></div>Table
+              <div class="ss_legend-dot" style="background:#AFA9EC"></div><span data-i18n="xlf_table">Table</span>
             </button>
-            <button class="ss_tab-btn" data-tab="field" data-i18n="xlf_field">
-              <div class="ss_legend-dot" style="background:#85B7EB"></div>Champ
+            <button class="ss_tab-btn" data-tab="field">
+              <div class="ss_legend-dot" style="background:#85B7EB"></div><span data-i18n="xlf_field">Champ</span>
             </button>
             <button class="ss_tab-btn" data-tab="direction">
-              <div class="ss_legend-dot" style="background:#5DCAA5"></div>Direction
+              <div class="ss_legend-dot" style="background:#5DCAA5"></div><span data-i18n="xlf_direction">Direction</span>
             </button>
             <button class="ss_tab-btn" data-tab="operator" style="display: none;">
               <div class="ss_legend-dot" style="background:#F0997B"></div>Operateur
@@ -105,14 +105,14 @@
   <section>
     <div class="ss_canvas-wrap">
 
-      <p class="ss_panel-title" data-i18n="xlf_Criteria">Critères de tri<span
+      <p class="ss_panel-title"><span data-i18n="xlf_Criteria">Critères de tri</span><span
           style="text-transform:none;letter-spacing:0;font-size:11px;font-weight:400;" data-i18n="xlf_drop_here">— déposez les pièces ici</span>
       </p>
 
       <div class="ss_lanes-wrap" id="lanes-wrap">
         <div class="ss_lane-row"><span class="ss_lane-num">1</span>
           <div class="ss_sort-lane"><span class="ss_lane-placeholder"><i class="ti ti-drag-drop" aria-hidden="true"
-                style="font-size:16px"></i>table → champ → ASC/DESC</span></div><button class="ss_btn-remove-lane"
+                style="font-size:16px"></i><span data-i18n="xlf_lane_hint">table → champ → ASC/DESC</span></span></div><button class="ss_btn-remove-lane"
             title="Supprimer ce critère" data-i18n-title="xlf_b_delete_criterion"><i class="ti ti-x"></i></button>
         </div>
       </div>

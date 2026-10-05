@@ -7,7 +7,7 @@ function setBaseLang($lang) {
     lang=$lang;
 
     i18next.init({
-        lng: ["fr", "en"].includes(lang) ? lang : "en",
+        lng: ["fr", "en", "ja"].includes(lang) ? lang : "en",
         resources: {
             fr: {
                 translation: {
@@ -24,7 +24,11 @@ function setBaseLang($lang) {
                     xlf_b_save: "Sauver",
                     xlf_b_load: "Charger",
                     xlf_b_close: "Fermer",
-                    xlf_b_delete_criterion: "Supprimer ce critère"
+                    xlf_b_delete_criterion: "Supprimer ce critère",
+                    xlf_table: "Table",
+                    xlf_direction: "Direction",
+                    xlf_lane_hint: "table → champ → ASC/DESC",
+                    xlf_remove_piece: "Retirer cette pièce"
                 }
             },
             en: {
@@ -42,12 +46,40 @@ function setBaseLang($lang) {
                     xlf_b_save: "Save",
                     xlf_b_load: "Load",
                     xlf_b_close: "Close",
-                    xlf_b_delete_criterion: "Remove this criterion"
+                    xlf_b_delete_criterion: "Remove this criterion",
+                    xlf_table: "Table",
+                    xlf_direction: "Direction",
+                    xlf_lane_hint: "table → field → ASC/DESC",
+                    xlf_remove_piece: "Remove this item"
+                }
+            },
+            ja: {
+                translation: {
+                    xlf_title: "並び替えエディター",
+                    xlf_field: "フィールド",
+                    xlf_search: "検索...",
+                    xlf_search_erase: "検索をクリア",
+                    xlf_not_found: "該当する項目はありません。",
+                    xlf_drop_here: "— ここにモジュールをドロップ",
+                    xlf_Criteria: "並べ替え条件",
+                    xlf_b_reset: "リセット",
+                    xlf_b_add: "追加",
+                    xlf_b_exe: "実行",
+                    xlf_b_save: "保存",
+                    xlf_b_load: "読み込み",
+                    xlf_b_close: "閉じる",
+                    xlf_b_delete_criterion: "この条件を削除",
+                    xlf_table: "テーブル",
+                    xlf_direction: "方向",
+                    xlf_lane_hint: "テーブル → フィールド → ASC/DESC",
+                    xlf_remove_piece: "このモジュールを削除"
                 }
             }
         }
     }, () => {
         translatePage();
+        // lanes are first drawn before the language is known
+        if (typeof renderLanes === "function") renderLanes();
     });
 
 }

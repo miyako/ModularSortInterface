@@ -131,7 +131,7 @@ function renderLanes() {
             const ph = document.createElement('span');
 
             ph.className = 'ss_lane-placeholder';
-            ph.innerHTML = `<i class="ti ti-drag-drop" aria-hidden="true" style="font-size:16px"></i>table → champ → ASC/DESC`;
+            ph.innerHTML = `<i class="ti ti-drag-drop" aria-hidden="true" style="font-size:16px"></i>${i18next.t('xlf_lane_hint')}`;
             laneEl.appendChild(ph);
 
         } else {
@@ -155,7 +155,7 @@ function renderLanes() {
                 el.innerHTML =
                     `<i class="${tabler} ${p.icon}" aria-hidden="true" style="font-size:14px"></i>` +
                     `${p.label}` +
-                    `<button class="ss_remove-btn" title="Retirer cette pièce" onclick="removePiece(${li},${pi})">×</button>`;
+                    `<button class="ss_remove-btn" title="${i18next.t('xlf_remove_piece')}" onclick="removePiece(${li},${pi})">×</button>`;
 
                 // Clic sur une table dans la lane → charger ses champs
                 if (p.nature === 'table') {

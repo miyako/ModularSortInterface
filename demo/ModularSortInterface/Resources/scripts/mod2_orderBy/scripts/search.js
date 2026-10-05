@@ -40,7 +40,7 @@ function filterPieces(query) {
       const p = document.createElement('p');
       p.setAttribute('id','noResult');
       p.className = 'no-result';
-      p.textContent = 'no result found';
+      p.textContent = i18next.t('xlf_not_found');
 
       document.getElementById('palette').appendChild(p);
       
